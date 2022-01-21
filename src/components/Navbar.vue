@@ -9,7 +9,6 @@
             height="40"
             alt=""
           />
-          <h5 class="fw-bold cTextDarkGray m-0 ms-2">VINCENT HADINATA</h5>
         </div>
       </router-link>
       <button
@@ -37,10 +36,15 @@
               <h6 class="cTextDarkGray fw-bold m-0">PROJECTS</h6>
             </router-link>
           </li>
-          <li class="my-1">
+          <li class="my-1 me-lg-5">
             <router-link :to="{ name: 'Blog' }" class="text-decoration-none">
               <h6 class="cTextDarkGray fw-bold m-0">BLOG</h6>
             </router-link>
+          </li>
+          <li class="my-1">
+            <a href="#" @click="onClickContact" class="text-decoration-none">
+              <h6 class="cTextDarkGray fw-bold m-0">CONTACT</h6>
+            </a>
           </li>
         </ul>
       </div>
@@ -49,7 +53,15 @@
 </template>
 
 <script>
-export default {};
+export default {
+  setup() {
+    const onClickContact = () => {
+      window.scrollTo(0, document.body.scrollHeight);
+    };
+
+    return { onClickContact };
+  },
+};
 </script>
 
 <style>

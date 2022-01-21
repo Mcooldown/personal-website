@@ -11,7 +11,7 @@
           <img
             :src="require('@/assets/projects/' + project.thumbnail)"
             alt="thumbnail"
-            class="w-100"
+            class="w-100 cDetailThumbnail"
           />
         </div>
         <div class="col-md-6 ps-lg-4">
@@ -31,6 +31,57 @@
       <div class="text-center" v-else>
         <h1 class="cTextGray fw-bold text-center mb-4">PROJECT NOT FOUND</h1>
         <Button title="BACK TO PROJECTS" />
+      </div>
+    </div>
+  </div>
+
+  <div class="cDetailContent">
+    <div class="container">
+      <div v-if="projectDetails.length">
+        <div v-for="detail in projectDetails" :key="detail.id" class="mb-5">
+          <h2 class="cTextDarkGray fw-bold mb-4">{{ detail.section_name }}</h2>
+
+          <!-- TEXT -->
+          <div
+            v-for="textItem in detail.text"
+            :key="textItem.title"
+            class="mb-3"
+          >
+            <h4 class="cTextBlue fw-bold">{{ textItem.title }}</h4>
+            <p class="text-muted">{{ textItem.content }}</p>
+          </div>
+
+          <!-- LINK -->
+          <div
+            v-for="linkItem in detail.link"
+            :key="linkItem.title"
+            class="mb-3"
+          >
+            <h4 class="cTextBlue fw-bold">{{ linkItem.title }}</h4>
+            <p class="text-muted">
+              <a :href="linkItem.content" target="_blank" class="text-reset">{{
+                linkItem.content
+              }}</a>
+            </p>
+          </div>
+
+          <!-- IMAGES -->
+          <div v-for="imageItem in detail.images" :key="imageItem.caption">
+            <div class="my-5">
+              <h4 class="cTextBlue fw-bold mb-3">
+                {{ imageItem.caption }}
+              </h4>
+              <img
+                :src="require('@/assets/projects/' + imageItem.location)"
+                class="w-100"
+                alt="image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div v-else>
+        <h5 class="cTextDarkGray text-center">No details available</h5>
       </div>
     </div>
   </div>
@@ -76,5 +127,18 @@ export default {
 }
 .cDetailHeader {
   padding: 9rem 0 7rem 0;
+}
+
+.cDetailThumbnail {
+  transition: 200ms ease all;
+  cursor: pointer;
+}
+
+.cDetailThumbnail:hover {
+  transform: rotate3d(10, 20, 5, 10deg);
+}
+
+.cDetailContent {
+  padding: 4rem 0;
 }
 </style>

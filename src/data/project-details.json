@@ -42,15 +42,15 @@
                "link" : [],
                "images" : [
                     {
-                         "caption": "Image 1",
+                         "caption": "Interface for: Home Page, About Us Page, and Our Services Page",
                          "location": "angkasa-visual-works/angkasa-1.webp"
                     },
                     {
-                         "caption": "Image 2",
+                         "caption": "Interface for: Product Detail Page, My Cart Page, and Checkout Form Page",
                          "location": "angkasa-visual-works/angkasa-2.webp"
                     },
                     {
-                         "caption": "Image 3",
+                         "caption": "Interface for: Order Detail Page, Customer Order List Page, Designer Order List Page",
                          "location": "angkasa-visual-works/angkasa-3.webp"
                     }
                ]
