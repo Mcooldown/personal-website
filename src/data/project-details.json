@@ -1,0 +1,59 @@
+{
+     "project_details" : [
+          {
+               "id" : 1,
+               "project_id" : 1,
+               "section_name": "Explanation",
+               "text" : [
+                    {
+                         "title" : "Introduction",
+                         "content" : "Angkasa Visual Works is a Web-based visual design production house that connects customers who need design and designers to handle their requests. This website has several features, including Authentication with JWT, Cart and Transaction, Chat for Customer and Designer, also Design Order System. This website is built using ReactJS framework for Front-end and Laravel for Back-end API."
+                    },
+                    {
+                         "title" : "My Role",
+                         "content": "My role is to implement UI design into code with ReactJS Framework as well as connect app to Back-end API. Besides that, I also play a role in deploying this web application to Firebase hosting"
+                    }
+               ],
+               "link": [],
+               "images" : []
+          },
+          {
+               "id" : 2,
+               "project_id" : 1,
+               "section_name": "Link to View the Project",
+               "text" : [],
+               "link" :[
+                    {
+                         "title" : "Web / Application Link",
+                         "content" : "https://angkasavisual.web.app/"
+                    },
+                    {
+                         "title" : "GitHub Link (Front-end)",
+                         "content" : "https://github.com/Mcooldown/angkasa-visual-app"
+                    }
+               ],
+               "images" : []
+          },
+          {
+               "id" : 3,
+               "project_id" : 1,
+               "section_name": "User Interface",
+               "text" : [],
+               "link" : [],
+               "images" : [
+                    {
+                         "caption": "Image 1",
+                         "location": "angkasa-visual-works/angkasa-1.webp"
+                    },
+                    {
+                         "caption": "Image 2",
+                         "location": "angkasa-visual-works/angkasa-2.webp"
+                    },
+                    {
+                         "caption": "Image 3",
+                         "location": "angkasa-visual-works/angkasa-3.webp"
+                    }
+               ]
+          }
+     ]
+}
