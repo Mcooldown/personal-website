@@ -19,9 +19,9 @@
           <p class="text-muted">{{ project.short_description }}</p>
 
           <h5 class="cTextDarkGray fw-bold">Tech Stack:</h5>
-          <div class="d-flex">
+          <div class="d-flex flex-wrap">
             <div v-for="tech in project.tech_stack" :key="tech">
-              <div class="cTechPills me-2">
+              <div class="cTechPills me-2 mb-2">
                 {{ tech }}
               </div>
             </div>
@@ -145,4 +145,33 @@ export default {
 .cDetailContent {
   padding: 6rem 0 8rem 0;
 }
+
+@media (max-width: 360.98px) {
+}
+
+@media (max-width: 575.98px) {
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 991.98px) {
+  .cDetailHeaderWrapper {
+    background-size: 115px, 125px;
+    background-position: 105% 20%, -5% 95%;
+  }
+  .cDetailContent {
+    padding: 6rem 0;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .cDetailHeaderWrapper {
+    background-size: 120px, 150px;
+    background-position: 105% 20%, -5% 95%;
+  }
+}
+
+/* @media (max-width: 1399.98px) {
+} */
 </style>

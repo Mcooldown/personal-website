@@ -9,7 +9,7 @@
     "
   >
     <div class="container">
-      <h1 class="cTextGray fw-bold text-center mb-4">COMING SOON</h1>
+      <h1 class="cTextGray fw-bold text-center mb-4">PAGE NOT FOUND</h1>
       <router-link
         :to="{ name: 'Home' }"
         class="d-flex justify-content-center text-decoration-none"

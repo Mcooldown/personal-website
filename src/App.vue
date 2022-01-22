@@ -14,14 +14,13 @@ export default {
 </script>
 
 <style>
+@import "~bootstrap/dist/css/bootstrap.css";
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* #nav a.router-link-exact-active {
-  color: #42b983;
-} */
 
 .cBgDarkGray {
   background-color: #393e46;
@@ -43,5 +42,11 @@ export default {
   color: #0092ca;
 }
 
-@import "~bootstrap/dist/css/bootstrap.css";
+.cLogoSocial {
+  transition: 200ms ease all;
+}
+
+.cLogoSocial:hover {
+  color: #005c81 !important;
+}
 </style>

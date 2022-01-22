@@ -1,0 +1,64 @@
+{
+     "skills" : [
+          {
+               "title" : "Vue.js",
+               "logo": "vue-js.png",
+               "category" : "Framework"
+          },
+          {
+               "title" : "React",
+               "logo": "react.png",
+               "category" : "Framework"
+          },
+          {
+               "title" : "Next.js",
+               "logo": "next-js.png",
+               "category" : "Framework"
+          },
+          {
+               "title" : "Laravel",
+               "logo": "laravel.png",
+               "category" : "Framework"
+          },
+          {
+               "title" : "Express.js",
+               "logo" : "express-js.png",
+               "category" : "Framework"
+          },
+          {
+               "title" : "Bootstrap",
+               "logo" : "bootstrap.svg",
+               "category" : "Framework"
+          },
+          {
+               "title" : "Java",
+               "logo" : "java.png",
+               "category" : "Language"
+          },
+          {
+               "title" : "HTML",
+               "logo" : "html.png",
+               "category" : "Language"
+          },
+          {
+               "title" : "CSS",
+               "logo" : "css.png",
+               "category" : "Language"
+          },
+          {
+               "title" : "JavaScript",
+               "logo" : "javascript.png",
+               "category" : "Language"
+          },
+          {
+               "title" : "PHP",
+               "logo" : "php.png",
+               "category" : "Language"
+          },
+          {
+               "title" : "SQL",
+               "logo" : "sql.png",
+               "category" : "Language"
+          }
+     ]
+}
