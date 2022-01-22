@@ -60,7 +60,7 @@
         </div>
         <div class="col-lg-6 d-lg-block ps-lg-4 d-none">
           <img
-            src="@/assets/profile-bnw.png"
+            src="@/assets/profile-color.webp"
             class="w-100 cImgLanding"
             alt=""
           />
