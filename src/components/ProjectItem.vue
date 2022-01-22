@@ -11,9 +11,9 @@
       />
       <h2 class="mt-2 fw-bold cTextDarkGray">{{ project.title }}</h2>
       <p class="text-muted">{{ project.short_description }}</p>
-      <div class="d-flex">
+      <div class="d-flex flex-wrap">
         <div v-for="tech in project.tech_stack" :key="tech">
-          <div class="cTechPills me-2">
+          <div class="cTechPills me-2 mb-2">
             {{ tech }}
           </div>
         </div>

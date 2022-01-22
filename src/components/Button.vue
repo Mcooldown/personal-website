@@ -24,6 +24,7 @@ button {
   padding: 8px 15px;
   transition: 200ms ease all;
   color: #0092ca;
+  background: transparent;
 }
 button:hover {
   background-color: #0092ca;

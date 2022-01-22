@@ -16,7 +16,45 @@
             lectures. I also made several personal projects after completing
             courses outside of college.
           </p>
-          <Button title="DOWNLOAD MY RESUME" :onClick="downloadResume" />
+          <div class="d-md-flex flex-wrap align-items-center">
+            <Button
+              title="DOWNLOAD MY RESUME"
+              class="my-2"
+              :onClick="downloadResume"
+            />
+            <ul class="list-unstyled d-flex ms-lg-3 my-2">
+              <li class="me-3">
+                <a href="mailto:vincenthadinata30@gmail.com" class="cTextBlue"
+                  ><i class="fa fa-envelope fa-2x"></i
+                ></a>
+              </li>
+              <li class="me-3">
+                <a
+                  href="https://www.linkedin.com/in/vincenthadinata/"
+                  class="cTextBlue"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+              </li>
+              <li class="me-3">
+                <a
+                  href="https://github.com/Mcooldown"
+                  class="cTextBlue"
+                  target="_blank"
+                  ><i class="fab fa-github fa-2x"></i
+                ></a>
+              </li>
+              <li class="me-3">
+                <a
+                  href="https://instagram.com/vincenthadinata"
+                  class="cTextBlue"
+                  target="_blank"
+                  ><i class="fab fa-instagram fa-2x"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="col-lg-6 d-lg-block ps-lg-4 d-none">
           <img
@@ -34,6 +72,11 @@
         Selected <span class="cTextBlue">Projects</span>
       </h1>
       <ProjectList :projects="projects" />
+      <div class="d-flex justify-content-center mt-4">
+        <router-link :to="{ name: 'Projects' }">
+          <Button title="SEE MORE PROJECTS" />
+        </router-link>
+      </div>
     </div>
   </div>
 </template>
@@ -42,16 +85,20 @@
 import Button from "@/components/Button.vue";
 import ProjectList from "@/components/ProjectList.vue";
 import projectsJSON from "@/data/projects.json";
-import { ref } from "vue";
+import { onMounted, ref } from "vue";
 
 export default {
   name: "Home",
   components: { Button, ProjectList },
   setup() {
+    onMounted(() => {
+      window.scrollTo(0, 0);
+    });
+
     const downloadResume = () => {
       const a = document.createElement("a");
       a.href = "CV_VincentHadinata.pdf";
-      a.download = "CV - Vincent Hadinata.pdf";
+      a.download = "Resume - Vincent Hadinata.pdf";
       a.click();
     };
 

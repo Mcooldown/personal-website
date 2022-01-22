@@ -11,7 +11,7 @@
                     },
                     {
                          "title" : "My Role",
-                         "content": "My role is to implement UI design into code with ReactJS Framework as well as connect app to Back-end API. Besides that, I also play a role in deploying this web application to Firebase hosting"
+                         "content": "My role is to implement UI design into code with ReactJS Framework as well as connect app to Back-end API. Besides that, I also play a role in deploying this web application to Firebase hosting."
                     }
                ],
                "link": [],
@@ -28,8 +28,12 @@
                          "content" : "https://angkasavisual.web.app/"
                     },
                     {
-                         "title" : "GitHub Link (Front-end)",
+                         "title" : "GitHub Link (Front-end / App)",
                          "content" : "https://github.com/Mcooldown/angkasa-visual-app"
+                    },
+                    {
+                         "title" : "GitHub Link (Back-end / API)",
+                         "content" : "https://github.com/putuduta/Angkasa-Visual-Backend"
                     }
                ],
                "images" : []
@@ -42,16 +46,76 @@
                "link" : [],
                "images" : [
                     {
-                         "caption": "Interface for: Home Page, About Us Page, and Our Services Page",
+                         "title" : "Home Page, About Us Page, and Our Services Page",
+                         "caption": "In the picture below, the page that is displayed is the Home Page, which is the first page when a user accesses this web. The Home Page displays the Landing section as well as information that promotes this website. Then the About Page displays information about Angkasa Visual Works and there are testimonials from several users about the use of this web. Then there is Our Service Page to see what products are offered through this website",
                          "location": "angkasa-visual-works/angkasa-1.webp"
                     },
                     {
-                         "caption": "Interface for: Product Detail Page, My Cart Page, and Checkout Form Page",
+                         "title": "Product Detail Page, My Cart Page, and Checkout Form Page",
+                         "caption": "In the image below, the page displayed is the Product Detail page, which shows the details of the product design selected by the user and the package. Users can also fill in the form below to add products to the cart. Then the Cart Page contains the product design orders that the user is interested in. Then the Checkout Form Page contains a form to checkout the selected product design",
                          "location": "angkasa-visual-works/angkasa-2.webp"
                     },
                     {
-                         "caption": "Interface for: Order Detail Page, Customer Order List Page, Designer Order List Page",
+                         "title": "Order Detail Page, Customer Order List Page, Designer Order List Page",
+                         "caption": "In the picture below, the page that is displayed is the Order Detail Page, which displays the order details from users who have completed their transactions. Then the Customer Order List to show a list of orders from the user and their status. Then Designer Order List to display a list of orders from the designer side, namely the designer who handles designs that have been ordered by the user and their status as well.",
                          "location": "angkasa-visual-works/angkasa-3.webp"
+                    }
+               ]
+          },
+          {
+               "id" : 4,
+               "project_id" : 2,
+               "section_name": "Explanation",
+               "text" : [
+                    {
+                         "title" : "Introduction",
+                         "content" : "Curebox is the Web based Medical Marketplace that provides feature to support the medicine transactions. This application is built as my personal portfolio as I've done learning about MERN Stack (MongoDB, ExpressJS, ReactJS, NodeJS). The features of this web consist of Medicine Search, Medicine Cart & Checkout, Forum about Medicine, also Articles about Medicine."
+                    },
+                    {
+                         "title" : "My Role",
+                         "content": "My role in this project is to implement the previously created user interface design into code using the React JS framework (Front-end). Then I also implemented the previously designed business process into code using NodeJS and ExpressJS (Back-end) and the database also uses MongoDB. Finally, I also play a role in deploying this web to firebase hosting. Overall, I'm holding the whole development in this project on the code side (Full stack)."
+                    }
+               ],
+               "link": [],
+               "images" : []
+          },
+          {
+               "id" : 5,
+               "project_id" : 2,
+               "section_name": "Link to View the Project",
+               "text" : [],
+               "link" :[
+                    {
+                         "title" : "Web / Application Link",
+                         "content" : "https://withcurebox.web.app/"
+                    },
+                    {
+                         "title" : "GitHub Link (Front-end / App)",
+                         "content" : "https://github.com/Mcooldown/curebox-app"
+                    },
+                    {
+                         "title" : "GitHub Link (Back-end / API)",
+                         "content" : "https://github.com/Mcooldown/curebox-api"
+                    }
+               ],
+               "images" : []
+          },
+          {
+               "id" : 6,
+               "project_id" : 2,
+               "section_name": "User Interface",
+               "text" : [],
+               "link" :[],
+               "images" : [
+                    {
+                         "title" : "Home Page, Login Page, Register Page, Article Detail Page, and Forum Detail Page",
+                         "caption" : "1",
+                         "location" : "curebox/curebox-1.webp"
+                    },
+                    {
+                         "title" : "Product Detail Page, My Cart Page, Checkout Form Page, My Transactions Page, Transaction Details Page, and Dashboard Page",
+                         "caption" : "2",
+                         "location" : "curebox/curebox-2.webp"
                     }
                ]
           }

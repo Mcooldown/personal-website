@@ -12,11 +12,15 @@
 <script>
 import ProjectList from "@/components/ProjectList.vue";
 import projectsJSON from "@/data/projects.json";
-import { ref } from "vue";
+import { onMounted, ref } from "vue";
 
 export default {
   components: { ProjectList },
   setup() {
+    onMounted(() => {
+      window.scrollTo(0, 0);
+    });
+
     const projects = ref(projectsJSON.projects);
 
     return { projects };

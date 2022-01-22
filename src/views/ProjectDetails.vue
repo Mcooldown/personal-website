@@ -7,14 +7,14 @@
   >
     <div class="container">
       <div v-if="project" class="row align-items-center cDetailHeader">
-        <div class="col-md-6">
+        <div class="col-md-6 my-3">
           <img
             :src="require('@/assets/projects/' + project.thumbnail)"
             alt="thumbnail"
             class="w-100 cDetailThumbnail"
           />
         </div>
-        <div class="col-md-6 ps-lg-4">
+        <div class="col-md-6 my-3 ps-lg-4">
           <h1 class="cTextDarkGray fw-bold">{{ project.title }}</h1>
           <p class="text-muted">{{ project.short_description }}</p>
 
@@ -39,13 +39,13 @@
     <div class="container">
       <div v-if="projectDetails.length">
         <div v-for="detail in projectDetails" :key="detail.id" class="mb-5">
-          <h2 class="cTextDarkGray fw-bold mb-4">{{ detail.section_name }}</h2>
+          <h2 class="cTextDarkGray fw-bold">{{ detail.section_name }}</h2>
 
           <!-- TEXT -->
           <div
             v-for="textItem in detail.text"
             :key="textItem.title"
-            class="mb-3"
+            class="my-4"
           >
             <h4 class="cTextBlue fw-bold">{{ textItem.title }}</h4>
             <p class="text-muted">{{ textItem.content }}</p>
@@ -55,7 +55,7 @@
           <div
             v-for="linkItem in detail.link"
             :key="linkItem.title"
-            class="mb-3"
+            class="my-4"
           >
             <h4 class="cTextBlue fw-bold">{{ linkItem.title }}</h4>
             <p class="text-muted">
@@ -66,11 +66,12 @@
           </div>
 
           <!-- IMAGES -->
-          <div v-for="imageItem in detail.images" :key="imageItem.caption">
+          <div v-for="imageItem in detail.images" :key="imageItem.title">
             <div class="my-5">
-              <h4 class="cTextBlue fw-bold mb-3">
-                {{ imageItem.caption }}
+              <h4 class="cTextBlue fw-bold">
+                {{ imageItem.title }}
               </h4>
+              <p class="text-muted mb-3">{{ imageItem.caption }}</p>
               <img
                 :src="require('@/assets/projects/' + imageItem.location)"
                 class="w-100"
@@ -101,6 +102,8 @@ export default {
     const projectDetails = ref([]);
 
     onMounted(() => {
+      window.scrollTo(0, 0);
+
       project.value = projectsJSON.projects.find(
         (project) => project.slug === props.slug
       );
@@ -111,6 +114,7 @@ export default {
           }
         );
       }
+      console.log(projectDetails.value);
     });
 
     return { project, projectDetails };
@@ -139,6 +143,6 @@ export default {
 }
 
 .cDetailContent {
-  padding: 4rem 0;
+  padding: 6rem 0 8rem 0;
 }
 </style>

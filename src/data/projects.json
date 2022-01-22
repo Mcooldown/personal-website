@@ -5,7 +5,7 @@
                "title": "Angkasa Visual Works",
                "short_description": "Web-based visual design production house that links customers who are in need of design and the designers to handle their requests.",
                "tech_stack": [
-                    "React JS", "Bootstrap 5"
+                    "Bootstrap 5", "React JS", "Laravel", "MySQL"
                ],
                "thumbnail" : "angkasa-visual-works/angkasa-thumbnail.png",
                "slug" : "angkasa-visual-works"
@@ -13,9 +13,9 @@
           {
                "id" : 2,
                "title": "CureBox",
-               "short_description": "Online Shop for Medicine",
+               "short_description": "Web based Medical Marketplace that provides feature to support the medicine transactions",
                "tech_stack": [
-                    "React JS", "Bootstrap 5", "MongoDB", "NodeJS", "ExpressJS"
+                    "Bootstrap 5", "React JS", "MongoDB", "NodeJS", "ExpressJS"
                ],
                "thumbnail" : "curebox/curebox-thumbnail.png",
                "slug" : "curebox"
