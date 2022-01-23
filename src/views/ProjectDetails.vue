@@ -66,17 +66,21 @@
           </div>
 
           <!-- IMAGES -->
-          <div v-for="imageItem in detail.images" :key="imageItem.title">
-            <div class="my-5">
-              <h4 class="cTextBlue fw-bold">
+          <div
+            v-for="imageItem in detail.images"
+            :key="imageItem.title"
+            class="my-4"
+          >
+            <div class="mb-5 pb-3">
+              <h4 class="cTextBlue fw-bold mb-3">
                 {{ imageItem.title }}
               </h4>
-              <p class="text-muted mb-3">{{ imageItem.caption }}</p>
               <img
                 :src="require('@/assets/projects/' + imageItem.location)"
                 class="w-100"
                 alt="image"
               />
+              <p class="text-muted mt-3">{{ imageItem.caption }}</p>
             </div>
           </div>
         </div>

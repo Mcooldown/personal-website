@@ -153,7 +153,7 @@ export default {
   background: url("../assets/pattern-1.png") no-repeat,
     url("../assets/pattern-2.png") no-repeat;
   background-size: 150px, 200px;
-  background-position: 100% 20%, -5% 100%;
+  background-position: 100% 10%, -5% 100%;
 }
 
 .cImgLanding {
@@ -185,7 +185,7 @@ export default {
 @media (max-width: 767.98px) {
   .cSectionProjects {
     background-size: 120px, 150px !important;
-    background-position: 110% 10%, -30% 100% !important;
+    background-position: 112% 5%, -30% 100% !important;
   }
   .cTitle {
     font-size: 36px;

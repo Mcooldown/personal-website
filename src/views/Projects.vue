@@ -33,27 +33,28 @@ export default {
   padding: 8rem 0;
   background: url("../assets/pattern-1.png") no-repeat,
     url("../assets/pattern-2.png") no-repeat;
-  background-size: 150px, 200px;
-  background-position: 100% 20%, 0% 50%;
+  background-size: 150px, 150px;
+  background-position: 100% 150px, 0% 99%;
 }
 
 /* @media (max-width: 360.98px) {
 }
 
 @media (max-width: 575.98px) {
+  
 } */
 
 @media (max-width: 767.98px) {
   .cProjects {
     background-size: 100px, 100px;
-    background-position: 105% 10%, -5% 95%;
+    background-position: 105% 150px, -5% 99%;
   }
 }
 
 @media (max-width: 991.98px) {
   .cProjects {
     background-size: 125px, 150px;
-    background-position: 105% 20%, -5% 95%;
+    background-position: 105% 150px, -5% 99%;
   }
 }
 

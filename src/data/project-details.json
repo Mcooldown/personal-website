@@ -47,17 +47,17 @@
                "images" : [
                     {
                          "title" : "Home Page, About Us Page, and Our Services Page",
-                         "caption": "In the picture below, the page that is displayed is the Home Page, which is the first page when a user accesses this web. The Home Page displays the Landing section as well as information that promotes this website. Then the About Page displays information about Angkasa Visual Works and there are testimonials from several users about the use of this web. Then there is Our Service Page to see what products are offered through this website",
+                         "caption": "In the picture above, the page that is displayed is the Home Page, which is the first page when a user accesses this web. The Home Page displays the Landing section as well as information that promotes this website. Then the About Page displays information about Angkasa Visual Works and there are testimonials from several users about the use of this web. Then there is Our Service Page to see what products are offered through this website",
                          "location": "angkasa-visual-works/angkasa-1.webp"
                     },
                     {
                          "title": "Product Detail Page, My Cart Page, and Checkout Form Page",
-                         "caption": "In the image below, the page displayed is the Product Detail page, which shows the details of the product design selected by the user and the package. Users can also fill in the form below to add products to the cart. Then the Cart Page contains the product design orders that the user is interested in. Then the Checkout Form Page contains a form to checkout the selected product design",
+                         "caption": "In the image above, the page displayed is the Product Detail page, which shows the details of the product design selected by the user and the package. Users can also fill in the form above to add products to the cart. Then the Cart Page contains the product design orders that the user is interested in. Then the Checkout Form Page contains a form to checkout the selected product design",
                          "location": "angkasa-visual-works/angkasa-2.webp"
                     },
                     {
                          "title": "Order Detail Page, Customer Order List Page, Designer Order List Page",
-                         "caption": "In the picture below, the page that is displayed is the Order Detail Page, which displays the order details from users who have completed their transactions. Then the Customer Order List to show a list of orders from the user and their status. Then Designer Order List to display a list of orders from the designer side, namely the designer who handles designs that have been ordered by the user and their status as well.",
+                         "caption": "In the picture above, the page that is displayed is the Order Detail Page, which displays the order details from users who have completed their transactions. Then the Customer Order List to show a list of orders from the user and their status. Then Designer Order List to display a list of orders from the designer side, namely the designer who handles designs that have been ordered by the user and their status as well.",
                          "location": "angkasa-visual-works/angkasa-3.webp"
                     }
                ]
@@ -109,12 +109,12 @@
                "images" : [
                     {
                          "title" : "Home Page, Login Page, Register Page, Article Detail Page, and Forum Detail Page",
-                         "caption" : "The image below shows the Home Page, where this page is displayed when the user first accesses the web. Then the login and register pages are displayed for authentication. Then the Article Details page displays certain articles along with their details and pictures. Then the last one is the Forum Details Page, where this page displays a particular forum thread that is being discussed. In the detail forum there is also a comment section to respond to the topic of the forum thread that is being discussed.",
+                         "caption" : "The image above shows the Home Page, where this page is displayed when the user first accesses the web. Then the login and register pages are displayed for authentication. Then the Article Details page displays certain articles along with their details and pictures. Then the last one is the Forum Details Page, where this page displays a particular forum thread that is being discussed. In the detail forum there is also a comment section to respond to the topic of the forum thread that is being discussed.",
                          "location" : "curebox/curebox-1.webp"
                     },
                     {
                          "title" : "Product Detail Page, My Cart Page, Checkout Form Page, My Transactions Page, Transaction Details Page, and Dashboard Page",
-                         "caption" : "The image below shows the Product Detail Page, where there is product and price information as well as a button to add the product to the cart. Then the cart page will display the results of orders from the user. Then there is a checkout page form to display the form that must be filled in to complete the product transaction previously ordered in the cart. After the transaction is successful, the transaction data will be displayed on the Transaction Page, and when a transaction is clicked it will display the Transaction Details page. Then the last is the dashboard page, where when the user logs in using authentication, he will be directed to this page immediately. This page contains a user profile along with a button to move to another page related to the features of this web.",
+                         "caption" : "The image above shows the Product Detail Page, where there is product and price information as well as a button to add the product to the cart. Then the cart page will display the results of orders from the user. Then there is a checkout page form to display the form that must be filled in to complete the product transaction previously ordered in the cart. After the transaction is successful, the transaction data will be displayed on the Transaction Page, and when a transaction is clicked it will display the Transaction Details page. Then the last is the dashboard page, where when the user logs in using authentication, he will be directed to this page immediately. This page contains a user profile along with a button to move to another page related to the features of this web.",
                          "location" : "curebox/curebox-2.webp"
                     }
                ]
@@ -126,7 +126,7 @@
                "text" : [
                     {
                          "title" : "Introduction",
-                         "content" : "Bilik Mental is the Web based Mental Health Application that provides feature to support the whose are in needs for they mental health. This web are built with Next.js, Node.js, Express.js, MongoDB, also Tailwind CSS. The features of this web consist of Meditation Course, Consultation with the professionals, Motivational Quotes, also Articles related to Mental Health."
+                         "content" : "Bilik Mental is the Web based Mental Health Application that provides feature to support the whose are in needs for they mental health. This web was built with Next.js, Node.js, Express.js, MongoDB, also Tailwind CSS. The features of this web consist of Meditation Course, Consultation with the professionals, Motivational Quotes, also Articles related to Mental Health."
                     },
                     {
                          "title" : "My Role",
@@ -166,13 +166,66 @@
                "images" : [
                     {
                          "title" : "Home Page, Login Page, Register Page, Quote List Page, and Article List Page",
-                         "caption" : "The image below shows the Home Page, where this page is displayed when the user first accesses the web. Then the register page to register a new account, then the login page to enter a registered user account. Then the Quotes List page displays all the motivational quotes available on this web and can also be filtered by category. Then the last is the Article List page showing all the articles available on this web and can also be filtered by category.",
+                         "caption" : "The image above shows the Home Page, where this page is displayed when the user first accesses the web. Then the register page to register a new account, then the login page to enter a registered user account. Then the Quotes List page displays all the motivational quotes available on this web and can also be filtered by category. Then the last is the Article List page showing all the articles available on this web and can also be filtered by category.",
                          "location" : "bilik-mental/bilik-mental-1.png"
                     },
                     {
                          "title" : "Dashboard Page, Consultation List Page, Select Consultant Page, and New Consultation Form Page",
-                         "caption" : "The image below shows the Dashboard Page, where this page is displayed when the user has successfully logged in. The information displayed is the user's profile, as well as buttons to access the features on this web. Then the Consultation List Page contains a list of consultations registered by the user along with information on the status of the consultation, the consultant, and the time of the consultation. Then when the user wants to make a new consultation schedule, the Select Consultant page will be displayed, where the user can choose the available consultant for consultation. After that the user will be shown the New Consultation Form page to fill in some data including the desired consultation time. When you have submitted, the process is complete and the data will be added to the user's consultation list.",
+                         "caption" : "The image above shows the Dashboard Page, where this page is displayed when the user has successfully logged in. The information displayed is the user's profile, as well as buttons to access the features on this web. Then the Consultation List Page contains a list of consultations registered by the user along with information on the status of the consultation, the consultant, and the time of the consultation. Then when the user wants to make a new consultation schedule, the Select Consultant page will be displayed, where the user can choose the available consultant for consultation. After that the user will be shown the New Consultation Form page to fill in some data including the desired consultation time. When you have submitted, the process is complete and the data will be added to the user's consultation list.",
                          "location" : "bilik-mental/bilik-mental-2.png"
+                    }
+               ]
+          },
+          {
+               "id" :10,
+               "project_id" : 4,
+               "section_name": "Explanation",
+               "text" : [
+                    {
+                         "title" : "Introduction",
+                         "content" : "NginepKuy is the web application that made for BNCC Hackathon 4.0 with the theme about staycation. This application provide booking & checkout feature for accomodation, also Online Chat with Travel Agent feature to consult the best vacation plan that user can follows. This web was built with Laravel (both Front-end and Back-end) and MySQL Database."
+                    },
+                    {
+                         "title" : "My Role",
+                         "content": "My role in this project is to help design web flow and database design with my team, and implement all these designs into the framework. In addition, I also helped create the User Interface of several pages on this web with my team."
+                    }
+               ],
+               "link": [],
+               "images" : []
+          },
+          {
+               "id" :11,
+               "project_id" : 4,
+               "section_name": "Link to View the Project",
+               "text" : [],
+               "link" :[
+                    {
+                         "title" : "Web / Application Link",
+                         "content" : "https://nginepkuy.000webhostapp.com/"
+                    },
+                    {
+                         "title" : "GitHub Link (Front-end & Back-end)",
+                         "content" : "https://github.com/Mcooldown/NginepKuy"
+                    }
+               ],
+               "images" : []
+          },
+          {
+               "id" : 12,
+               "project_id" : 4,
+               "section_name": "User Interface",
+               "text" : [],
+               "link" :[],
+               "images" : [
+                    {
+                         "title" : "Home Page, Accomodation List Page, and Accomodation Details Page",
+                         "caption" : "The picture above shows the Home Page, which is the initial page that the user accesses when he first opens this web. On this page, the user can view information about this website and there is a form that can be filled in to search for accommodation according to the user's filter. Then on the Accommodation List page, the results of the filter will be displayed, where there is a list of accommodations that can be booked for online transactions. Then when one of the accommodations is clicked, it will display the Accommodation Details Page, which displays detailed information about the selected accommodation and the type of room provided by the accommodation.",
+                         "location" : "nginepkuy/nginepkuy-1.webp"
+                    },
+                    {
+                         "title" : "Accomodation Type Details Page, Booking List Page, Payment Form Page, and Checkout List Page",
+                         "caption" : "The picture above shows the Accomodation Type Details Page, where when the user selects a room type in a particular accommodation, the user will be directed to this page, where this page will display detailed information about the selected room type and also a button to make a booking if the user wishes. the room type. When the user makes a booking, the booking data for the accommodation will automatically enter the user's booking list, which is displayed on the Booking List page. After that, if the user wants to pay, he will be directed to the Payment Form Page, where the user needs to fill in some data to make a payment and complete the transaction. After the transaction is successful, the user will be directed to the Checkout List page which displays all transactions and their status as well.",
+                         "location" : "nginepkuy/nginepkuy-2.webp"
                     }
                ]
           }

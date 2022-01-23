@@ -10,7 +10,7 @@
         flex-wrap
         align-items-center
         justify-content-center
-        rounded
+        cSkillBox
         px-md-4
         py-md-3
       "
@@ -40,6 +40,10 @@ export default {
   width: 72px;
   height: 72px;
   object-fit: contain;
+}
+
+.cSkillBox {
+  border-radius: 8px;
 }
 
 .cSkillList {
