@@ -126,8 +126,8 @@ export default {
 .cDetailHeaderWrapper {
   background: url("../assets/pattern-1.png") no-repeat,
     url("../assets/pattern-2.png") no-repeat, #eeeeee;
-  background-size: 200px, 250px;
-  background-position: 100% 20%, 0% 50%;
+  background-size: 120px, 200px;
+  background-position: 103% 20%, -5% 60%;
 }
 .cDetailHeader {
   padding: 9rem 0 7rem 0;

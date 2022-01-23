@@ -1,19 +1,7 @@
-# personal-website
+# My Personal Website
+======================
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
+This website contains personal information about me, including abilities and projects that I have worked on.
 
 ### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Visit [My Personal Website](https://vincenthadinata.netlify.app).

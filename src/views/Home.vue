@@ -83,7 +83,7 @@
   </div>
   <div class="cSectionSkills">
     <div class="container">
-      <h1 class="cTitle cTextDarkGray fw-bold mb-md-4 text-center">
+      <h1 class="cTitle cTextDarkGray fw-bold mb-md-5 mb-4 text-center">
         Tech <span class="cTextBlue">Skills</span>
       </h1>
       <div class="row">
@@ -122,7 +122,7 @@ export default {
     };
 
     // Fetch Data
-    const projects = ref(projectsJSON.projects.slice(0, 2));
+    const projects = ref(projectsJSON.projects.slice(0, 4));
     const frameworkSkills = ref(
       skillsJSON.skills.filter((skill) => {
         return skill.category === "Framework";
@@ -145,15 +145,15 @@ export default {
 }
 
 .cLanding {
-  min-height: 100vh;
+  min-height: 120vh;
 }
 
 .cSectionProjects {
   padding: 8rem 0 4rem 0;
   background: url("../assets/pattern-1.png") no-repeat,
     url("../assets/pattern-2.png") no-repeat;
-  background-size: 200px, 250px;
-  background-position: 100% 20%, 0% 50%;
+  background-size: 150px, 200px;
+  background-position: 100% 20%, -5% 100%;
 }
 
 .cImgLanding {
@@ -166,7 +166,7 @@ export default {
 }
 
 .cSectionSkills {
-  padding: 4rem 0 12rem 0;
+  padding: 4rem 0 10rem 0;
 }
 
 @media (max-width: 360.98px) {

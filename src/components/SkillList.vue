@@ -1,16 +1,27 @@
 <template>
   <div class="cSkillList">
-    <h2 class="cTextBlue fw-bold text-center mb-md-5 mb-4">
+    <h2 class="cTextBlue fw-bold text-center mb-4">
       {{ category }}
     </h2>
-    <div class="d-flex flex-wrap align-items-center justify-content-center">
+    <div
+      class="
+        cBgLightGray
+        d-flex
+        flex-wrap
+        align-items-center
+        justify-content-center
+        rounded
+        px-md-4
+        py-md-3
+      "
+    >
       <div v-for="skill in skills" :key="skill.title" class="m-2 text-center">
         <img
           :src="require('@/assets/skills/' + skill.logo)"
           alt=""
           class="cSkillLogo"
         />
-        <p class="fw-bold mt-3">
+        <p class="fw-bold mt-3 mb-0 cTextDarkGray">
           {{ skill.title }}
         </p>
       </div>
@@ -26,8 +37,16 @@ export default {
 
 <style scoped>
 .cSkillLogo {
-  width: 80px;
-  height: 80px;
+  width: 72px;
+  height: 72px;
   object-fit: contain;
+}
+
+.cSkillList {
+  transition: 200ms ease all;
+  cursor: pointer;
+}
+.cSkillList:hover {
+  transform: scale(1.02);
 }
 </style>

@@ -118,6 +118,63 @@
                          "location" : "curebox/curebox-2.webp"
                     }
                ]
+          },
+          {
+               "id" :7,
+               "project_id" : 3,
+               "section_name": "Explanation",
+               "text" : [
+                    {
+                         "title" : "Introduction",
+                         "content" : "Bilik Mental is the Web based Mental Health Application that provides feature to support the whose are in needs for they mental health. This web are built with Next.js, Node.js, Express.js, MongoDB, also Tailwind CSS. The features of this web consist of Meditation Course, Consultation with the professionals, Motivational Quotes, also Articles related to Mental Health."
+                    },
+                    {
+                         "title" : "My Role",
+                         "content": "Because this web is my personal project after completing the Next.js course, the entire process from the beginning of the user interface design, database design, to implementation into code on the front-end and back-end is done by myself."
+                    }
+               ],
+               "link": [],
+               "images" : []
+          },
+          {
+               "id" : 8,
+               "project_id" : 3,
+               "section_name": "Link to View the Project",
+               "text" : [],
+               "link" :[
+                    {
+                         "title" : "Web / Application Link",
+                         "content" : "http://bilikmental.vercel.app/"
+                    },
+                    {
+                         "title" : "GitHub Link (Front-end / App)",
+                         "content" : "https://github.com/Mcooldown/bilikmental-app"
+                    },
+                    {
+                         "title" : "GitHub Link (Back-end / API)",
+                         "content" : "https://github.com/Mcooldown/bilikmental-api"
+                    }
+               ],
+               "images" : []
+          },
+          {
+               "id" : 9,
+               "project_id" : 3,
+               "section_name": "User Interface",
+               "text" : [],
+               "link" :[],
+               "images" : [
+                    {
+                         "title" : "Home Page, Login Page, Register Page, Quote List Page, and Article List Page",
+                         "caption" : "The image below shows the Home Page, where this page is displayed when the user first accesses the web. Then the register page to register a new account, then the login page to enter a registered user account. Then the Quotes List page displays all the motivational quotes available on this web and can also be filtered by category. Then the last is the Article List page showing all the articles available on this web and can also be filtered by category.",
+                         "location" : "bilik-mental/bilik-mental-1.png"
+                    },
+                    {
+                         "title" : "Dashboard Page, Consultation List Page, Select Consultant Page, and New Consultation Form Page",
+                         "caption" : "The image below shows the Dashboard Page, where this page is displayed when the user has successfully logged in. The information displayed is the user's profile, as well as buttons to access the features on this web. Then the Consultation List Page contains a list of consultations registered by the user along with information on the status of the consultation, the consultant, and the time of the consultation. Then when the user wants to make a new consultation schedule, the Select Consultant page will be displayed, where the user can choose the available consultant for consultation. After that the user will be shown the New Consultation Form page to fill in some data including the desired consultation time. When you have submitted, the process is complete and the data will be added to the user's consultation list.",
+                         "location" : "bilik-mental/bilik-mental-2.png"
+                    }
+               ]
           }
      ]
 }

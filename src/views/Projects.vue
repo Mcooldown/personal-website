@@ -33,7 +33,7 @@ export default {
   padding: 8rem 0;
   background: url("../assets/pattern-1.png") no-repeat,
     url("../assets/pattern-2.png") no-repeat;
-  background-size: 200px, 250px;
+  background-size: 150px, 200px;
   background-position: 100% 20%, 0% 50%;
 }
 

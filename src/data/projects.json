@@ -13,12 +13,32 @@
           {
                "id" : 2,
                "title": "CureBox",
-               "short_description": "Web based Medical Marketplace that provides feature to support the medicine transactions",
+               "short_description": "Web based Medical Marketplace that provides feature to support the medicine transactions.",
                "tech_stack": [
                     "Bootstrap 5", "React", "MongoDB", "Node.js", "Express.js"
                ],
                "thumbnail" : "curebox/curebox-thumbnail.png",
                "slug" : "curebox"
+          },
+          {
+               "id" : 3,
+               "title": "Bilik Mental",
+               "short_description": "Web-based platform for those who have mentally ill to do consultation and meditation about their mental health.",
+               "tech_stack": [
+                    "Tailwind CSS", "Next.js", "MongoDB", "Node.js", "Express.js"
+               ],
+               "thumbnail" : "bilik-mental/bilik-mental-thumbnail.png",
+               "slug" : "bilik-mental"
+          },
+          {
+               "id" : 4,
+               "title": "NginepKuy!",
+               "short_description": "Web Application for Online Staycation Booking and Consultation",
+               "tech_stack": [
+                    "Bootstrap 5", "Laravel", "MySQL"
+               ],
+               "thumbnail" : "nginepkuy/nginepkuy-thumbnail.png",
+               "slug" : "nginepkuy"
           }
      ]
 }

@@ -27,7 +27,7 @@ export default {
 }
 
 .cBgLightGray {
-  background-color: #eeeeee;
+  background-color: #f8f8f8;
 }
 
 .cBgBlue {
