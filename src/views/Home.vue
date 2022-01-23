@@ -122,7 +122,11 @@ export default {
     };
 
     // Fetch Data
-    const projects = ref(projectsJSON.projects.slice(0, 4));
+    const projects = ref(
+      projectsJSON.projects.filter((project) => {
+        return project.selected === true;
+      })
+    );
     const frameworkSkills = ref(
       skillsJSON.skills.filter((skill) => {
         return skill.category === "Framework";

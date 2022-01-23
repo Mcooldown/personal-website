@@ -228,6 +228,60 @@
                          "location" : "nginepkuy/nginepkuy-2.webp"
                     }
                ]
+          },
+          {
+               "id" : 13,
+               "project_id" : 5,
+               "section_name": "Explanation",
+               "text" : [
+                    {
+                         "title" : "Background",
+                         "content" : "As the 28th IT manager at BNEC (Bina Nusantara English Club), the first thing I did was to change the appearance of the main website of this organization to be more modern and attractive according to the design style used in the presidency in which year I served at that time (2021) . The purpose of this redesign is to provide a better user experience for users, including those who want to see information about this organization. A good user interface makes users have a good impression of this organization, so that is one of the reasons why I decided to do this redesign."
+                    },
+                    {
+                         "title" : "My Role & Tools Used",
+                         "content": "My role is to carry out the entirety of this redesign, namely designing a new user interface design, requesting the required image components to the brand management division, and finally implementing the design into the framework. Because the frameworks used to create this website are only laravel and bootstrap, so I only use these two frameworks to do this redesign, not using other front-end frameworks."
+                    }
+               ],
+               "link": [],
+               "images" : []
+          },
+          {
+               "id" :14,
+               "project_id" : 5,
+               "section_name": "Link to View the Project",
+               "text" : [],
+               "link" :[
+                    {
+                         "title" : "Current Website Link",
+                         "content" : "https://www.mybnec.org/"
+                    }
+               ],
+               "images" : []
+          },
+          {
+               "id" : 15,
+               "project_id" : 5,
+               "section_name": "User Interface",
+               "text" : [],
+               "link" :[],
+               "images" : [
+                    {
+                         "title" : "Home Page",
+                         "caption" : "The picture above shows the Home page, which is the page that the user accesses when entering this website. This page displays information related to the organization as a whole, namely organizational profile information, latest articles and news, and partners who work with the organization.",
+                         "location" : "mybnec/mybnec-1.webp"
+                    },
+                    {
+                         "title" : "About Us Page, Board of Management Page, Event History Details Page",
+                         "caption" : "The image above displays the About us page, where there is information related to the organization's profile, ranging from the vision and mission, values, to greetings from the president. Then the Board of Management Page displays information about the organization's management as well as the current organizational management structure. Then there is also the Event History Details page, where this page displays the history of events held by the organization since they first started.",
+                         "location" : "mybnec/mybnec-2.webp"
+                    },
+                    {
+                         "title" : "Dashboard Page",
+                         "caption" : "The picture above is the Dashboard Page. where this page can only be accessed by members of the board of management (BoM). This website also provides features to assist organizational activities that can be used by all BoM members. When BoM members log into their respective accounts, this page will be displayed, which contains information on the names of BoM members along with information on feature usage and information on BoM members whose birthdays are today or this week.",
+                         "location" : "mybnec/mybnec-3.webp"
+                    }
+               ]
           }
      ]
 }

@@ -11,8 +11,8 @@
         align-items-center
         justify-content-center
         cSkillBox
-        px-md-4
-        py-md-3
+        px-md-4 px-3
+        py-3
       "
     >
       <div v-for="skill in skills" :key="skill.title" class="m-2 text-center">

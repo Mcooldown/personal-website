@@ -5,20 +5,22 @@
                "title": "Angkasa Visual Works",
                "short_description": "Web-based visual design production house that links customers who are in need of design and the designers to handle their requests.",
                "tech_stack": [
-                    "Bootstrap 5", "React", "Laravel", "MySQL"
+                    "Bootstrap", "React", "Laravel", "MySQL"
                ],
                "thumbnail" : "angkasa-visual-works/angkasa-thumbnail.png",
-               "slug" : "angkasa-visual-works"
+               "slug" : "angkasa-visual-works",
+               "selected" : true
           },
           {
                "id" : 2,
                "title": "CureBox",
                "short_description": "Web based Medical Marketplace that provides feature to support the medicine transactions.",
                "tech_stack": [
-                    "Bootstrap 5", "React", "MongoDB", "Node.js", "Express.js"
+                    "Bootstrap", "React", "MongoDB", "Node.js", "Express.js"
                ],
                "thumbnail" : "curebox/curebox-thumbnail.png",
-               "slug" : "curebox"
+               "slug" : "curebox",
+               "selected" : true
           },
           {
                "id" : 3,
@@ -28,17 +30,30 @@
                     "Tailwind CSS", "Next.js", "MongoDB", "Node.js", "Express.js"
                ],
                "thumbnail" : "bilik-mental/bilik-mental-thumbnail.png",
-               "slug" : "bilik-mental"
+               "slug" : "bilik-mental",
+               "selected" : true
           },
           {
                "id" : 4,
                "title": "NginepKuy!",
                "short_description": "Web Application for Online Staycation Booking and Consultation",
                "tech_stack": [
-                    "Bootstrap 5", "Laravel", "MySQL"
+                    "Bootstrap", "Laravel", "MySQL"
                ],
                "thumbnail" : "nginepkuy/nginepkuy-thumbnail.png",
-               "slug" : "nginepkuy"
+               "slug" : "nginepkuy",
+               "selected" : true
+          },
+          {
+               "id" : 5,
+               "title": "BNEC Main Website User Interface Re-design",
+               "short_description": "Redesign the user interface of the existing BNEC Main Website to a new and more attractive appearance",
+               "tech_stack": [
+                    "Bootstrap", "Laravel"
+               ],
+               "thumbnail" : "mybnec/mybnec-thumbnail.png",
+               "slug" : "mybnec",
+               "selected" : false
           }
      ]
 }
