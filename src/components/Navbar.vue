@@ -30,12 +30,6 @@
               <i class="d-md-none fa fa-tasks cTextDarkGray"></i>
             </router-link>
           </li>
-          <li class="my-1 me-lg-5 me-4">
-            <router-link :to="{ name: 'Blog' }" class="text-decoration-none">
-              <h6 class="d-none d-md-block cTextDarkGray fw-bold m-0">BLOG</h6>
-              <i class="d-md-none fa fa-blog cTextDarkGray"></i>
-            </router-link>
-          </li>
           <li class="my-1">
             <a href="#" @click="onClickContact" class="text-decoration-none">
               <h6 class="d-none d-md-block cTextDarkGray fw-bold m-0">

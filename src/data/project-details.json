@@ -231,6 +231,20 @@
           },
           {
                "id" : 13,
+               "project_id" : 4,
+               "section_name": "Certificate",
+               "text" : [],
+               "link" :[],
+               "images" : [
+                    {
+                         "title" : "Certificate of Participation",
+                         "caption" : "Certificate of participation of BNCC Technoscape Hackathon 4.0",
+                         "location" : "nginepkuy/hackaton-certificate.webp"
+                    }
+               ]
+          },
+          {
+               "id" : 14,
                "project_id" : 5,
                "section_name": "Explanation",
                "text" : [
@@ -247,10 +261,12 @@
                "images" : []
           },
           {
-               "id" :14,
+               "id" :15,
                "project_id" : 5,
-               "section_name": "Link to View the Project",
-               "text" : [],
+               "section_name": "Current Website Link",
+               "text" : [
+                    {"title" : "Disclaimer","content" : "The user interface of the current website can change from the one I designed considering that this website belongs to an organization that can change at any time depending on the next presidency."}
+               ],
                "link" :[
                     {
                          "title" : "Current Website Link",
@@ -260,7 +276,7 @@
                "images" : []
           },
           {
-               "id" : 15,
+               "id" : 16,
                "project_id" : 5,
                "section_name": "User Interface",
                "text" : [],
@@ -272,7 +288,7 @@
                          "location" : "mybnec/mybnec-1.webp"
                     },
                     {
-                         "title" : "About Us Page, Board of Management Page, Event History Details Page",
+                         "title" : "About Us Page, Board of Management Page, and Event History Details Page",
                          "caption" : "The image above displays the About us page, where there is information related to the organization's profile, ranging from the vision and mission, values, to greetings from the president. Then the Board of Management Page displays information about the organization's management as well as the current organizational management structure. Then there is also the Event History Details page, where this page displays the history of events held by the organization since they first started.",
                          "location" : "mybnec/mybnec-2.webp"
                     },
@@ -280,6 +296,122 @@
                          "title" : "Dashboard Page",
                          "caption" : "The picture above is the Dashboard Page. where this page can only be accessed by members of the board of management (BoM). This website also provides features to assist organizational activities that can be used by all BoM members. When BoM members log into their respective accounts, this page will be displayed, which contains information on the names of BoM members along with information on feature usage and information on BoM members whose birthdays are today or this week.",
                          "location" : "mybnec/mybnec-3.webp"
+                    }
+               ]
+          },
+          {
+               "id" : 17,
+               "project_id" : 6,
+               "section_name": "Explanation",
+               "text" : [
+                    {
+                         "title" : "Introduction",
+                         "content" : "This website is the official website of the 2021 Asian English Olympics event, which is an Asian-scale English competition held by my organization (BNEC) every year. This website provides all information about this event, starting from the theme raised, the English competitions being contested and their details, announcements, sponsors and media partners, as well as terms and conditions. In addition to displaying this information, this website also provides a competition participant registration feature, where participants can register their accounts first and purchase tickets to enter the competition. The registration process starts from ordering competition slots to making payments and registering information for each participant. In addition to features for participants, there are also features for the committee, which is to view the list of participants and their payment status as well as other features that manage the operations of this web. This website is made using Laravel both on the front-end and back-end. Then MySQL is used as the database."
+                    },
+                    {
+                         "title" : "My Role",
+                         "content": "Because I was appointed as the committee for this event, namely as the coordinator of the Media and Information Technology Division in charge of handling the entire website, I am tasked with ensuring that the features on this website run well. Previously, the main features of this website have been created by people in my division of the organization (BNEC). Therefore, when I was appointed to be the coordinator, I was in charge of perfecting the feature so that it was ready to be used later. In addition, when new features are needed that are requested by other committees, then I am tasked with fulfilling their needs, namely making these features. In addition, because the website for this event changes every year, I also redesigned the entire website so that it was different from previous years."
+                    }
+               ],
+               "link": [],
+               "images" : []
+          },
+          {
+               "id" :18,
+               "project_id" : 6,
+               "section_name": "Current Website Link",
+               "text" : [
+                    {"title" : "Disclaimer","content" : "The user interface of the current website can change from the one I designed considering that this website belongs to an organization that can change at any time depending on the next presidency."}
+               ],
+               "link" :[
+                    {
+                         "title" : "Link",
+                         "content" : "https://aeo.mybnec.org/"
+                    }
+               ],
+               "images" : []
+          },
+          {
+               "id" : 19,
+               "project_id" : 6,
+               "section_name": "User Interface",
+               "text" : [],
+               "link" :[],
+               "images" : [
+                    {
+                         "title" : "Home Page, About Us Page, and FAQ Page",
+                         "caption" : "The image above shows the Home page, where all information about the event is displayed in its entirety from top to bottom. Then the About Us page displays information about this event in more detail, which is more focused on the profile of this event. Then the FAQ page displays a list of questions that are usually frequently asked by participants when registering for this competition event and the answers to these questions.",
+                         "location" : "aeo-2021/aeo-2021-1.webp"
+                    },
+                    {
+                         "title" : "Login Page, Register Page, and Step 1-4 Page",
+                         "caption" : "The image above shows the page in sequence during the competition registration process. When a user wants to register, they need to create an account first on the register page, then go to the login page to enter their account. After that the user will be directed to the step 1 page, which is to place an order for the competition slot taken. After step 1 is complete, you will be directed to step 2, which is to make a payment. After the payment is confirmed, it will be directed to step 3 where the user will register the names of the participants who have taken part in the competition that has been ordered. Then after registering participants, the user can access the step 4 page, namely the dashboard which displays several menus that can be accessed related to this event.",
+                         "location" : "aeo-2021/aeo-2021-2.webp"
+                    }
+               ]
+          },
+          {
+               "id" : 20,
+               "project_id" : 6,
+               "section_name": "Certificate",
+               "text" : [],
+               "link" :[],
+               "images" : [
+                    {
+                         "title" : "Committee Certificate",
+                         "caption" : "Certificate as Coordinator of Media and Information Technology Division",
+                         "location" : "aeo-2021/committee-certificate.webp"
+                    }
+               ]
+          },
+          {
+               "id" : 21,
+               "project_id" : 7,
+               "section_name": "Explanation",
+               "text" : [
+                    {
+                         "title" : "Introduction",
+                         "content" : "This website is the official website of The 2021 BNEC Social Event, where on this website some information is displayed about this event, starting from the purpose of the event, the theme raised, and an invitation to make donations. In addition, there are articles that can be read related to this event. Then this website also provides a donation feature where data is collected on anyone who makes a donation and the amount. In addition, because this event also held several webinars, this website provides a registration feature for the webinars held. Registered data will be stored in a list that can only be seen by the event committee."
+                    },
+                    {
+                         "title" : "My Role",
+                         "content": "Because I was appointed as the committee for this event, namely as the coordinator of the Media Information Technology and Registration Division in charge of handling the entire website, I was tasked with creating this website from scratch and its features, as well as creating a new user interface that was different from previous years. In addition, I also ensure that all features run well without any problems, and I am also in charge of handling committee requests if it turns out that new features are needed or changes to features that have been made."
+                    }
+               ],
+               "link": [],
+               "images" : []
+          },
+          {
+               "id" :22,
+               "project_id" : 7,
+               "section_name": "Current Website Link",
+               "text" : [
+                    {"title" : "Disclaimer","content" : "The user interface of the current website can change from the one I designed considering that this website belongs to an organization that can change at any time depending on the next presidency."}
+               ],
+               "link" :[
+                    {
+                         "title" : "Link",
+                         "content" : "https://se.mybnec.org/"
+                    }
+               ],
+               "images" : []
+          },
+          {
+               "id" : 23,
+               "project_id" : 7,
+               "section_name": "User Interface",
+               "text" : [],
+               "link" :[],
+               "images" : [
+                    {
+                         "title" : "Home Page, Campaign Page, and Article List Page",
+                         "caption" : "The image above shows the home page, where there is information about this event in its entirety. Then there is a campaign page which details the purpose of this event being held along with posts that have been uploaded to support this event. In addition, there is an article list page which contains a collection of articles created at this event to be read by users. This article contains the theme raised.",
+                         "location" : "se-2020/se-2020-1.webp"
+                    },
+                    {
+                         "title" : "Competition Registration Page, Donation Page, Main Event Registration Page, and Webinar Registration Page",
+                         "caption" : "The picture above shows the registration and donation pages, where on this registration page there is registration for competitions held at this event, then registration for main events and webinars that users can participate in. On the registration page, the user only needs to fill in the registration form, after that the user is automatically registered in the event. Then there is also a donation page that can be accessed by users when they want to donate in the form of money or used books. To donate, just fill out the form provided. The purpose of this form is only to collect data. The picture above does not show the entire form because at the time of documenting, registration has been closed so that it looks different.",
+                         "location" : "se-2020/se-2020-2.webp"
                     }
                ]
           }

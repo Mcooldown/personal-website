@@ -52,7 +52,29 @@
                     "Bootstrap", "Laravel"
                ],
                "thumbnail" : "mybnec/mybnec-thumbnail.png",
-               "slug" : "mybnec",
+               "slug" : "bnec-main-website-redesign",
+               "selected" : false
+          },
+          {
+               "id" : 6,
+               "title": "The 2021 Asian English Olympics Web",
+               "short_description": "The official website of The 2021 Asian English Olympics event that provide registration feature also information related to the events",
+               "tech_stack": [
+                    "Bootstrap", "Laravel", "MySQL"
+               ],
+               "thumbnail" : "aeo-2021/aeo-2021-thumbnail.png",
+               "slug" : "the-2021-asian-english-olympics-web",
+               "selected" : false
+          },
+          {
+               "id" : 7,
+               "title": "The 2020 BNEC Social Event Web",
+               "short_description": "The official website of The 2020 BNEC Social Event",
+               "tech_stack": [
+                    "Bootstrap", "Laravel", "MySQL"
+               ],
+               "thumbnail" : "se-2020/se-2020-thumbnail.png",
+               "slug" : "the-2020-bnec-social-event-web",
                "selected" : false
           }
      ]
