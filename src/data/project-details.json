@@ -414,6 +414,63 @@
                          "location" : "se-2020/se-2020-2.webp"
                     }
                ]
+          },
+          {
+               "id" : 24,
+               "project_id" : 8,
+               "section_name": "Explanation",
+               "text" : [
+                    {
+                         "title" : "Introduction",
+                         "content" : "'Can you count it?' is a game about addition where there are 3 numbers that need to be added to get certain points, but one of the numbers can change at certain time intervals according to the level of the game. This game is made using Vue.js and Laravel framework"
+                    },
+                    {
+                         "title" : "My Role",
+                         "content": "My role is to make the whole game from start to finish, starting from designing the appearance, logo, implementing code both front-end and backend."
+                    }
+               ],
+               "link": [],
+               "images" : []
+          },
+          {
+               "id" : 25,
+               "project_id" : 8,
+               "section_name": "Link to View the Project",
+               "text" : [],
+               "link" :[
+                    {
+                         "title" : "Web / Application Link",
+                         "content" : "https://cycigame.web.app/"
+                    },
+                    {
+                         "title" : "GitHub Link (Front-end / App)",
+                         "content" : "https://github.com/Mcooldown/can-you-count-it"
+                    },
+                    {
+                         "title" : "GitHub Link (Back-end / API)",
+                         "content" : "https://github.com/Mcooldown/can-you-count-it-api"
+                    }
+               ],
+               "images" : []
+          },
+          {
+               "id" : 25,
+               "project_id" : 8,
+               "section_name": "Link to View the Project",
+               "text" : [],
+               "link" :[],
+               "images" : [
+                    {
+                         "title" : "Home Page, Select Level Page, Loading Page",
+                         "caption" : "The picture above is the home page, where when the user first opens the web, this page will appear. Users need to fill in their name before entering the game, then the next page is the Select Level Page, where users can choose the level of the game according to their abilities. Then after that the loading page will appear before the game starts.",
+                         "location" : "can-you-count-it/cyci-1.webp"
+                    },
+                    {
+                         "title" : "Game Page, Result Page, How to Play Page, Leaderboard Page",
+                         "caption" : "The picture above shows the game page, where users can play this game on this page. Then after the time expires, the Result page where the score from the user is displayed. Then after that in this game there is also a how to play page that users can read when they don't understand how to play this game. Then there is also a Leaderboard page where users can see the ranking of users with the highest scores in this game at each level.",
+                         "location" : "can-you-count-it/cyci-2.webp"
+                    }
+               ]
           }
      ]
 }

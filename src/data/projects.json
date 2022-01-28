@@ -42,7 +42,7 @@
                ],
                "thumbnail" : "nginepkuy/nginepkuy-thumbnail.png",
                "slug" : "nginepkuy",
-               "selected" : true
+               "selected" : false
           },
           {
                "id" : 5,
@@ -76,6 +76,17 @@
                "thumbnail" : "se-2020/se-2020-thumbnail.png",
                "slug" : "the-2020-bnec-social-event-web",
                "selected" : false
+          },
+          {
+               "id" : 8,
+               "title": "Can you count it?",
+               "short_description": "Math game with time interval",
+               "tech_stack": [
+                    "Bootstrap", "Vue.js", "Laravel", "MySQL"
+               ],
+               "thumbnail" : "can-you-count-it/cyci-thumbnail.png",
+               "slug" : "can-you-count-it",
+               "selected" : true
           }
      ]
 }
