@@ -3,12 +3,7 @@
     <div class="container d-flex justify-content-between align-items-center">
       <div>
         <router-link :to="{ name: 'Home' }" class="text-decoration-none">
-          <img
-            src="@/assets/logo-brand.png"
-            class="cLogoBrand"
-            height="40"
-            alt=""
-          />
+          <h6 class="cTextDarkGray fw-bold m-0">VINCENT HADINATA</h6>
         </router-link>
       </div>
       <div>

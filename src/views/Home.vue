@@ -58,11 +58,11 @@
             </ul>
           </div>
         </div>
-        <div class="col-lg-6 d-lg-block ps-lg-4 d-none">
+        <div class="col-lg-6 d-lg-block d-none">
           <img
             src="@/assets/profile-color.webp"
-            class="w-100 cImgLanding"
-            alt=""
+            class="w-100 cImgLanding p-5 ms-4"
+            alt="landing-profile"
           />
         </div>
       </div>
@@ -88,10 +88,16 @@
       </h1>
       <div class="row">
         <div class="col-md-6 my-3">
-          <SkillList category="Framework" :skills="frameworkSkills" />
+          <SkillList category="Front-End" :skills="frontEndSkills" />
+        </div>
+        <div class="col-md-6 my-3">
+          <SkillList category="Back-End" :skills="backEndSkills" />
         </div>
         <div class="col-md-6 my-3">
           <SkillList category="Language" :skills="languageSkills" />
+        </div>
+        <div class="col-md-6 my-3">
+          <SkillList category="Software" :skills="softwareSkills" />
         </div>
       </div>
     </div>
@@ -127,9 +133,14 @@ export default {
         return project.selected === true;
       })
     );
-    const frameworkSkills = ref(
+    const frontEndSkills = ref(
       skillsJSON.skills.filter((skill) => {
-        return skill.category === "Framework";
+        return skill.category === "Front-End";
+      })
+    );
+    const backEndSkills = ref(
+      skillsJSON.skills.filter((skill) => {
+        return skill.category === "Back-End";
       })
     );
     const languageSkills = ref(
@@ -137,8 +148,20 @@ export default {
         return skill.category === "Language";
       })
     );
+    const softwareSkills = ref(
+      skillsJSON.skills.filter((skill) => {
+        return skill.category === "Software";
+      })
+    );
 
-    return { downloadResume, projects, frameworkSkills, languageSkills };
+    return {
+      downloadResume,
+      projects,
+      frontEndSkills,
+      backEndSkills,
+      softwareSkills,
+      languageSkills,
+    };
   },
 };
 </script>
