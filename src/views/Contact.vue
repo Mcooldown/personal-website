@@ -1,5 +1,5 @@
 <template>
-  <div class="cContact" v-animate-onscroll="'zoomInUp'">
+  <div class="cContact">
     <div class="container">
       <h1 class="cTitle cTextDarkGray fw-bold">
         Contact <span class="cTextBlue">Me</span>
