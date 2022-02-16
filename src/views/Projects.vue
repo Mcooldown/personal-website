@@ -1,9 +1,12 @@
 <template>
   <div class="cProjects">
     <div class="container">
-      <h1 class="cTitle cTextDarkGray fw-bold mb-4">
+      <h1 class="cTitle cTextDarkGray fw-bold">
         My <span class="cTextBlue">Projects</span>
       </h1>
+      <p class="text-muted mt-3 mb-4">
+        These are several projects that I was involved in. Please have a look.
+      </p>
       <ProjectList :projects="projects" />
     </div>
   </div>
@@ -30,37 +33,6 @@ export default {
 
 <style scoped>
 .cProjects {
-  padding: 8rem 0;
-  background: url("../assets/pattern-1.png") no-repeat,
-    url("../assets/pattern-2.png") no-repeat;
-  background-size: 150px, 150px;
-  background-position: 100% 150px, 0% 99%;
+  padding: 3rem 0 8rem 0;
 }
-
-/* @media (max-width: 360.98px) {
-}
-
-@media (max-width: 575.98px) {
-  
-} */
-
-@media (max-width: 767.98px) {
-  .cProjects {
-    background-size: 100px, 100px;
-    background-position: 105% 150px, -5% 99%;
-  }
-}
-
-@media (max-width: 991.98px) {
-  .cProjects {
-    background-size: 125px, 150px;
-    background-position: 105% 150px, -5% 99%;
-  }
-}
-
-/* @media (max-width: 1199.98px) {
-}
-
-@media (max-width: 1399.98px) {
-} */
 </style>

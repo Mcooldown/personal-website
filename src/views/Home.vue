@@ -1,32 +1,33 @@
 <template>
-  <div class="cLanding cBgLightGray pt-4 d-flex align-items-center">
+  <div class="cLanding bg-white d-flex align-items-center">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6">
-          <h4 class="fw-bold cTextBlue">Hello, I'm Vincent Hadinata</h4>
+          <h3 class="fw-bold cTextBlue mb-2">Hello, I'm Vincent Hadinata</h3>
           <h1 class="cTitle cTextDarkGray fw-bold mb-3">
-            Computer Science Student interested in Full Stack Development
+            Full Stack Development Enthusiast
           </h1>
           <p class="text-muted">
-            Currently, I am studying full stack development, which is making
-            applications both on the front-end and back-end. During college, I
-            served as IT Manager at BINUS English Club, where I was involved in
-            all web projects belonging to the organization, besides that I was
-            also involved in several web application development projects from
-            lectures. I also made several personal projects after completing
-            courses outside of college.
+            I have an interest in full stack development, and I'm currently
+            exploring this field, where I learn various technologies to create
+            applications on both the front end and back end. I have also been
+            involved in several group projects and personal projects as a result
+            of my learning. Please contact me if you are interested in working
+            with me!
           </p>
           <div class="d-md-flex flex-wrap align-items-center">
             <Button
-              title="DOWNLOAD MY RESUME"
+              title="VIEW RESUME"
+              icon="fa fa-file"
               class="my-2"
-              :onClick="downloadResume"
+              :onClick="viewResume"
             />
-            <ul class="list-unstyled d-flex ms-md-3 my-2">
+            <ul class="list-unstyled d-flex ms-md-4 mt-md-0 mt-3 my-2">
               <li class="me-3">
                 <a
                   href="mailto:vincenthadinata30@gmail.com"
                   class="cTextBlue cLogoSocial"
+                  target="_blank"
                   ><i class="fa fa-envelope fa-2x"></i
                 ></a>
               </li>
@@ -45,14 +46,6 @@
                   class="cTextBlue cLogoSocial"
                   target="_blank"
                   ><i class="fab fa-github fa-2x"></i
-                ></a>
-              </li>
-              <li class="me-3">
-                <a
-                  href="https://instagram.com/vincenthadinata"
-                  class="cTextBlue cLogoSocial"
-                  target="_blank"
-                  ><i class="fab fa-instagram fa-2x"></i
                 ></a>
               </li>
             </ul>
@@ -86,17 +79,17 @@
       <h1 class="cTitle cTextDarkGray fw-bold mb-md-5 mb-4 text-center">
         Tech <span class="cTextBlue">Skills</span>
       </h1>
-      <div class="row">
-        <div class="col-md-6 my-3">
+      <div class="row justify-content-center">
+        <div class="col-md-10 my-4">
           <SkillList category="Front-End" :skills="frontEndSkills" />
         </div>
-        <div class="col-md-6 my-3">
+        <div class="col-md-10 my-4">
           <SkillList category="Back-End" :skills="backEndSkills" />
         </div>
-        <div class="col-md-6 my-3">
+        <div class="col-md-10 my-4">
           <SkillList category="Language" :skills="languageSkills" />
         </div>
-        <div class="col-md-6 my-3">
+        <div class="col-md-10 my-4">
           <SkillList category="Software" :skills="softwareSkills" />
         </div>
       </div>
@@ -120,11 +113,10 @@ export default {
       window.scrollTo(0, 0);
     });
 
-    const downloadResume = () => {
+    const viewResume = () => {
       const a = document.createElement("a");
-      a.href = "CV_VincentHadinata.pdf";
-      a.download = "Resume - Vincent Hadinata.pdf";
-      a.click();
+      a.href = "Resume - Vincent Hadinata.pdf";
+      window.open(a.href);
     };
 
     // Fetch Data
@@ -155,7 +147,7 @@ export default {
     );
 
     return {
-      downloadResume,
+      viewResume,
       projects,
       frontEndSkills,
       backEndSkills,
@@ -168,19 +160,11 @@ export default {
 
 <style scoped>
 .cTitle {
-  font-size: 48px;
-}
-
-.cLanding {
-  min-height: 120vh;
+  font-size: 42px;
 }
 
 .cSectionProjects {
-  padding: 8rem 0 4rem 0;
-  background: url("../assets/pattern-1.png") no-repeat,
-    url("../assets/pattern-2.png") no-repeat;
-  background-size: 150px, 200px;
-  background-position: 100% 10%, -5% 100%;
+  padding: 4rem 0 4rem 0;
 }
 
 .cImgLanding {
@@ -197,10 +181,6 @@ export default {
 }
 
 @media (max-width: 360.98px) {
-  .cLanding {
-    min-height: 150vh !important;
-  }
-
   .cTitle {
     font-size: 32px !important;
   }
@@ -210,35 +190,22 @@ export default {
 } */
 
 @media (max-width: 767.98px) {
-  .cSectionProjects {
-    background-size: 120px, 150px !important;
-    background-position: 112% 5%, -30% 100% !important;
-  }
   .cTitle {
     font-size: 36px;
-  }
-  .cLanding {
-    min-height: 160vh;
   }
 }
 
 @media (max-width: 991.98px) {
-  .cSectionProjects {
-    padding: 4rem 0;
-    background-size: 150px, 150px;
-    background-position: 105% 10%, -5% 100%;
-  }
-
   .cSectionSkills {
     padding: 4rem 0;
   }
-}
-
-@media (max-width: 1199.98px) {
   .cLanding {
-    min-height: 120vh;
+    padding-top: 3rem;
   }
 }
+
+/* @media (max-width: 1199.98px) {
+} */
 
 /* @media (max-width: 1399.98px) {
 } */

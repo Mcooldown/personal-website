@@ -1,5 +1,5 @@
 <template>
-  <div class="cProjectItem">
+  <div class="cProjectItem p-lg-4 p-3">
     <router-link
       :to="{ name: 'Project Details', params: { slug: project.slug } }"
       class="text-decoration-none"
@@ -9,8 +9,10 @@
         class="cProjectThumbnail w-100 mb-4"
         alt="thumbnail"
       />
-      <h2 class="mt-2 fw-bold cTextDarkGray">{{ project.title }}</h2>
-      <p class="text-muted">{{ project.short_description }}</p>
+      <h2 class="mt-2 fw-bold cTitleProject cTextDarkGray">
+        {{ project.title }}
+      </h2>
+      <p class="text-muted cDescription">{{ project.short_description }}</p>
       <div class="d-flex flex-wrap">
         <div v-for="tech in project.tech_stack" :key="tech">
           <div class="cTechPills me-2 mb-2">
@@ -32,10 +34,21 @@ export default {
 .cProjectItem {
   transition: 200ms ease all;
   cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px 2px rgb(221, 221, 221);
+  background: white;
 }
 
-.cProjectThumbnail {
-  box-shadow: 0px 0px 4px 2px rgb(221, 221, 221);
+.cTitleProject {
+  height: 1.4em;
+  line-height: 1.4;
+  overflow: hidden;
+}
+
+.cDescription {
+  height: 2.8em;
+  line-height: 1.4;
+  overflow: hidden;
 }
 
 .cProjectItem:hover {

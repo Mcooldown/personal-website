@@ -1,15 +1,51 @@
 <template>
-  <Navbar />
-  <router-view />
-  <Footer />
+  <div ref="navbar">
+    <Navbar />
+  </div>
+  <div ref="content">
+    <router-view />
+  </div>
+  <div ref="footer">
+    <Footer />
+  </div>
+  <div v-if="showButton" class="cButtonUp">
+    <button @click="scrollToTop" class="btn cBgBlue text-white">
+      <i class="fa fa-arrow-up"></i>
+    </button>
+  </div>
 </template>
 
 <script>
 import Navbar from "@/components/Navbar.vue";
 import Footer from "@/components/Footer.vue";
+import Button from "@/components/Button.vue";
+import { onMounted, onUnmounted, ref } from "vue";
 
 export default {
-  components: { Navbar, Footer },
+  components: { Navbar, Footer, Button },
+  setup() {
+    const showButton = ref(false);
+
+    onMounted(() => {
+      window.addEventListener("scroll", handleScroll);
+    });
+    onUnmounted(() => {
+      window.removeEventListener("scroll", handleScroll);
+    });
+
+    const handleScroll = () => {
+      showButton.value = !(window.scrollY === 0);
+    };
+
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    };
+
+    return { scrollToTop, showButton };
+  },
 };
 </script>
 
@@ -48,5 +84,19 @@ export default {
 
 .cLogoSocial:hover {
   color: #005c81 !important;
+}
+
+.cButtonUp {
+  position: fixed;
+  bottom: 3vh;
+  right: 3vw;
+  transition: 200ms ease all;
+}
+
+.cButtonUp > button {
+  font-size: 2em;
+  padding: 0.25rem 1.25rem;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px 2px rgb(221, 221, 221);
 }
 </style>

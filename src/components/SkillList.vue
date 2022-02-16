@@ -5,7 +5,7 @@
     </h2>
     <div
       class="
-        cBgLightGray
+        bg-white
         d-flex
         flex-wrap
         align-items-center
@@ -15,7 +15,11 @@
         py-3
       "
     >
-      <div v-for="skill in skills" :key="skill.title" class="m-2 text-center">
+      <div
+        v-for="skill in skills"
+        :key="skill.title"
+        class="mx-3 my-2 text-center"
+      >
         <img
           :src="require('@/assets/skills/' + skill.logo)"
           alt=""
@@ -43,7 +47,8 @@ export default {
 }
 
 .cSkillBox {
-  border-radius: 8px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px 2px rgb(221, 221, 221);
 }
 
 .cSkillList {

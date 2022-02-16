@@ -1,10 +1,5 @@
 <template>
-  <div
-    :class="
-      'cDetailHeaderWrapper ' +
-      (project ? '' : 'min-vh-100 d-flex align-items-center')
-    "
-  >
+  <div class="bg-white">
     <div class="container">
       <div v-if="project" class="row align-items-center cDetailHeader">
         <div class="col-md-6 my-3">
@@ -118,7 +113,6 @@ export default {
           }
         );
       }
-      console.log(projectDetails.value);
     });
 
     return { project, projectDetails };
@@ -127,19 +121,14 @@ export default {
 </script>
 
 <style scoped>
-.cDetailHeaderWrapper {
-  background: url("../assets/pattern-1.png") no-repeat,
-    url("../assets/pattern-2.png") no-repeat, #eeeeee;
-  background-size: 120px, 200px;
-  background-position: 103% 20%, -5% 60%;
-}
 .cDetailHeader {
-  padding: 9rem 0 7rem 0;
+  padding: 3rem 0 2rem 0;
 }
 
 .cDetailThumbnail {
   transition: 200ms ease all;
   cursor: pointer;
+  box-shadow: 0px 0px 8px 2px rgb(221, 221, 221);
 }
 
 .cDetailThumbnail:hover {
@@ -147,35 +136,6 @@ export default {
 }
 
 .cDetailContent {
-  padding: 6rem 0 8rem 0;
+  padding: 2rem 0 4rem 0;
 }
-
-@media (max-width: 360.98px) {
-}
-
-@media (max-width: 575.98px) {
-}
-
-@media (max-width: 767.98px) {
-}
-
-@media (max-width: 991.98px) {
-  .cDetailHeaderWrapper {
-    background-size: 115px, 125px;
-    background-position: 105% 20%, -5% 95%;
-  }
-  .cDetailContent {
-    padding: 6rem 0;
-  }
-}
-
-@media (max-width: 1199.98px) {
-  .cDetailHeaderWrapper {
-    background-size: 120px, 150px;
-    background-position: 105% 20%, -5% 95%;
-  }
-}
-
-/* @media (max-width: 1399.98px) {
-} */
 </style>
