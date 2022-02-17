@@ -87,6 +87,17 @@
                "thumbnail" : "can-you-count-it/cyci-thumbnail.png",
                "slug" : "can-you-count-it",
                "selected" : true
+          },
+          {
+               "id" : 9,
+               "title": "BNEC Member Web",
+               "short_description": "BNEC Web-based application for class selection, activities, exam, scores and merchant transaction claim.",
+               "tech_stack": [
+                    "Bootstrap", "Laravel", "MySQL"
+               ],
+               "thumbnail" : "bnec-member/bnec-member-thumbnail.png",
+               "slug" : "bnec-member-web",
+               "selected" : false
           }
      ]
 }

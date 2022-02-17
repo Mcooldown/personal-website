@@ -88,15 +88,15 @@ export default {
 
 .cButtonUp {
   position: fixed;
-  bottom: 3vh;
+  bottom: 2vh;
   right: 3vw;
   transition: 200ms ease all;
 }
 
 .cButtonUp > button {
   font-size: 2em;
-  padding: 0.25rem 1.25rem;
+  padding: 0.25rem 1.5rem;
   border-radius: 8px;
-  box-shadow: 0px 0px 8px 2px rgb(221, 221, 221);
+  box-shadow: 0px 0px 4px 1px rgb(221, 221, 221);
 }
 </style>

@@ -23,14 +23,28 @@
           </div>
         </div>
       </div>
-      <div class="text-center" v-else>
-        <h1 class="cTextGray fw-bold text-center mb-4">PROJECT NOT FOUND</h1>
-        <Button title="BACK TO PROJECTS" />
+      <div
+        class="
+          text-center
+          min-vh-100
+          d-flex
+          justify-content-center
+          align-items-center
+        "
+        v-else
+      >
+        <div class="text-center">
+          <h1 class="cTextGray fw-bold text-center mb-4">PROJECT NOT FOUND</h1>
+          <Button
+            title="BACK TO PROJECTS"
+            @click="$router.push({ name: 'Projects' })"
+          />
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="cDetailContent">
+  <div class="cDetailContent" v-if="project">
     <div class="container">
       <div v-if="projectDetails.length">
         <div v-for="detail in projectDetails" :key="detail.id" class="mb-5">

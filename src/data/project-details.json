@@ -417,6 +417,20 @@
           },
           {
                "id" : 24,
+               "project_id" : 7,
+               "section_name": "Certificate",
+               "text" : [],
+               "link" :[],
+               "images" : [
+                    {
+                         "title" : "Committee Certificate",
+                         "caption" : "Certificate as Coordinator of Media Information Technology and Registration Division",
+                         "location" : "se-2020/commitee-certificate.webp"
+                    }
+               ]
+          },
+          {
+               "id" : 25,
                "project_id" : 8,
                "section_name": "Explanation",
                "text" : [
@@ -433,7 +447,7 @@
                "images" : []
           },
           {
-               "id" : 25,
+               "id" : 26,
                "project_id" : 8,
                "section_name": "Link to View the Project",
                "text" : [],
@@ -454,7 +468,7 @@
                "images" : []
           },
           {
-               "id" : 25,
+               "id" : 27,
                "project_id" : 8,
                "section_name": "User Interface",
                "text" : [],
@@ -469,6 +483,62 @@
                          "title" : "Game Page, Result Page, How to Play Page, Leaderboard Page",
                          "caption" : "The picture above shows the game page, where users can play this game on this page. Then after the time expires, the Result page where the score from the user is displayed. Then after that in this game there is also a how to play page that users can read when they don't understand how to play this game. Then there is also a Leaderboard page where users can see the ranking of users with the highest scores in this game at each level.",
                          "location" : "can-you-count-it/cyci-2.webp"
+                    }
+               ]
+          },
+          {
+               "id" : 28,
+               "project_id" : 9,
+               "section_name": "Explanation",
+               "text" : [
+                    {
+                         "title" : "Introduction",
+                         "content" : "As the 28th IT manager of BNEC, I created this website to help the learning management and corporate relations division to meet the needs of BNEC members, namely related to learning systems and transaction systems for merchants who partner with BNEC. Therefore, this website was created with various features, namely Class selection, Class Activities, Online Exam, Class Score, and Merchant Transaction Claim, where these features are expected to help these two divisions meet the needs of members. This website was created using Laravel and it is possible to use other frameworks if in the future this website is developed further when I am no longer serving as IT manager at BNEC."
+                    },
+                    {
+                         "title" : "My Role",
+                         "content": "My role is to do research on the needs of the Learning management and corporate relations divisions to create a system that suits their needs, as well as to design the interface and database of this web. Then I and my partner Putu also implemented this design into code until it was completely finished."
+                    }
+               ],
+               "link": [],
+               "images" : []
+          },
+          {
+               "id" :29,
+               "project_id" : 9,
+               "section_name": "Current Website Link",
+               "text" : [
+                    {"title" : "Disclaimer","content" : "The user interface of the current website can change from the one I designed considering that this website belongs to an organization that can change at any time depending on the next presidency."}
+               ],
+               "link" :[
+                    {
+                         "title" : "Link",
+                         "content" : "https://member.mybnec.org/"
+                    }
+               ],
+               "images" : []
+          },
+          {
+               "id" : 30,
+               "project_id" : 9,
+               "section_name": "User Interface",
+               "text" : [],
+               "link" :[],
+               "images" : [
+                    {
+                         "title" : "Home Page, Dashboard Page, and Merchant Transaction List Page",
+                         "caption" : "The picture above is the home page, where members must enter their NIM and password to be able to enter their respective accounts. Then after success, the Dashboard page will be displayed. This page displays a summary of all the features on this website, which includes class information, headlines, loyalty points for merchant transactions, and BNEC cart for merchant transactions. Then when a member opens the sidebar by clicking the button on the top left and then clicking the Merchant Transactions menu, it will be directed to the Merchant Transaction List page which displays a list of transactions that have been made by the user and claimed to the corporate relations division.",
+                         "location" : "bnec-member/bnec-member-1.webp"
+                    },
+                    {
+                         "title" : "Activity List Page, Class Detail Page, Class Scores Page",
+                         "caption" : "The picture above is an Activity List Page, where each member attends a class session every week, the tutor will record the activities carried out along with taking the member's attendance to record their attendance. Then there is the class detail page, where information about the classes taken by members is displayed, starting from the name, tutor, and also the schedule for each week. Then there is a score page where the mid exam scores and final exam scores from the class the member is participating in will be displayed on this page.",
+                         "location" : "bnec-member/bnec-member-2.webp"
+                    },
+                    {
+                         "title" : "Exam List Page, Module List Page",
+                         "caption" : "The picture above is the exam page, that is, when a member wants to take an exam, this page is accessed to see which exams are currently in progress and which exams have been completed. When the exam takes place, members can click start and start working on the questions on the exam questions page. Then the last is the Module page, where each class has learning materials in the form of pdf or ppt which are stored on this website and can be downloaded by members to learn.",
+                         "location" : "bnec-member/bnec-member-3.webp"
                     }
                ]
           }
