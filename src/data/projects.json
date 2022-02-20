@@ -98,6 +98,17 @@
                "thumbnail" : "bnec-member/bnec-member-thumbnail.png",
                "slug" : "bnec-member-web",
                "selected" : false
+          },
+          {
+               "id" : 10,
+               "title": "Coffee Vibes",
+               "short_description": "Java GUI Application for Product, Voucher, Transaction and Employee Management. Built for Final Lab Project of Object Oriented Analysis and Design course at Binus University.",
+               "tech_stack": [
+                    "Java"
+               ],
+               "thumbnail" : "coffee-vibes/coffee-vibes-thumbnail.png",
+               "slug" : "coffee-vibes",
+               "selected" : false
           }
      ]
 }

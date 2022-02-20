@@ -541,6 +541,50 @@
                          "location" : "bnec-member/bnec-member-3.webp"
                     }
                ]
+          },
+          {
+               "id" : 31,
+               "project_id" : 10,
+               "section_name": "Explanation",
+               "text" : [
+                    {
+                         "title" : "Introduction",
+                         "content" : "This application was created using the Java GUI to complete the final lab project assignment for the object oriented analysis and design course at Binus University. This application has several features to manage this Coffee Vibes (coffee shop). These features include Employee Management to manage employees who work in this coffee shop, then Product Management to collect data on all coffees and can be used for ordering by baristas. Then there is transaction management to manage the ordering process from product selection to checkout. Lastly is voucher management to record all vouchers that apply to this coffee shop transaction. This application is made in the Java language by utilizing the Java GUI library to display the GUI."
+                    },
+                    {
+                         "title" : "My Role",
+                         "content": "My role is to make all the features together with my partner, Putu. Then I also helped make the documentation as a project collection requirement."
+                    }
+               ],
+               "link": [],
+               "images" : []
+          },
+          {
+               "id" :32,
+               "project_id" : 10,
+               "section_name": "Link to View The Project",
+               "text" : [],
+               "link" :[
+                    {
+                         "title" : "Source Code Link",
+                         "content" : "https://github.com/Mcooldown/coffee-vibes"
+                    }
+               ],
+               "images" : []
+          },
+          {
+               "id" : 33,
+               "project_id" : 10,
+               "section_name": "User Interface",
+               "text" : [],
+               "link" :[],
+               "images" : [
+                    {
+                         "title" : "Login Page, Voucher Management Page, Employee Management Page, Product Management Page, Transaction Management Page, Add to Cart Page, Cart Page, and Checkout Page",
+                         "caption" : "When the application is run, the Login page will be displayed to log in to each account. After success, a different page will be displayed depending on the role of the account that is currently logged in. The first is the Voucher Management Page which can only be accessed by the admin, which is useful for collecting data on vouchers that can be used in transactions. Admin can add vouchers and delete certain vouchers. Then the Employee Management Page is a page that lists all employees at this coffee shop, which can be accessed by HRD and Admin roles. HRD can add new employees and update their data, while admins can only delete or fire selected employees. Then there is the Product management page where this page displays a list of all coffee products sold in this store. Admin and Barista can access this page. Admin can insert new products and update and delete products. Meanwhile, the barista can choose the product to put in the basket, when there is a new coffee order from the customer. Then there is the Transaction Management page, which is to display a list of transactions that have been successfully checked out by the barista and can only be seen by the admin. Admin can see the details of the order that has been checked out along with the coffee ordered. Then there is the Add to cart page which is a page to confirm orders that the barista adds to the cart. Once confirmed, the Cart page will be displayed along with the confirmed order. If the cart already contains the copies ordered, the Checkout page will be displayed to create a new transaction. The Add to Cart to Checkout pages can only be accessed by the Barista.",
+                         "location" : "coffee-vibes/coffee-vibes-1.webp"
+                    }
+               ]
           }
      ]
 }
