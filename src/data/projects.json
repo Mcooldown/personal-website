@@ -109,6 +109,17 @@
                "thumbnail" : "coffee-vibes/coffee-vibes-thumbnail.png",
                "slug" : "coffee-vibes",
                "selected" : false
+          },
+          {
+               "id" : 11,
+               "title": "Store Del Luna",
+               "short_description": "Website for K-pop Merchandise Shop. Built for Final Lab Project of Human and Computer Interaction course at Binus University.",
+               "tech_stack": [
+                    "HTML", "CSS", "JavaScript"
+               ],
+               "thumbnail" : "store-del-luna/store-del-luna-thumbnail.png",
+               "slug" : "store-del-luna",
+               "selected" : false
           }
      ]
 }

@@ -34,7 +34,12 @@
         v-else
       >
         <div class="text-center">
-          <h1 class="cTextGray fw-bold text-center mb-4">PROJECT NOT FOUND</h1>
+          <i class="fa fa-8x fa-exclamation-triangle cTextBlue"></i>
+          <h1 class="cTextGray fw-bold text-center mt-4">Project Not Found</h1>
+          <p class="text-muted mb-4">
+            Sorry, your requested project doesn't exist. Please go to another
+            project.
+          </p>
           <Button
             title="BACK TO PROJECTS"
             @click="$router.push({ name: 'Projects' })"

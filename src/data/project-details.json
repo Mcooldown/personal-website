@@ -585,6 +585,59 @@
                          "location" : "coffee-vibes/coffee-vibes-1.webp"
                     }
                ]
+          },
+          {
+               "id" : 34,
+               "project_id" : 11,
+               "section_name": "Explanation",
+               "text" : [
+                    {
+                         "title" : "Introduction",
+                         "content" : "This website is made using HTML, CSS and a bit of Javascript for form validation. This website is used to display the catalog of the k-pop merchandise store along with the registration form for those who want to register as a new member. This website was created to fulfill the final lab project assignment for the Human and Computer Interaction course at Binus University."
+                    },
+                    {
+                         "title" : "My Role",
+                         "content": "My role is to help work on all the pages of the website with my partners, namely Ricky and Glenn."
+                    }
+               ],
+               "link": [],
+               "images" : []
+          },
+          {
+               "id" :35,
+               "project_id" : 11,
+               "section_name": "Link to View The Project",
+               "text" : [],
+               "link" :[
+                    {
+                         "title" : "Website Link",
+                         "content" : "https://store-del-luna.web.app/"
+                    },
+                    {
+                         "title" : "Source Code Link",
+                         "content" : "https://github.com/Mcooldown/Store-Del-Luna"
+                    }
+               ],
+               "images" : []
+          },
+          {
+               "id" : 36,
+               "project_id" : 11,
+               "section_name": "User Interface",
+               "text" : [],
+               "link" :[],
+               "images" : [
+                    {
+                         "title" : "Home Page, Register Page, and Testimonial Page",
+                         "caption" : "The home page is the main page, which displays information about the store, promo information, and also information on artist merchandise sold by this store. Then the register page displays a form that can be filled in to become a new member. Then the data will be validated by Javascript but not sent to the database because this project task is only required to create the front-end. Then there is a testimonial page that displays testimonials from buyers of this store. The data displayed is in the form of a dummy only, so it does not really come from a real person.",
+                         "location" : "store-del-luna/store-del-luna-1.webp"
+                    },
+                    {
+                         "title" : "Merchandise Page, and Albums Page",
+                         "caption" : "The merchandise page shows all the merchandise sold in this store and individual merchandise grouped by artist. Then the albums page displays all the albums sold in this store and each album is also grouped by artist.",
+                         "location" : "store-del-luna/store-del-luna-2.webp"
+                    }
+               ]
           }
      ]
 }
