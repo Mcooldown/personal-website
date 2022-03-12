@@ -3,7 +3,13 @@
     <Navbar />
   </div>
   <div ref="content">
-    <router-view />
+    <router-view v-slot="{ Component, route }">
+      <transition name="slide" mode="out-in">
+        <div :key="route.name">
+          <component :is="Component"></component>
+        </div>
+      </transition>
+    </router-view>
   </div>
   <div ref="footer">
     <Footer />
@@ -98,5 +104,16 @@ export default {
   padding: 0.25rem 1.5rem;
   border-radius: 8px;
   box-shadow: 0px 0px 4px 1px rgb(221, 221, 221);
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: opacity 1s, transform 1s;
+}
+
+.slide-enter-from,
+.slide-leave-to {
+  opacity: 0;
+  transform: translateX(-30%);
 }
 </style>
