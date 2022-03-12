@@ -7,7 +7,7 @@
       <img
         :src="require('@/assets/projects/' + project.thumbnail)"
         class="cProjectThumbnail w-100 mb-4"
-        alt="thumbnail"
+        :alt="project.title"
       />
       <h2 class="mt-2 fw-bold cTitleProject cTextDarkGray">
         {{ project.title }}
@@ -34,8 +34,8 @@ export default {
 .cProjectItem {
   transition: 200ms ease all;
   cursor: pointer;
-  border-radius: 10px;
-  box-shadow: 0px 0px 8px 2px rgb(221, 221, 221);
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px 2px rgb(221, 221, 221);
   background: white;
 }
 

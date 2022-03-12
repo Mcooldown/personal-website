@@ -33,6 +33,6 @@ export default {
 
 <style scoped>
 .cProjects {
-  padding: 3rem 0 8rem 0;
+  padding: 3rem 0 6rem 0;
 }
 </style>

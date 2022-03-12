@@ -46,4 +46,8 @@ export default {};
 .cContact {
   padding: 3rem 0 8rem 0;
 }
+
+* {
+  word-break: break-all;
+}
 </style>

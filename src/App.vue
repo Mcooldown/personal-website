@@ -2,7 +2,7 @@
   <div ref="navbar">
     <Navbar />
   </div>
-  <div ref="content">
+  <div ref="content" class="wrapper">
     <router-view v-slot="{ Component, route }">
       <transition name="slide" mode="out-in">
         <div :key="route.name">
@@ -58,10 +58,8 @@ export default {
 <style>
 @import "~bootstrap/dist/css/bootstrap.css";
 
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.wrapper {
+  min-height: 100vh;
 }
 
 .cBgDarkGray {
@@ -95,20 +93,19 @@ export default {
 .cButtonUp {
   position: fixed;
   bottom: 2vh;
-  right: 3vw;
+  right: 4vw;
   transition: 200ms ease all;
 }
 
 .cButtonUp > button {
-  font-size: 2em;
-  padding: 0.25rem 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0px 0px 4px 1px rgb(221, 221, 221);
+  font-size: 1.5em;
+  padding: 0.25rem 1.25rem;
+  border-radius: 5px;
 }
 
 .slide-enter-active,
 .slide-leave-active {
-  transition: opacity 1s, transform 1s;
+  transition: opacity 1s, transform 0.75s;
 }
 
 .slide-enter-from,

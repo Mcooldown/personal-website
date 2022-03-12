@@ -15,14 +15,14 @@
             of my learning. Please contact me if you are interested in working
             with me!
           </p>
-          <div class="d-md-flex flex-wrap align-items-center">
+          <div class="d-flex cWrapperBtnSocial flex-wrap align-items-center">
             <Button
               title="VIEW RESUME"
               icon="fa fa-file"
               class="my-2"
               :onClick="viewResume"
             />
-            <ul class="list-unstyled d-flex ms-md-4 mt-md-0 mt-3 my-2">
+            <ul class="list-unstyled d-flex cWrapperListSocial my-2">
               <li class="me-3">
                 <a
                   href="mailto:vincenthadinata30@gmail.com"
@@ -55,7 +55,7 @@
           <img
             src="@/assets/profile-color.webp"
             class="w-100 cImgLanding p-5 ms-4"
-            alt="landing-profile"
+            alt="Vincent Hadinata"
           />
         </div>
       </div>
@@ -63,11 +63,11 @@
   </div>
   <div class="cSectionProjects bg-white">
     <div class="container">
-      <h1 class="cTitle cTextDarkGray fw-bold mb-4">
+      <h1 class="cTitle cTextDarkGray fw-bold mb-md-4 mb-3">
         Selected <span class="cTextBlue">Projects</span>
       </h1>
       <ProjectList :projects="projects" />
-      <div class="d-flex justify-content-center mt-4">
+      <div class="d-flex justify-content-center mt-md-4 mt-3">
         <router-link :to="{ name: 'Projects' }">
           <Button title="SEE MORE PROJECTS" />
         </router-link>
@@ -76,20 +76,20 @@
   </div>
   <div class="cSectionSkills">
     <div class="container">
-      <h1 class="cTitle cTextDarkGray fw-bold mb-md-5 mb-4 text-center">
+      <h1 class="cTitle cTextDarkGray fw-bold mb-md-4 mb-3 text-center">
         Tech <span class="cTextBlue">Skills</span>
       </h1>
       <div class="row justify-content-center">
-        <div class="col-md-10 my-4">
+        <div class="col-md-10 my-3">
           <SkillList category="Front-End" :skills="frontEndSkills" />
         </div>
-        <div class="col-md-10 my-4">
+        <div class="col-md-10 my-3">
           <SkillList category="Back-End" :skills="backEndSkills" />
         </div>
-        <div class="col-md-10 my-4">
+        <div class="col-md-10 my-3">
           <SkillList category="Language" :skills="languageSkills" />
         </div>
-        <div class="col-md-10 my-4">
+        <div class="col-md-10 my-3">
           <SkillList category="Software" :skills="softwareSkills" />
         </div>
       </div>
@@ -173,16 +173,32 @@ export default {
 }
 
 .cImgLanding:hover {
-  transform: rotate3d(2, 10, 2, 10deg);
+  transform: scale(1.03);
 }
 
 .cSectionSkills {
   padding: 4rem 0 10rem 0;
 }
 
+.cWrapperBtnSocial {
+  display: flex;
+}
+.cWrapperListSocial {
+  margin-left: 1.5rem;
+}
+.cLanding {
+  padding-bottom: 2rem;
+}
+
 @media (max-width: 360.98px) {
   .cTitle {
     font-size: 32px !important;
+  }
+  .cWrapperBtnSocial {
+    display: block;
+  }
+  .cWrapperListSocial {
+    margin-left: 0;
   }
 }
 
@@ -193,12 +209,23 @@ export default {
   .cTitle {
     font-size: 36px;
   }
+
+  .cSectionProjects {
+    padding: 2rem 0;
+  }
+  .cSectionSkills {
+    padding: 2rem 0;
+  }
 }
 
 @media (max-width: 991.98px) {
-  .cSectionSkills {
-    padding: 4rem 0;
+  .cSectionProjects {
+    padding: 3rem 0;
   }
+  .cSectionSkills {
+    padding: 3rem 0;
+  }
+
   .cLanding {
     padding-top: 3rem;
   }

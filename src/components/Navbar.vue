@@ -23,7 +23,9 @@
           <li class="my-1 me-lg-5 me-4">
             <router-link
               :to="{ name: 'Projects' }"
-              class="text-decoration-none"
+              :class="`text-decoration-none ${
+                $route.path.match('projects*') ? 'router-link-exact-active' : ''
+              }`"
             >
               <h6
                 class="d-none d-md-block cTextRoute cTextDarkGray fw-bold m-0"

@@ -28,11 +28,11 @@
                          "content" : "https://angkasavisual.web.app/"
                     },
                     {
-                         "title" : "GitHub Link (Front-end / App)",
+                         "title" : "Source Code Link (UI)",
                          "content" : "https://github.com/Mcooldown/angkasa-visual-app"
                     },
                     {
-                         "title" : "GitHub Link (Back-end / API)",
+                         "title" : "Source Code Link (API)",
                          "content" : "https://github.com/putuduta/Angkasa-Visual-Backend"
                     }
                ],
@@ -90,11 +90,11 @@
                          "content" : "https://withcurebox.web.app/"
                     },
                     {
-                         "title" : "GitHub Link (Front-end / App)",
+                         "title" : "Source Code Link (UI)",
                          "content" : "https://github.com/Mcooldown/curebox-app"
                     },
                     {
-                         "title" : "GitHub Link (Back-end / API)",
+                         "title" : "Source Code Link (API)",
                          "content" : "https://github.com/Mcooldown/curebox-api"
                     }
                ],
@@ -147,11 +147,11 @@
                          "content" : "http://bilikmental.vercel.app/"
                     },
                     {
-                         "title" : "GitHub Link (Front-end / App)",
+                         "title" : "Source Code Link (UI)",
                          "content" : "https://github.com/Mcooldown/bilikmental-app"
                     },
                     {
-                         "title" : "GitHub Link (Back-end / API)",
+                         "title" : "Source Code Link (API)",
                          "content" : "https://github.com/Mcooldown/bilikmental-api"
                     }
                ],
@@ -204,7 +204,7 @@
                          "content" : "https://nginepkuy.000webhostapp.com/"
                     },
                     {
-                         "title" : "GitHub Link (Front-end & Back-end)",
+                         "title" : "Source Code Link (Front-end & Back-end)",
                          "content" : "https://github.com/Mcooldown/NginepKuy"
                     }
                ],
@@ -457,11 +457,11 @@
                          "content" : "https://cycigame.web.app/"
                     },
                     {
-                         "title" : "GitHub Link (Front-end / App)",
+                         "title" : "Source Code Link (UI)",
                          "content" : "https://github.com/Mcooldown/can-you-count-it"
                     },
                     {
-                         "title" : "GitHub Link (Back-end / API)",
+                         "title" : "Source Code Link (API)",
                          "content" : "https://github.com/Mcooldown/can-you-count-it-api"
                     }
                ],

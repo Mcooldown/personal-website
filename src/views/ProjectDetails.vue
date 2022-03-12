@@ -42,7 +42,7 @@
           </p>
           <Button
             title="BACK TO PROJECTS"
-            @click="$router.push({ name: 'Projects' })"
+            :onClick="() => $router.push({ name: 'Projects' })"
           />
         </div>
       </div>
@@ -53,48 +53,60 @@
     <div class="container">
       <div v-if="projectDetails.length">
         <div v-for="detail in projectDetails" :key="detail.id" class="mb-5">
-          <h2 class="cTextDarkGray fw-bold">{{ detail.section_name }}</h2>
+          <h2 class="cTextDarkGray fw-bold mb-4">{{ detail.section_name }}</h2>
 
           <!-- TEXT -->
-          <div
-            v-for="textItem in detail.text"
-            :key="textItem.title"
-            class="my-4"
-          >
-            <h4 class="cTextBlue fw-bold">{{ textItem.title }}</h4>
-            <p class="text-muted">{{ textItem.content }}</p>
+          <div v-if="detail.text.length">
+            <div
+              v-for="textItem in detail.text"
+              :key="textItem.title"
+              class="my-3 cCard"
+            >
+              <h4 class="cTextBlue fw-bold">
+                <i class="fa fa-info-circle"></i> {{ textItem.title }}
+              </h4>
+              <p class="text-muted m-0">{{ textItem.content }}</p>
+            </div>
           </div>
 
           <!-- LINK -->
-          <div
-            v-for="linkItem in detail.link"
-            :key="linkItem.title"
-            class="my-4"
-          >
-            <h4 class="cTextBlue fw-bold">{{ linkItem.title }}</h4>
-            <p class="text-muted">
-              <a :href="linkItem.content" target="_blank" class="text-reset">{{
-                linkItem.content
-              }}</a>
-            </p>
+          <div v-if="detail.link.length" class="row align-items-start">
+            <div
+              v-for="linkItem in detail.link"
+              :key="linkItem.title"
+              class="col-lg-4 col-md-6 my-3"
+            >
+              <div class="cCard">
+                <h4 class="cTextBlue fw-bold">
+                  <i class="fas fa-link"></i> {{ linkItem.title }}
+                </h4>
+                <Button
+                  title="CLICK HERE TO OPEN"
+                  class="mt-3"
+                  :onClick="() => openLink(linkItem.content)"
+                />
+              </div>
+            </div>
           </div>
 
           <!-- IMAGES -->
-          <div
-            v-for="imageItem in detail.images"
-            :key="imageItem.title"
-            class="my-4"
-          >
-            <div class="mb-5 pb-3">
-              <h4 class="cTextBlue fw-bold mb-3">
-                {{ imageItem.title }}
-              </h4>
-              <img
-                :src="require('@/assets/projects/' + imageItem.location)"
-                class="w-100"
-                alt="image"
-              />
-              <p class="text-muted mt-3">{{ imageItem.caption }}</p>
+          <div v-if="detail.images.length" class="row">
+            <div
+              v-for="imageItem in detail.images"
+              :key="imageItem.title"
+              class="col-md-6 my-3"
+            >
+              <div class="cCard">
+                <h4 class="cTextBlue fw-bold mb-3">
+                  <i class="fas fa-image"></i> {{ imageItem.title }}
+                </h4>
+                <p class="text-muted mb-3">{{ imageItem.caption }}</p>
+                <img
+                  :src="require('@/assets/projects/' + imageItem.location)"
+                  class="w-100"
+                  :alt="imageItem.title"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -121,7 +133,6 @@ export default {
 
     onMounted(() => {
       window.scrollTo(0, 0);
-
       project.value = projectsJSON.projects.find(
         (project) => project.slug === props.slug
       );
@@ -134,7 +145,13 @@ export default {
       }
     });
 
-    return { project, projectDetails };
+    const openLink = (link) => {
+      const a = document.createElement("a");
+      a.href = link;
+      window.open(a.href);
+    };
+
+    return { project, projectDetails, openLink };
   },
 };
 </script>
@@ -147,14 +164,21 @@ export default {
 .cDetailThumbnail {
   transition: 200ms ease all;
   cursor: pointer;
-  box-shadow: 0px 0px 8px 2px rgb(221, 221, 221);
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px 2px rgb(221, 221, 221);
 }
 
 .cDetailThumbnail:hover {
-  transform: rotate3d(10, 20, 5, 10deg);
+  transform: scale(1.03);
 }
 
 .cDetailContent {
   padding: 2rem 0 4rem 0;
+}
+
+.cCard {
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px 2px rgb(221, 221, 221);
+  padding: 1.5rem;
 }
 </style>
