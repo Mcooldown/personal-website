@@ -29,8 +29,7 @@ export default {
       title: "Vincent Hadinata,",
       subtitle: "A Software Engineer who interested in full stack development.",
       description: `Currently, I'm working as Associate Software Development Engineer at Blibli.
-        I have an interest in full stack development on the web platform, and still
-        exploring this field. Also, I've been
+        I'm interested to explore more about full stack development for web. Also, I've been
         involved in several group projects and personal projects as a result
         of my learning.`,
       button: "VIEW MY RESUME"

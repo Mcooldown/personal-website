@@ -5,7 +5,7 @@
       class="text-decoration-none"
     >
       <img
-        :src="require('@/assets/projects/' + project.thumbnail)"
+        :src="require(`@/assets/projects/${project.thumbnail}`)"
         class="cProjectThumbnail w-100 mb-4"
         :alt="project.title"
       />
@@ -26,8 +26,9 @@
 
 <script>
 export default {
-  props: ["project"],
-};
+  name: "ProjectItem",
+  props: ["project"]
+}
 </script>
 
 <style>
@@ -37,6 +38,7 @@ export default {
   border-radius: 8px;
   box-shadow: 2px 2px 5px 2px rgb(221, 221, 221);
   background: white;
+  height: 100%;
 }
 
 .cTitleProject {

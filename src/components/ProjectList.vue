@@ -6,14 +6,7 @@
   </div>
 </template>
 
-<script>
-import ProjectItem from "@/components/ProjectItem.vue";
-
-export default {
-  props: ["projects"],
-  components: { ProjectItem },
-};
-</script>
+<script src="./js/project-list.js"></script>
 
 <style>
 </style>

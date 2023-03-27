@@ -18,7 +18,7 @@
           <div class="mt-4">
             <Button
               :title="config.home.landing.button"
-              :onClick="viewResume"
+              @click="viewResume"
               icon="fa fa-file"
             />
           </div>
@@ -26,7 +26,7 @@
         <div class="col-lg-6 d-none d-lg-block">
           <img
             src="@/assets/profile-color.webp"
-            class="w-100 cImgLanding ms-4"
+            class="w-100 cImgLanding ms-3"
             alt="Vincent Hadinata"
           />
         </div>
@@ -73,7 +73,7 @@
 }
 
 .cLanding {
-  padding: 10rem 0 4rem 0;
+  padding: 12rem 0 4rem 0;
 }
 
 .cSectionProjects {
@@ -83,7 +83,7 @@
 .cImgLanding {
   transition: 200ms ease all;
   cursor: pointer;
-  padding: 36px;
+  padding: 0 48px;
 }
 
 .cImgLanding:hover {
@@ -104,31 +104,31 @@
     font-size: 16px !important;
   }
   .cSectionProjects {
-    padding: 2rem 0 !important;
+    padding: 6rem 0 !important;
   }
 }
 
 @media (max-width: 1199.98px) {
   .cLanding {
-    padding: 8rem 0 2rem 0;
+    padding: 10rem 0 2rem 0;
   }
   .cSectionProjects {
-    padding: 4rem 0;
+    padding: 6rem 0;
   }
   .cTop {
-    font-size: 20px;
-  }
-  .cTitle {
-    font-size: 36px;
-  }
-  .cSubTitle {
-    font-size: 32px;
-  }
-  .cTextDescription {
     font-size: 18px;
   }
+  .cTitle {
+    font-size: 32px;
+  }
+  .cSubTitle {
+    font-size: 28px;
+  }
+  .cTextDescription {
+    font-size: 16px;
+  }
   .cImgLanding {
-    padding: 8px;
+    padding: 0 24px;
   }
 }
 </style>

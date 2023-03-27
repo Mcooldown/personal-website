@@ -1,23 +1,15 @@
 <template>
-  <button @click="onClick">
-    <i v-if="icon" :class="icon + (title !== '' ? ' me-2' : '')"></i>
+  <button>
+    <i
+      v-if="icon"
+      :class="`${icon} ${!!title && 'me-2'}`"
+    >
+    </i>
     {{ title }}
   </button>
 </template>
 
-<script>
-export default {
-  props: ["title", "icon"],
-  emits: ["onClick"],
-  setup(props, { emit }) {
-    const onClick = () => {
-      emit("onClick");
-    };
-
-    return { onClick };
-  },
-};
-</script>
+<script src="./js/button.js"></script>
 
 <style scoped>
 button {
