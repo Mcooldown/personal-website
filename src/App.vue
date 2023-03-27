@@ -4,11 +4,9 @@
   </div>
   <div ref="content" class="wrapper">
     <router-view v-slot="{ Component, route }">
-      <transition name="slide" mode="out-in">
-        <div :key="route.name">
-          <component :is="Component"></component>
-        </div>
-      </transition>
+      <div :key="route.name">
+        <component :is="Component"></component>
+      </div>
     </router-view>
   </div>
   <div ref="footer">
@@ -21,39 +19,7 @@
   </div>
 </template>
 
-<script>
-import Navbar from "@/components/Navbar.vue";
-import Footer from "@/components/Footer.vue";
-import Button from "@/components/Button.vue";
-import { onMounted, onUnmounted, ref } from "vue";
-
-export default {
-  components: { Navbar, Footer, Button },
-  setup() {
-    const showButton = ref(false);
-
-    onMounted(() => {
-      window.addEventListener("scroll", handleScroll);
-    });
-    onUnmounted(() => {
-      window.removeEventListener("scroll", handleScroll);
-    });
-
-    const handleScroll = () => {
-      showButton.value = !(window.scrollY === 0);
-    };
-
-    const scrollToTop = () => {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    };
-
-    return { scrollToTop, showButton };
-  },
-};
-</script>
+<script src="./js/app.js"></script>
 
 <style>
 @import "~bootstrap/dist/css/bootstrap.css";
@@ -78,6 +44,10 @@ export default {
   color: #393e46;
 }
 
+.cTextGray {
+  color: #8e8e8e;
+}
+
 .cTextBlue {
   color: #0092ca;
 }
@@ -99,8 +69,8 @@ export default {
 
 .cButtonUp > button {
   font-size: 1.5em;
-  padding: 0.25rem 1.25rem;
-  border-radius: 5px;
+  padding: 0.25rem 1rem;
+  border-radius: 8px;
 }
 
 .slide-enter-active,

@@ -1,9 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
-import Projects from '../views/Projects.vue'
-import ProjectDetails from '../views/ProjectDetails.vue'
-import Contact from "../views/Contact.vue";
-import NotFound from "../views/NotFound.vue";
+import Home from '@/views/Home.vue'
+import Projects from '@/views/Projects.vue'
+import ProjectDetails from '@/views/ProjectDetails.vue'
+import NotFound from "@/views/NotFound.vue"
+import config from "@/data/config"
 
 const routes = [
   {
@@ -23,11 +23,6 @@ const routes = [
     props: true,
   },
   {
-    path: '/contact',
-    name: 'Contact',
-    component: Contact
-  },
-  {
     path:'/:catchAll(.*)',
     name: 'Not Found',
     component: NotFound
@@ -39,8 +34,12 @@ const router = createRouter({
   routes
 })
 
-router.beforeEach((to, from, next) => {
-  document.title = `${to.name} - Vincent Hadinata Personal Website`
+router.beforeEach((to, _, next) => {
+  if (to.path === config.page.home) {
+    document.title = config.name
+  } else {
+    document.title = `${to.name} - ${config.name}`
+  }
   next()
 })
 

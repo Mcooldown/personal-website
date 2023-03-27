@@ -4,7 +4,7 @@
       <div v-if="project" class="row align-items-center cDetailHeader">
         <div class="col-md-6 my-3">
           <img
-            :src="require('@/assets/projects/' + project.thumbnail)"
+            :src="require(`@/assets/projects/${project.thumbnail}`)"
             alt="thumbnail"
             class="w-100 cDetailThumbnail"
           />
@@ -13,7 +13,7 @@
           <h1 class="cTextDarkGray fw-bold">{{ project.title }}</h1>
           <p class="text-muted">{{ project.short_description }}</p>
 
-          <h5 class="cTextDarkGray fw-bold">Tech Stack:</h5>
+          <h5 class="cTextDarkGray fw-bold">{{ config.projectDetails.techStack }}</h5>
           <div class="d-flex flex-wrap">
             <div v-for="tech in project.tech_stack" :key="tech">
               <div class="cTechPills me-2 mb-2">
@@ -35,14 +35,13 @@
       >
         <div class="text-center">
           <i class="fa fa-8x fa-exclamation-triangle cTextBlue"></i>
-          <h1 class="cTextGray fw-bold text-center mt-4">Project Not Found</h1>
-          <p class="text-muted mb-4">
-            Sorry, your requested project doesn't exist. Please go to another
-            project.
+          <h2 class="cTextDarkGray fw-bold text-center mt-4">{{ config.projectDetails.notFound.title }}</h2>
+          <p class="cTextGray mb-4 mt-3">
+            {{ config.projectDetails.notFound.description }}
           </p>
           <Button
-            title="BACK TO PROJECTS"
-            :onClick="() => $router.push({ name: 'Projects' })"
+            :title="config.projectDetails.notFound.button"
+            @click="goToProjectPage"
           />
         </div>
       </div>
@@ -81,9 +80,9 @@
                   <i class="fas fa-link"></i> {{ linkItem.title }}
                 </h4>
                 <Button
-                  title="CLICK HERE TO OPEN"
+                  :title="config.projectDetails.openLinkButton"
                   class="mt-3"
-                  :onClick="() => openLink(linkItem.content)"
+                  @click="openLink(linkItem.content)"
                 />
               </div>
             </div>
@@ -102,7 +101,7 @@
                 </h4>
                 <p class="text-muted mb-3">{{ imageItem.caption }}</p>
                 <img
-                  :src="require('@/assets/projects/' + imageItem.location)"
+                  :src="require(`@/assets/projects/${imageItem.location}`)"
                   class="w-100"
                   :alt="imageItem.title"
                 />
@@ -112,53 +111,17 @@
         </div>
       </div>
       <div v-else>
-        <h5 class="cTextDarkGray text-center">No details available</h5>
+        <h5 class="cTextDarkGray text-center">{{ config.projectDetails.noDetails }}</h5>
       </div>
     </div>
   </div>
 </template>
 
-<script>
-import projectsJSON from "@/data/projects.json";
-import projectDetailsJSON from "@/data/project-details.json";
-import { onMounted, ref } from "vue";
-import Button from "@/components/Button.vue";
-
-export default {
-  props: ["slug"],
-  components: { Button },
-  setup(props) {
-    const project = ref(null);
-    const projectDetails = ref([]);
-
-    onMounted(() => {
-      window.scrollTo(0, 0);
-      project.value = projectsJSON.projects.find(
-        (project) => project.slug === props.slug
-      );
-      if (project.value != null) {
-        projectDetails.value = projectDetailsJSON.project_details.filter(
-          (detail) => {
-            return detail.project_id === project.value.id;
-          }
-        );
-      }
-    });
-
-    const openLink = (link) => {
-      const a = document.createElement("a");
-      a.href = link;
-      window.open(a.href);
-    };
-
-    return { project, projectDetails, openLink };
-  },
-};
-</script>
+<script src="./js/project-details.js"></script>
 
 <style scoped>
 .cDetailHeader {
-  padding: 3rem 0 2rem 0;
+  padding: 10rem 0 2rem 0;
 }
 
 .cDetailThumbnail {
@@ -180,5 +143,11 @@ export default {
   border-radius: 8px;
   box-shadow: 2px 2px 5px 2px rgb(221, 221, 221);
   padding: 1.5rem;
+}
+
+@media (max-width: 767.98px) {
+  .cDetailHeader {
+    padding: 8rem 0 0 0;
+  }
 }
 </style>

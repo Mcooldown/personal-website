@@ -3,7 +3,7 @@
           {
                "id" : 1,
                "project_id" : 1,
-               "section_name": "Explanation",
+               "section_name": "About",
                "text" : [
                     {
                          "title" : "Introduction",
@@ -65,7 +65,7 @@
           {
                "id" : 4,
                "project_id" : 2,
-               "section_name": "Explanation",
+               "section_name": "About",
                "text" : [
                     {
                          "title" : "Introduction",
@@ -122,7 +122,7 @@
           {
                "id" :7,
                "project_id" : 3,
-               "section_name": "Explanation",
+               "section_name": "About",
                "text" : [
                     {
                          "title" : "Introduction",
@@ -179,7 +179,7 @@
           {
                "id" :10,
                "project_id" : 4,
-               "section_name": "Explanation",
+               "section_name": "About",
                "text" : [
                     {
                          "title" : "Introduction",
@@ -246,7 +246,7 @@
           {
                "id" : 14,
                "project_id" : 5,
-               "section_name": "Explanation",
+               "section_name": "About",
                "text" : [
                     {
                          "title" : "Background",
@@ -302,7 +302,7 @@
           {
                "id" : 17,
                "project_id" : 6,
-               "section_name": "Explanation",
+               "section_name": "About",
                "text" : [
                     {
                          "title" : "Introduction",
@@ -367,7 +367,7 @@
           {
                "id" : 21,
                "project_id" : 7,
-               "section_name": "Explanation",
+               "section_name": "About",
                "text" : [
                     {
                          "title" : "Introduction",
@@ -432,7 +432,7 @@
           {
                "id" : 25,
                "project_id" : 8,
-               "section_name": "Explanation",
+               "section_name": "About",
                "text" : [
                     {
                          "title" : "Introduction",
@@ -489,7 +489,7 @@
           {
                "id" : 28,
                "project_id" : 9,
-               "section_name": "Explanation",
+               "section_name": "About",
                "text" : [
                     {
                          "title" : "Introduction",
@@ -545,7 +545,7 @@
           {
                "id" : 31,
                "project_id" : 10,
-               "section_name": "Explanation",
+               "section_name": "About",
                "text" : [
                     {
                          "title" : "Introduction",
@@ -589,7 +589,7 @@
           {
                "id" : 34,
                "project_id" : 11,
-               "section_name": "Explanation",
+               "section_name": "About",
                "text" : [
                     {
                          "title" : "Introduction",
