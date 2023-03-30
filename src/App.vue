@@ -21,8 +21,13 @@
 
 <script src="./js/app.js"></script>
 
-<style>
+<style lang="scss">
 @import "~bootstrap/dist/css/bootstrap.css";
+@import "~@/styles/variables.scss";
+
+* {
+  font-family: "OpenSans-Regular";
+}
 
 .wrapper {
   min-height: 100vh;

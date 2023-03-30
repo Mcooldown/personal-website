@@ -1,66 +1,85 @@
 <template>
-  <div class="cProjectItem p-lg-4 p-3">
-    <router-link
-      :to="{ name: 'Project Details', params: { slug: project.slug } }"
-      class="text-decoration-none"
-    >
-      <img
-        :src="require(`@/assets/projects/${project.thumbnail}`)"
-        class="cProjectThumbnail w-100 mb-4"
-        :alt="project.title"
-      />
-      <h2 class="mt-2 fw-bold cTitleProject cTextDarkGray">
-        {{ project.title }}
-      </h2>
-      <p class="text-muted cDescription">{{ project.short_description }}</p>
-      <div class="d-flex flex-wrap">
-        <div v-for="tech in project.tech_stack" :key="tech">
-          <div class="cTechPills me-2 mb-2">
-            {{ tech }}
-          </div>
-        </div>
+  <div
+    class="project-item"
+    @click="goToProjectDetailPage"
+  >
+    <img
+      :src="require(`@/assets/projects/${project.thumbnail}`)"
+      class="project-item__thumbnail"
+      :alt="project.title"
+    />
+    <h2 class="project-item__title">
+      {{ project.title }}
+    </h2>
+    <p class="project-item__description">
+      {{ project.short_description }}
+    </p>
+    <div class="project-item__tech-stacks">
+      <div 
+        v-for="tech in project.tech_stack"
+        :key="tech"
+        class="tech-stacks__item"
+      >
+        {{ tech }}
       </div>
-    </router-link>
+    </div>
   </div>
 </template>
 
-<script>
-export default {
-  name: "ProjectItem",
-  props: ["project"]
-}
-</script>
+<script src="./js/project-item.js"></script>
 
-<style>
-.cProjectItem {
+<style lang="scss" scoped>
+@import "~@/styles/variables.scss";
+@import "~@/styles/responsive.scss";
+
+.project-item {
   transition: 200ms ease all;
   cursor: pointer;
   border-radius: 8px;
-  box-shadow: 2px 2px 5px 2px rgb(221, 221, 221);
-  background: white;
+  box-shadow: 2px 2px 5px 2px $color-shadow;
+  background: $color-white;
   height: 100%;
-}
+  padding: 1.5rem;
+  
+  @include mobile {
+    padding: 1rem;
+  }
 
-.cTitleProject {
-  height: 1.4em;
-  line-height: 1.4;
-  overflow: hidden;
-}
+  &:hover {
+    transform: scale(1.02);
+  }
 
-.cDescription {
-  height: 2.8em;
-  line-height: 1.4;
-  overflow: hidden;
-}
+  a {
+    text-decoration: none;
+  }
 
-.cProjectItem:hover {
-  transform: scale(1.02);
-}
+  &__thumbnail {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
 
-.cTechPills {
-  border-radius: 5px;
-  background-color: #0092ca;
-  padding: 2px 10px;
-  color: white;
+  &__title {
+    color: $color-dark-gray;
+    font-weight: bold;
+  }
+
+  &__description {
+    color: $color-gray;
+  }
+
+  &__tech-stacks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    .tech-stacks {
+      &__item {
+        border-radius: 8px;
+        background-color: $color-blue;
+        padding: 4px 10px;
+        color: $color-white;
+      }
+    }
+  }
 }
 </style>

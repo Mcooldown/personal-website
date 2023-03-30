@@ -1,27 +1,29 @@
 <template>
-  <button>
+  <button class="button">
     <i
       v-if="icon"
-      :class="`${icon} ${!!title && 'me-2'}`"
-    >
-    </i>
+      :class="[icon, { 'me-2': !!title}]"
+    />
     {{ title }}
   </button>
 </template>
 
 <script src="./js/button.js"></script>
 
-<style scoped>
-button {
-  border: 2px solid #0092ca;
+<style lang="scss" scoped>
+@import "~@/styles/variables.scss";
+
+.button {
+  border: 2px solid $color-blue;
   padding: 8px 15px;
   transition: 200ms ease all;
-  color: #0092ca;
+  color: $color-blue;
   background: transparent;
   border-radius: 5px;
-}
-button:hover {
-  background-color: #0092ca;
-  color: white;
+
+  &:hover {
+    background-color: $color-blue;
+    color: $color-white;
+  }
 }
 </style>
