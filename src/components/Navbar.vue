@@ -36,6 +36,7 @@
   background: $color-white;
   position: fixed;
   top: 0;
+  left: 0;
   padding: 16px 0;
   width: 100%;
   z-index: 999;
@@ -45,14 +46,19 @@
   }
 
   &__container {
-    padding: 0 1.25rem;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 2rem;
+
+    @include mobile {
+      padding: 0 1rem;
+    }
 
     @include widescreen {
       max-width: $widescreen;
+      padding: 0;
     }
   }
 

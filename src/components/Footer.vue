@@ -33,13 +33,17 @@
 @import "~@/styles/responsive.scss";
 
 .footer {
-  padding: 0 1.25rem;
   text-align: center;
   margin: 0 auto 1.5rem auto;
+  padding: 0 2rem;
   
   @include widescreen {
     max-width: $widescreen;
     margin: 2rem auto;
+    padding: 0;
+  }
+  @include mobile {
+    padding: 0 0.5rem;
   }
 
   &__title {

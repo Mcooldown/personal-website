@@ -1,9 +1,10 @@
 import projectData from "@/data/projects.json"
 import projectDetailData from "@/data/project-details.json"
-import { onMounted, ref } from "vue"
+import { onMounted, onUnmounted, ref } from "vue"
 import Button from "@/components/Button.vue"
 import config from "@/data/config"
 import { useRouter } from "vue-router"
+import { useStore } from "vuex"
 
 export default {
   name: 'ProjectDetails',
@@ -15,14 +16,19 @@ export default {
     const router = useRouter()
     const project = ref(null)
     const projectDetails = ref([])
+    const store = useStore()
 
     function handleSetProjectDetail () {
       project.value = 
       projectData.projects.find((project) => project.slug === props.slug)
-      if(project.value) {
-        projectDetails.value = 
-          projectDetailData.project_details.filter((detail) => detail.project_id === project.value.id)
+      
+      if(!project.value) {
+        store.commit('setVisibleNavbar', false)
+        store.commit('setVisibleFooter', false)
+        return
       }
+      projectDetails.value = 
+        projectDetailData.project_details.filter((detail) => detail.project_id === project.value.id)
     }
     
     function openLink (link) {
@@ -38,6 +44,11 @@ export default {
     onMounted(() => {
       window.scrollTo(0, 0)
       handleSetProjectDetail()
+    })
+
+    onUnmounted (() => {
+      store.commit('setVisibleNavbar', true)
+      store.commit('setVisibleFooter', true)
     })
 
     return {

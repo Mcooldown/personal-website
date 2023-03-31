@@ -53,15 +53,17 @@
 @import "~@/styles/responsive";
 
 .home {
-  padding: 0 1.25rem;
+  padding: 0 2rem;
   margin: 10rem auto 12rem;
 
   @include widescreen {
     max-width: $widescreen;
+    padding: 0;
   }
 
   @include mobile {
     margin-bottom: 8rem;
+    padding: 0 0.5rem;
   }
 
   &__landing {

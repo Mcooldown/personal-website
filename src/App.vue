@@ -1,5 +1,5 @@
 <template>
-  <div ref="navbar">
+  <div v-if="visibleNavbar" ref="navbar">
     <Navbar />
   </div>
   <div ref="content" class="wrapper">
@@ -9,7 +9,7 @@
       </div>
     </router-view>
   </div>
-  <div ref="footer">
+  <div v-if="visibleFooter" ref="footer">
     <Footer />
   </div>
   <div v-if="showButton" class="button-up">

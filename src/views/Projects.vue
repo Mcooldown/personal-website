@@ -18,14 +18,16 @@
 
 .projects {
   margin: 10rem auto 12rem;
-  padding: 0 1.25rem;
+  padding: 0 2rem;
 
   @include widescreen {
     max-width: $widescreen;
+    padding: 0;
   }
 
   @include mobile {
     margin: 7rem 0;
+    padding: 0 0.5rem;
   }
 
   &__title {
