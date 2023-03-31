@@ -38,7 +38,6 @@
   border-radius: 8px;
   box-shadow: 1px 1px 10px $color-shadow;
   background: $color-white;
-  height: 100%;
   padding: 1.5rem;
   
   @include mobile {

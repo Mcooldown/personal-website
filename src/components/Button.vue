@@ -2,7 +2,7 @@
   <button class="button">
     <i
       v-if="icon"
-      :class="[icon, { 'me-2': !!title}]"
+      :class="[icon, { 'button__icon': !!title}]"
     />
     {{ title }}
   </button>
@@ -20,10 +20,16 @@
   color: $color-blue;
   background: transparent;
   border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
 
   &:hover {
     background-color: $color-blue;
     color: $color-white;
+  }
+
+  &__icon {
+    padding-right: 8px;
   }
 }
 </style>

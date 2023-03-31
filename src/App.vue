@@ -24,6 +24,10 @@
 <style lang="scss">
 @import "~@/styles/variables.scss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   font-family: "OpenSans-Regular";
 }
