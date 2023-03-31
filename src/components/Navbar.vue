@@ -1,31 +1,26 @@
 <template>
-  <nav :class="['navbar navbar-expand-lg bg-white py-3 fixed-top', {'shadow-sm': visibleShadow }]">
-    <div class="container d-flex justify-content-between align-items-center">
-      <div>
-        <router-link :to="{ name: 'Home' }" class="text-decoration-none">
-          <img src="@/assets/vh-logo.png" height="40" alt="" />
-        </router-link>
-      </div>
-      <div>
-        <ul class="list-unstyled d-flex align-items-center m-0">
-          <li 
-            v-for="(item, index) of navItems"
-            :key="`nav-item-${index+1}`"
-            :class="['my-1', { 'ms-lg-5 ms-4': index > 0 }]"
-          >
-            <div
-              :class="['cNavItem', {'active' : item.isActive }]"
-              @click="item.action"
-            >
-              <h6 class="d-none d-md-block cTextDarkGray cTextRoute fw-bold m-0">
-                {{ item.title }}
-              </h6>
-              <div class="d-md-none cNavIcon">
-                <i :class="['cTextRoute cTextDarkGray', item.icon]"></i>
-              </div>
-            </div>
-          </li>
-        </ul>
+  <nav :class="['v-navbar', {'visible-shadow': visibleShadow }]">
+    <div class="v-navbar__container">
+      <img 
+        src="@/assets/vh-logo.png"
+        class="v-navbar__logo"
+        alt=""
+        @click="goToHomePage"
+      />
+      <div class="v-navbar__list">
+        <div
+          v-for="(item, index) of navItems"
+          :key="`nav-item-${index+1}`"
+          :class="['list__item', { 'active': item.isActive }]"
+          @click="item.action"
+        >
+          <div class="item__title">
+            {{ item.title }}
+          </div>
+          <div class="item__icon">
+            <i :class="[item.icon]" />
+          </div>
+        </div>
       </div>
     </div>
   </nav>
@@ -33,42 +28,103 @@
 
 <script src="./js/navbar.js"></script>
 
-<style scoped>
-svg {
-  font-size: 1em;
-}
+<style lang="scss" scoped>
+@import "~@/styles/variables.scss";
+@import "~@/styles/responsive.scss";
 
-.cNavIcon {
-  transition: 200ms ease all;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+.v-navbar {
+  background: $color-white;
+  position: fixed;
+  top: 0;
+  padding: 16px 0;
+  width: 100%;
+  z-index: 999;
 
-.cLogoBrand {
-  transition: 200ms ease all;
-}
+  &.visible-shadow {
+    box-shadow: 0 1px 8px rgba($color-gray, 0.2);
+  }
 
-.cLogoBrand:hover {
-  transform: rotateZ(360deg);
-}
+  &__container {
+    padding: 0 1.25rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-.cNavItem {
-  cursor: pointer;
-  font-size: 18px;
-}
+    @include widescreen {
+      max-width: $widescreen;
+    }
+  }
 
-.cNavItem.active > .cTextRoute {
-  color: #0092ca !important;
-}
+  &__logo {
+    height: 36px;
+    cursor: pointer;
+    transition: 200ms ease all;
 
-.cNavItem.active > .cNavIcon {
-  background: #0092ca;
-}
-.cNavItem.active > .cNavIcon svg {
-  color: white !important;
+    &:hover {
+      transform: scale(1.25);
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 48px;
+
+    @include mobile {
+      gap: 16px;
+    }
+    .list {
+      &__item {
+        cursor: pointer;
+        transition: 200ms ease all;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+        .item {
+          &__title {
+            font-size: 16px;
+            font-family: $font-bold;
+
+            @include mobile {
+              display: none;
+            }
+          }
+          &__icon {
+            display: none;
+            transition: 200ms ease all;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            
+            @include mobile {
+              display: flex;
+            }
+
+            svg {
+              font-size: 1em;
+            }
+          }
+        }
+
+        &.active {
+          .item {
+            &__title {
+              color: $color-blue;
+            }
+            &__icon {
+              background: $color-blue;
+
+              svg {
+                color: $color-white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 </style>

@@ -1,32 +1,57 @@
 <template>
-  <div class="cProjects">
-    <div class="container">
-      <div class="d-flex">
-        <h1 class="cTitle cTextDarkGray fw-bold">
-          {{ config.projects["title-1"] }}
-        </h1>
-        <h1 class="cTitle cTextBlue fw-bold ms-2">
-          {{ config.projects["title-2"] }}
-        </h1>
-      </div>
-      <p class="text-muted mt-3 mb-4">
-        {{ config.projects.subtitle }}
-      </p>
-      <ProjectList :projects="projects" />
+  <div class="projects">
+    <div class="projects__title">
+      {{ config.projects["title-1"] }} <span class="blue">{{ config.home.projects["title-2"] }}</span>
     </div>
+    <div class="projects__subtitle">
+      {{ config.projects.subtitle }}
+    </div>
+    <ProjectList :projects="projects" />
   </div>
 </template>
 
 <script src="./js/projects.js"></script>
 
-<style scoped>
-.cProjects {
-  padding: 10rem 0 6rem 0;
-}
+<style lang="scss" scoped>
+@import "~@/styles/variables";
+@import "~@/styles/responsive";
 
-@media (max-width: 767.98px) {
-  .cProjects {
-    padding: 8rem 0 4rem 0;
+.projects {
+  margin: 10rem auto 12rem;
+  padding: 0 1.25rem;
+
+  @include widescreen {
+    max-width: $widescreen;
+  }
+
+  @include mobile {
+    margin: 7rem 0;
+  }
+
+  &__title {
+    font-size: 36px;
+    font-family: $font-bold;
+    color: $color-dark-gray;
+    margin-bottom: 4px;
+
+    @include mobile {
+      font-size: 28px;
+    }
+
+    .blue {
+      color: $color-blue;
+      font-family: $font-bold;
+    }
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    margin-bottom: 28px;
+    color: $color-gray;
+
+    @include mobile {
+      margin-bottom: 20px;
+    }
   }
 }
 </style>

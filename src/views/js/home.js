@@ -3,6 +3,7 @@ import ProjectList from "@/components/ProjectList.vue"
 import projectData from "@/data/projects.json"
 import { onMounted } from "vue"
 import config from "@/data/config"
+import { useRouter } from "vue-router"
 
 export default {
   name: "Home",
@@ -11,6 +12,7 @@ export default {
     ProjectList
   },
   setup() {
+    const router = useRouter()
     const projects = projectData.projects.filter((project) => project.selected)
 
     onMounted(() => {
@@ -23,10 +25,15 @@ export default {
       window.open(a.href)
     }
 
+    function goToProjectsPage () {
+      router.push(config.page.projects)
+    }
+
     return {
       config,
       projects,
-      viewResume
+      viewResume,
+      goToProjectsPage
     }
   },
 }

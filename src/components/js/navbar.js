@@ -17,6 +17,10 @@ export default {
       visibleShadow.value = window.scrollY > 10
     }
 
+    function goToHomePage () {
+      router.push(config.page.home)
+    }
+
     onMounted(() => {
       window.addEventListener('scroll', handlePageScroll)
     })
@@ -32,7 +36,7 @@ export default {
         title: "PROJECTS",
         icon: "fa fa-tasks",
         action: () => router.push(config.page.projects),
-        isActive: route.path.match('projects*')
+        isActive: route.path === config.page.projects
       },
       {
         title: "CONTACT ME",
@@ -44,7 +48,8 @@ export default {
 
     return { 
       visibleShadow,
-      navItems
+      navItems,
+      goToHomePage
     }
   },
 }

@@ -1,37 +1,97 @@
 <template>
-  <footer class="bg-white text-center">
-    <div class="container">
-      <h4 class="fw-bold cTextDarkGray">
-        {{ config.footer.title }}
-      </h4>
-      <div class="d-flex justify-content-center align-items-center">
-        <ul class="list-unstyled d-flex mt-4">
-          <li
-            v-for="(contact, index) of config.footer.contacts"
-            :key="`contact-${index+1}`"
-            class="me-3"
-          >
-            <a
-              :href="contact.link"
-              class="cTextBlue cLogoSocial"
-              target="_blank"
-            >
-              <i :class="['fa-2x', contact.icon]"></i>
-            </a>
-          </li>
-        </ul>
+  <footer class="footer">
+    <div class="footer__title">
+      {{ config.footer.title }}
+    </div>
+    <div class="footer__description">
+      {{ config.footer.description }}
+    </div>
+    <div class="footer__contacts">
+      <div
+        v-for="(contact, index) of config.footer.contacts"
+        :key="`contact-${index+1}`"
+      >
+        <a
+          :href="contact.link"
+          class="contacts__item"
+          target="_blank"
+        >
+          <i :class="['fa-2x', contact.icon]"/>
+        </a>
       </div>
-      <div class="text-center text-muted mt-3">
-        {{ config.footer.copyright(currentYear) }}
-      </div>
+    </div>
+    <div class="footer__copyright">
+      {{ config.footer.copyright(currentYear) }}
     </div>
   </footer>
 </template>
 
 <script src="./js/footer.js"></script>
 
-<style scoped>
-footer {
-  padding: 2rem 0;
+<style lang="scss" scoped>
+@import "~@/styles/variables.scss";
+@import "~@/styles/responsive.scss";
+
+.footer {
+  padding: 0 1.25rem;
+  text-align: center;
+  margin: 0 auto 1.5rem auto;
+  
+  @include widescreen {
+    max-width: $widescreen;
+    margin: 2rem auto;
+  }
+
+  &__title {
+    font-family: $font-bold;
+    color: $color-dark-gray;
+    font-size: 32px;
+
+    @include mobile {
+      font-size: 28px;
+    }
+  }
+  
+  &__description {
+    margin-top: 8px;
+    color: $color-gray;
+    font-size: 16px;
+
+    @include mobile {
+      margin-top: 4px;
+    }
+  }
+
+  &__contacts {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    @include mobile {
+      margin-top: 20px;
+    }
+
+    .contacts {
+      &__item {
+        transition: 300ms ease all;
+        color: $color-blue;
+        
+        &:hover {
+          color: #004f6e;
+        }
+      }
+    }
+  }
+
+  &__copyright {
+    margin-top: 40px;
+    color: $color-gray;
+
+    @include mobile {
+      font-size: 14px;
+      margin-top: 32px;
+    }
+  }
 }
 </style>

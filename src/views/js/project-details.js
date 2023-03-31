@@ -16,10 +16,10 @@ export default {
     const project = ref(null)
     const projectDetails = ref([])
 
-    function setProjectDetail () {
+    function handleSetProjectDetail () {
       project.value = 
       projectData.projects.find((project) => project.slug === props.slug)
-      if (project.value) {
+      if(project.value) {
         projectDetails.value = 
           projectDetailData.project_details.filter((detail) => detail.project_id === project.value.id)
       }
@@ -37,7 +37,7 @@ export default {
 
     onMounted(() => {
       window.scrollTo(0, 0)
-      setProjectDetail()
+      handleSetProjectDetail()
     })
 
     return {

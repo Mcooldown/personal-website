@@ -8,12 +8,12 @@
       class="project-item__thumbnail"
       :alt="project.title"
     />
-    <h2 class="project-item__title">
+    <div class="project-item__title">
       {{ project.title }}
-    </h2>
-    <p class="project-item__description">
+    </div>
+    <div class="project-item__description">
       {{ project.short_description }}
-    </p>
+    </div>
     <div class="project-item__tech-stacks">
       <div 
         v-for="tech in project.tech_stack"
@@ -36,7 +36,7 @@
   transition: 200ms ease all;
   cursor: pointer;
   border-radius: 8px;
-  box-shadow: 2px 2px 5px 2px $color-shadow;
+  box-shadow: 1px 1px 10px $color-shadow;
   background: $color-white;
   height: 100%;
   padding: 1.5rem;
@@ -55,29 +55,38 @@
 
   &__thumbnail {
     width: 100%;
-    margin-bottom: 1.5rem;
   }
-
+  
   &__title {
+    margin-top: 12px;
     color: $color-dark-gray;
-    font-weight: bold;
-  }
+    font-family: $font-bold;
+    font-size: 28px;
 
+    @include mobile {
+      font-size: 24px;
+    }
+  }
+  
   &__description {
     color: $color-gray;
+    font-size: 16px;
+    margin-top: 4px;
   }
 
   &__tech-stacks {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+    margin-top: 24px;
 
     .tech-stacks {
       &__item {
         border-radius: 8px;
         background-color: $color-blue;
-        padding: 4px 10px;
+        padding: 4px 12px;
         color: $color-white;
+        font-size: 16px;
       }
     }
   }

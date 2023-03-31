@@ -6,7 +6,8 @@ export default {
     projectDetails: (slug) => `/projects/${slug}`
   },
   footer: {
-    title: "Feel free to contact if you're interested to work with me!",
+    title: "Contact Me",
+    description: "Feel free to contact if you're interested to work with me!",
     contacts: [
       {
         icon: "fa fa-envelope",
@@ -29,7 +30,7 @@ export default {
       title: "Vincent Hadinata,",
       subtitle: "A Software Engineer who interested in full stack development.",
       description: `Currently, I'm working as Associate Software Development Engineer at Blibli.
-        I'm interested to explore more about full stack development for web. Also, I've been
+        I'm interested to explore more about full stack development for web. Also, I've
         involved in several group projects and personal projects as a result
         of my learning.`,
       button: "VIEW MY RESUME"

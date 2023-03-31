@@ -1,7 +1,13 @@
 @import "~@/styles/variables.scss";
 
 @mixin mobile {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin widescreen {
+  @media screen and (min-width: $widescreen) {
     @content;
   }
 }
