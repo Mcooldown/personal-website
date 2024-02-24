@@ -22,7 +22,7 @@
     <template v-if="project">
       <div class="project-details__project">
         <img
-          :src="require(`@/assets/projects/${project.thumbnail}`)"
+          :src="projectImageUrl"
           alt=""
           class="project__image"
         />
@@ -126,7 +126,7 @@
                     {{ imageItem.caption }}
                   </div>
                   <img
-                    :src="require(`@/assets/projects/${imageItem.location}`)"
+                    :src="imageItem.fullUrl"
                     class="content__image"
                     :alt="imageItem.title"
                   />
@@ -143,8 +143,8 @@
 <script src="./js/project-details.js"></script>
 
 <style lang="scss" scoped>
-@import "~@/styles/variables.scss";
-@import "~@/styles/responsive.scss";
+@import "@/styles/variables.scss";
+@import "@/styles/responsive.scss";
 
 .project-details {
   padding: 0 2rem;

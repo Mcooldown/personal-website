@@ -29,8 +29,8 @@
 <script src="./js/footer.js"></script>
 
 <style lang="scss" scoped>
-@import "~@/styles/variables.scss";
-@import "~@/styles/responsive.scss";
+@import "@/styles/variables.scss";
+@import "@/styles/responsive.scss";
 
 .footer {
   text-align: center;

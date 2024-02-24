@@ -11,7 +11,7 @@
 <script src="./js/button.js"></script>
 
 <style lang="scss" scoped>
-@import "~@/styles/variables.scss";
+@import "@/styles/variables.scss";
 
 .button {
   border: 2px solid $color-blue;

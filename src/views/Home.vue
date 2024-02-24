@@ -49,8 +49,8 @@
 <script src="./js/home.js"></script>
 
 <style lang="scss" scoped>
-@import "~@/styles/variables";
-@import "~@/styles/responsive";
+@import "@/styles/variables";
+@import "@/styles/responsive";
 
 .home {
   padding: 0 2rem;

@@ -20,8 +20,8 @@
 <script src="./js/not-found.js"></script>
 
 <style lang="scss" scoped>
-@import "~@/styles/variables.scss";
-@import "~@/styles/responsive.scss";
+@import "@/styles/variables.scss";
+@import "@/styles/responsive.scss";
 
 .not-found {
   padding: 0 2rem;

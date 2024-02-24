@@ -1,10 +1,11 @@
 import projectData from "@/data/projects.json"
 import projectDetailData from "@/data/project-details.json"
-import { onMounted, onUnmounted, ref } from "vue"
+import { onMounted, onUnmounted, ref, computed } from "vue"
 import Button from "@/components/Button.vue"
 import config from "@/data/config"
 import { useRouter } from "vue-router"
 import { useStore } from "vuex"
+
 
 export default {
   name: 'ProjectDetails',
@@ -17,6 +18,7 @@ export default {
     const project = ref(null)
     const projectDetails = ref([])
     const store = useStore()
+    const projectImageUrl = ref('')
 
     function handleSetProjectDetail () {
       project.value = 
@@ -27,8 +29,16 @@ export default {
         store.commit('setVisibleFooter', false)
         return
       }
-      projectDetails.value = 
-        projectDetailData.project_details.filter((detail) => detail.project_id === project.value.id)
+      projectDetails.value = projectDetailData.project_details
+        .filter(detail => detail.project_id === project.value.id)
+        .map(detail => ({
+          ...detail,
+          images: detail.images.map(image => ({
+            ...image,
+            fullUrl: new URL(`/src/assets/projects/${image.location}`, import.meta.url)
+          }))
+        }))
+      projectImageUrl.value =  new URL(`/src/assets/projects/${project.value.thumbnail}`, import.meta.url)
     }
     
     function openLink (link) {
@@ -55,6 +65,7 @@ export default {
       config,
       project,
       projectDetails,
+      projectImageUrl,
       openLink,
       goToProjectPage
     }
