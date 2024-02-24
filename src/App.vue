@@ -22,7 +22,7 @@
 <script src="./js/app.js"></script>
 
 <style lang="scss">
-@import "~@/styles/variables.scss";
+@import "@/styles/variables.scss";
 
 html {
   scroll-behavior: smooth;

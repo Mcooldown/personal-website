@@ -29,8 +29,8 @@
 <script src="./js/navbar.js"></script>
 
 <style lang="scss" scoped>
-@import "~@/styles/variables.scss";
-@import "~@/styles/responsive.scss";
+@import "@/styles/variables.scss";
+@import "@/styles/responsive.scss";
 
 .v-navbar {
   background: $color-white;

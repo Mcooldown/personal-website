@@ -11,7 +11,7 @@
 <script src="./js/project-list.js"></script>
 
 <style lang="scss" scoped>
-@import "~@/styles/responsive.scss";
+@import "@/styles/responsive.scss";
 
 .project-list {
   display: grid;

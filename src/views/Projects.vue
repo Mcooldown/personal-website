@@ -13,8 +13,8 @@
 <script src="./js/projects.js"></script>
 
 <style lang="scss" scoped>
-@import "~@/styles/variables";
-@import "~@/styles/responsive";
+@import "@/styles/variables";
+@import "@/styles/responsive";
 
 .projects {
   margin: 10rem auto 12rem;
