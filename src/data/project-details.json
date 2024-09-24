@@ -1,643 +1,718 @@
 {
-     "project_details" : [
-          {
-               "id" : 1,
-               "project_id" : 1,
-               "section_name": "About",
-               "text" : [
-                    {
-                         "title" : "Introduction",
-                         "content" : "Angkasa Visual Works is a Web-based visual design production house that connects customers who need design and designers to handle their requests. This website has several features, including Authentication with JWT, Cart and Transaction, Chat for Customer and Designer, also Design Order System. This website is built using ReactJS framework for Front-end and Laravel for Back-end API."
-                    },
-                    {
-                         "title" : "My Role",
-                         "content": "My role is to implement UI design into code with ReactJS Framework as well as connect app to Back-end API. Besides that, I also play a role in deploying this web application to Firebase hosting."
-                    }
-               ],
-               "link": [],
-               "images" : []
-          },
-          {
-               "id" : 2,
-               "project_id" : 1,
-               "section_name": "Link to View the Project",
-               "text" : [],
-               "link" :[
-                    {
-                         "title" : "Web / Application Link",
-                         "content" : "https://angkasavisual.web.app/"
-                    },
-                    {
-                         "title" : "Source Code Link (UI)",
-                         "content" : "https://github.com/Mcooldown/angkasa-visual-app"
-                    },
-                    {
-                         "title" : "Source Code Link (API)",
-                         "content" : "https://github.com/putuduta/Angkasa-Visual-Backend"
-                    }
-               ],
-               "images" : []
-          },
-          {
-               "id" : 3,
-               "project_id" : 1,
-               "section_name": "User Interface",
-               "text" : [],
-               "link" : [],
-               "images" : [
-                    {
-                         "title" : "Home Page, About Us Page, and Our Services Page",
-                         "caption": "In the picture above, the page that is displayed is the Home Page, which is the first page when a user accesses this web. The Home Page displays the Landing section as well as information that promotes this website. Then the About Page displays information about Angkasa Visual Works and there are testimonials from several users about the use of this web. Then there is Our Service Page to see what products are offered through this website",
-                         "location": "angkasa-visual-works/angkasa-1.webp"
-                    },
-                    {
-                         "title": "Product Detail Page, My Cart Page, and Checkout Form Page",
-                         "caption": "In the image above, the page displayed is the Product Detail page, which shows the details of the product design selected by the user and the package. Users can also fill in the form above to add products to the cart. Then the Cart Page contains the product design orders that the user is interested in. Then the Checkout Form Page contains a form to checkout the selected product design",
-                         "location": "angkasa-visual-works/angkasa-2.webp"
-                    },
-                    {
-                         "title": "Order Detail Page, Customer Order List Page, Designer Order List Page",
-                         "caption": "In the picture above, the page that is displayed is the Order Detail Page, which displays the order details from users who have completed their transactions. Then the Customer Order List to show a list of orders from the user and their status. Then Designer Order List to display a list of orders from the designer side, namely the designer who handles designs that have been ordered by the user and their status as well.",
-                         "location": "angkasa-visual-works/angkasa-3.webp"
-                    }
-               ]
-          },
-          {
-               "id" : 4,
-               "project_id" : 2,
-               "section_name": "About",
-               "text" : [
-                    {
-                         "title" : "Introduction",
-                         "content" : "Curebox is the Web based Medical Marketplace that provides feature to support the medicine transactions. This application is built as my personal portfolio as I've done learning about MERN Stack (MongoDB, ExpressJS, ReactJS, NodeJS). The features of this web consist of Medicine Search, Medicine Cart & Checkout, Forum about Medicine, also Articles about Medicine."
-                    },
-                    {
-                         "title" : "My Role",
-                         "content": "My role in this project is to implement the previously created user interface design into code using the React JS framework (Front-end). Then I also implemented the previously designed business process into code using NodeJS and ExpressJS (Back-end) and the database also uses MongoDB. Finally, I also play a role in deploying this web to firebase hosting. Overall, I'm holding the whole development in this project on the code side (Full stack)."
-                    }
-               ],
-               "link": [],
-               "images" : []
-          },
-          {
-               "id" : 5,
-               "project_id" : 2,
-               "section_name": "Link to View the Project",
-               "text" : [],
-               "link" :[
-                    {
-                         "title" : "Web / Application Link",
-                         "content" : "https://withcurebox.web.app/"
-                    },
-                    {
-                         "title" : "Source Code Link (UI)",
-                         "content" : "https://github.com/Mcooldown/curebox-app"
-                    },
-                    {
-                         "title" : "Source Code Link (API)",
-                         "content" : "https://github.com/Mcooldown/curebox-api"
-                    }
-               ],
-               "images" : []
-          },
-          {
-               "id" : 6,
-               "project_id" : 2,
-               "section_name": "User Interface",
-               "text" : [],
-               "link" :[],
-               "images" : [
-                    {
-                         "title" : "Home Page, Login Page, Register Page, Article Detail Page, and Forum Detail Page",
-                         "caption" : "The image above shows the Home Page, where this page is displayed when the user first accesses the web. Then the login and register pages are displayed for authentication. Then the Article Details page displays certain articles along with their details and pictures. Then the last one is the Forum Details Page, where this page displays a particular forum thread that is being discussed. In the detail forum there is also a comment section to respond to the topic of the forum thread that is being discussed.",
-                         "location" : "curebox/curebox-1.webp"
-                    },
-                    {
-                         "title" : "Product Detail Page, My Cart Page, Checkout Form Page, My Transactions Page, Transaction Details Page, and Dashboard Page",
-                         "caption" : "The image above shows the Product Detail Page, where there is product and price information as well as a button to add the product to the cart. Then the cart page will display the results of orders from the user. Then there is a checkout page form to display the form that must be filled in to complete the product transaction previously ordered in the cart. After the transaction is successful, the transaction data will be displayed on the Transaction Page, and when a transaction is clicked it will display the Transaction Details page. Then the last is the dashboard page, where when the user logs in using authentication, he will be directed to this page immediately. This page contains a user profile along with a button to move to another page related to the features of this web.",
-                         "location" : "curebox/curebox-2.webp"
-                    }
-               ]
-          },
-          {
-               "id" :7,
-               "project_id" : 3,
-               "section_name": "About",
-               "text" : [
-                    {
-                         "title" : "Introduction",
-                         "content" : "Bilik Mental is the Web based Mental Health Application that provides feature to support the whose are in needs for they mental health. This web was built with Next.js, Node.js, Express.js, MongoDB, also Tailwind CSS. The features of this web consist of Meditation Course, Consultation with the professionals, Motivational Quotes, also Articles related to Mental Health."
-                    },
-                    {
-                         "title" : "My Role",
-                         "content": "Because this web is my personal project after completing the Next.js course, the entire process from the beginning of the user interface design, database design, to implementation into code on the front-end and back-end is done by myself."
-                    }
-               ],
-               "link": [],
-               "images" : []
-          },
-          {
-               "id" : 8,
-               "project_id" : 3,
-               "section_name": "Link to View the Project",
-               "text" : [],
-               "link" :[
-                    {
-                         "title" : "Web / Application Link",
-                         "content" : "http://bilikmental.vercel.app/"
-                    },
-                    {
-                         "title" : "Source Code Link (UI)",
-                         "content" : "https://github.com/Mcooldown/bilikmental-app"
-                    },
-                    {
-                         "title" : "Source Code Link (API)",
-                         "content" : "https://github.com/Mcooldown/bilikmental-api"
-                    }
-               ],
-               "images" : []
-          },
-          {
-               "id" : 9,
-               "project_id" : 3,
-               "section_name": "User Interface",
-               "text" : [],
-               "link" :[],
-               "images" : [
-                    {
-                         "title" : "Home Page, Login Page, Register Page, Quote List Page, and Article List Page",
-                         "caption" : "The image above shows the Home Page, where this page is displayed when the user first accesses the web. Then the register page to register a new account, then the login page to enter a registered user account. Then the Quotes List page displays all the motivational quotes available on this web and can also be filtered by category. Then the last is the Article List page showing all the articles available on this web and can also be filtered by category.",
-                         "location" : "bilik-mental/bilik-mental-1.png"
-                    },
-                    {
-                         "title" : "Dashboard Page, Consultation List Page, Select Consultant Page, and New Consultation Form Page",
-                         "caption" : "The image above shows the Dashboard Page, where this page is displayed when the user has successfully logged in. The information displayed is the user's profile, as well as buttons to access the features on this web. Then the Consultation List Page contains a list of consultations registered by the user along with information on the status of the consultation, the consultant, and the time of the consultation. Then when the user wants to make a new consultation schedule, the Select Consultant page will be displayed, where the user can choose the available consultant for consultation. After that the user will be shown the New Consultation Form page to fill in some data including the desired consultation time. When you have submitted, the process is complete and the data will be added to the user's consultation list.",
-                         "location" : "bilik-mental/bilik-mental-2.png"
-                    }
-               ]
-          },
-          {
-               "id" :10,
-               "project_id" : 4,
-               "section_name": "About",
-               "text" : [
-                    {
-                         "title" : "Introduction",
-                         "content" : "NginepKuy is the web application that made for BNCC Hackathon 4.0 with the theme about staycation. This application provide booking & checkout feature for accomodation, also Online Chat with Travel Agent feature to consult the best vacation plan that user can follows. This web was built with Laravel (both Front-end and Back-end) and MySQL Database."
-                    },
-                    {
-                         "title" : "My Role",
-                         "content": "My role in this project is to help design web flow and database design with my team, and implement all these designs into the framework. In addition, I also helped create the User Interface of several pages on this web with my team."
-                    }
-               ],
-               "link": [],
-               "images" : []
-          },
-          {
-               "id" :11,
-               "project_id" : 4,
-               "section_name": "Link to View the Project",
-               "text" : [],
-               "link" :[
-                    {
-                         "title" : "Web / Application Link",
-                         "content" : "https://nginepkuy.000webhostapp.com/"
-                    },
-                    {
-                         "title" : "Source Code Link (Front-end & Back-end)",
-                         "content" : "https://github.com/Mcooldown/NginepKuy"
-                    }
-               ],
-               "images" : []
-          },
-          {
-               "id" : 12,
-               "project_id" : 4,
-               "section_name": "User Interface",
-               "text" : [],
-               "link" :[],
-               "images" : [
-                    {
-                         "title" : "Home Page, Accomodation List Page, and Accomodation Details Page",
-                         "caption" : "The picture above shows the Home Page, which is the initial page that the user accesses when he first opens this web. On this page, the user can view information about this website and there is a form that can be filled in to search for accommodation according to the user's filter. Then on the Accommodation List page, the results of the filter will be displayed, where there is a list of accommodations that can be booked for online transactions. Then when one of the accommodations is clicked, it will display the Accommodation Details Page, which displays detailed information about the selected accommodation and the type of room provided by the accommodation.",
-                         "location" : "nginepkuy/nginepkuy-1.webp"
-                    },
-                    {
-                         "title" : "Accomodation Type Details Page, Booking List Page, Payment Form Page, and Checkout List Page",
-                         "caption" : "The picture above shows the Accomodation Type Details Page, where when the user selects a room type in a particular accommodation, the user will be directed to this page, where this page will display detailed information about the selected room type and also a button to make a booking if the user wishes. the room type. When the user makes a booking, the booking data for the accommodation will automatically enter the user's booking list, which is displayed on the Booking List page. After that, if the user wants to pay, he will be directed to the Payment Form Page, where the user needs to fill in some data to make a payment and complete the transaction. After the transaction is successful, the user will be directed to the Checkout List page which displays all transactions and their status as well.",
-                         "location" : "nginepkuy/nginepkuy-2.webp"
-                    }
-               ]
-          },
-          {
-               "id" : 13,
-               "project_id" : 4,
-               "section_name": "Certificate",
-               "text" : [],
-               "link" :[],
-               "images" : [
-                    {
-                         "title" : "Certificate of Participation",
-                         "caption" : "Certificate of participation of BNCC Technoscape Hackathon 4.0",
-                         "location" : "nginepkuy/hackaton-certificate.webp"
-                    }
-               ]
-          },
-          {
-               "id" : 14,
-               "project_id" : 5,
-               "section_name": "About",
-               "text" : [
-                    {
-                         "title" : "Background",
-                         "content" : "As the 28th IT manager at BNEC (Bina Nusantara English Club), the first thing I did was to change the appearance of the main website of this organization to be more modern and attractive according to the design style used in the presidency in which year I served at that time (2021) . The purpose of this redesign is to provide a better user experience for users, including those who want to see information about this organization. A good user interface makes users have a good impression of this organization, so that is one of the reasons why I decided to do this redesign."
-                    },
-                    {
-                         "title" : "My Role & Tools Used",
-                         "content": "My role is to carry out the entirety of this redesign, namely designing a new user interface design, requesting the required image components to the brand management division, and finally implementing the design into the framework. Because the frameworks used to create this website are only laravel and bootstrap, so I only use these two frameworks to do this redesign, not using other front-end frameworks."
-                    }
-               ],
-               "link": [],
-               "images" : []
-          },
-          {
-               "id" :15,
-               "project_id" : 5,
-               "section_name": "Current Website Link",
-               "text" : [
-                    {"title" : "Disclaimer","content" : "The user interface of the current website can change from the one I designed considering that this website belongs to an organization that can change at any time depending on the next presidency."}
-               ],
-               "link" :[
-                    {
-                         "title" : "Current Website Link",
-                         "content" : "https://www.mybnec.org/"
-                    }
-               ],
-               "images" : []
-          },
-          {
-               "id" : 16,
-               "project_id" : 5,
-               "section_name": "User Interface",
-               "text" : [],
-               "link" :[],
-               "images" : [
-                    {
-                         "title" : "Home Page",
-                         "caption" : "The picture above shows the Home page, which is the page that the user accesses when entering this website. This page displays information related to the organization as a whole, namely organizational profile information, latest articles and news, and partners who work with the organization.",
-                         "location" : "mybnec/mybnec-1.webp"
-                    },
-                    {
-                         "title" : "About Us Page, Board of Management Page, and Event History Details Page",
-                         "caption" : "The image above displays the About us page, where there is information related to the organization's profile, ranging from the vision and mission, values, to greetings from the president. Then the Board of Management Page displays information about the organization's management as well as the current organizational management structure. Then there is also the Event History Details page, where this page displays the history of events held by the organization since they first started.",
-                         "location" : "mybnec/mybnec-2.webp"
-                    },
-                    {
-                         "title" : "Dashboard Page",
-                         "caption" : "The picture above is the Dashboard Page. where this page can only be accessed by members of the board of management (BoM). This website also provides features to assist organizational activities that can be used by all BoM members. When BoM members log into their respective accounts, this page will be displayed, which contains information on the names of BoM members along with information on feature usage and information on BoM members whose birthdays are today or this week.",
-                         "location" : "mybnec/mybnec-3.webp"
-                    }
-               ]
-          },
-          {
-               "id" : 17,
-               "project_id" : 6,
-               "section_name": "About",
-               "text" : [
-                    {
-                         "title" : "Introduction",
-                         "content" : "This website is the official website of the 2021 Asian English Olympics event, which is an Asian-scale English competition held by my organization (BNEC) every year. This website provides all information about this event, starting from the theme raised, the English competitions being contested and their details, announcements, sponsors and media partners, as well as terms and conditions. In addition to displaying this information, this website also provides a competition participant registration feature, where participants can register their accounts first and purchase tickets to enter the competition. The registration process starts from ordering competition slots to making payments and registering information for each participant. In addition to features for participants, there are also features for the committee, which is to view the list of participants and their payment status as well as other features that manage the operations of this web. This website is made using Laravel both on the front-end and back-end. Then MySQL is used as the database."
-                    },
-                    {
-                         "title" : "My Role",
-                         "content": "Because I was appointed as the committee for this event, namely as the coordinator of the Media and Information Technology Division in charge of handling the entire website, I am tasked with ensuring that the features on this website run well. Previously, the main features of this website have been created by people in my division of the organization (BNEC). Therefore, when I was appointed to be the coordinator, I was in charge of perfecting the feature so that it was ready to be used later. In addition, when new features are needed that are requested by other committees, then I am tasked with fulfilling their needs, namely making these features. In addition, because the website for this event changes every year, I also redesigned the entire website so that it was different from previous years."
-                    }
-               ],
-               "link": [],
-               "images" : []
-          },
-          {
-               "id" :18,
-               "project_id" : 6,
-               "section_name": "Current Website Link",
-               "text" : [
-                    {"title" : "Disclaimer","content" : "The user interface of the current website can change from the one I designed considering that this website belongs to an organization that can change at any time depending on the next presidency."}
-               ],
-               "link" :[
-                    {
-                         "title" : "Link",
-                         "content" : "https://aeo.mybnec.org/"
-                    }
-               ],
-               "images" : []
-          },
-          {
-               "id" : 19,
-               "project_id" : 6,
-               "section_name": "User Interface",
-               "text" : [],
-               "link" :[],
-               "images" : [
-                    {
-                         "title" : "Home Page, About Us Page, and FAQ Page",
-                         "caption" : "The image above shows the Home page, where all information about the event is displayed in its entirety from top to bottom. Then the About Us page displays information about this event in more detail, which is more focused on the profile of this event. Then the FAQ page displays a list of questions that are usually frequently asked by participants when registering for this competition event and the answers to these questions.",
-                         "location" : "aeo-2021/aeo-2021-1.webp"
-                    },
-                    {
-                         "title" : "Login Page, Register Page, and Step 1-4 Page",
-                         "caption" : "The image above shows the page in sequence during the competition registration process. When a user wants to register, they need to create an account first on the register page, then go to the login page to enter their account. After that the user will be directed to the step 1 page, which is to place an order for the competition slot taken. After step 1 is complete, you will be directed to step 2, which is to make a payment. After the payment is confirmed, it will be directed to step 3 where the user will register the names of the participants who have taken part in the competition that has been ordered. Then after registering participants, the user can access the step 4 page, namely the dashboard which displays several menus that can be accessed related to this event.",
-                         "location" : "aeo-2021/aeo-2021-2.webp"
-                    }
-               ]
-          },
-          {
-               "id" : 20,
-               "project_id" : 6,
-               "section_name": "Certificate",
-               "text" : [],
-               "link" :[],
-               "images" : [
-                    {
-                         "title" : "Committee Certificate",
-                         "caption" : "Certificate as Coordinator of Media and Information Technology Division",
-                         "location" : "aeo-2021/committee-certificate.webp"
-                    }
-               ]
-          },
-          {
-               "id" : 21,
-               "project_id" : 7,
-               "section_name": "About",
-               "text" : [
-                    {
-                         "title" : "Introduction",
-                         "content" : "This website is the official website of The 2021 BNEC Social Event, where on this website some information is displayed about this event, starting from the purpose of the event, the theme raised, and an invitation to make donations. In addition, there are articles that can be read related to this event. Then this website also provides a donation feature where data is collected on anyone who makes a donation and the amount. In addition, because this event also held several webinars, this website provides a registration feature for the webinars held. Registered data will be stored in a list that can only be seen by the event committee."
-                    },
-                    {
-                         "title" : "My Role",
-                         "content": "Because I was appointed as the committee for this event, namely as the coordinator of the Media Information Technology and Registration Division in charge of handling the entire website, I was tasked with creating this website from scratch and its features, as well as creating a new user interface that was different from previous years. In addition, I also ensure that all features run well without any problems, and I am also in charge of handling committee requests if it turns out that new features are needed or changes to features that have been made."
-                    }
-               ],
-               "link": [],
-               "images" : []
-          },
-          {
-               "id" :22,
-               "project_id" : 7,
-               "section_name": "Current Website Link",
-               "text" : [
-                    {"title" : "Disclaimer","content" : "The user interface of the current website can change from the one I designed considering that this website belongs to an organization that can change at any time depending on the next presidency."}
-               ],
-               "link" :[
-                    {
-                         "title" : "Link",
-                         "content" : "https://se.mybnec.org/"
-                    }
-               ],
-               "images" : []
-          },
-          {
-               "id" : 23,
-               "project_id" : 7,
-               "section_name": "User Interface",
-               "text" : [],
-               "link" :[],
-               "images" : [
-                    {
-                         "title" : "Home Page, Campaign Page, and Article List Page",
-                         "caption" : "The image above shows the home page, where there is information about this event in its entirety. Then there is a campaign page which details the purpose of this event being held along with posts that have been uploaded to support this event. In addition, there is an article list page which contains a collection of articles created at this event to be read by users. This article contains the theme raised.",
-                         "location" : "se-2020/se-2020-1.webp"
-                    },
-                    {
-                         "title" : "Competition Registration Page, Donation Page, Main Event Registration Page, and Webinar Registration Page",
-                         "caption" : "The picture above shows the registration and donation pages, where on this registration page there is registration for competitions held at this event, then registration for main events and webinars that users can participate in. On the registration page, the user only needs to fill in the registration form, after that the user is automatically registered in the event. Then there is also a donation page that can be accessed by users when they want to donate in the form of money or used books. To donate, just fill out the form provided. The purpose of this form is only to collect data. The picture above does not show the entire form because at the time of documenting, registration has been closed so that it looks different.",
-                         "location" : "se-2020/se-2020-2.webp"
-                    }
-               ]
-          },
-          {
-               "id" : 24,
-               "project_id" : 7,
-               "section_name": "Certificate",
-               "text" : [],
-               "link" :[],
-               "images" : [
-                    {
-                         "title" : "Committee Certificate",
-                         "caption" : "Certificate as Coordinator of Media Information Technology and Registration Division",
-                         "location" : "se-2020/commitee-certificate.webp"
-                    }
-               ]
-          },
-          {
-               "id" : 25,
-               "project_id" : 8,
-               "section_name": "About",
-               "text" : [
-                    {
-                         "title" : "Introduction",
-                         "content" : "'Can you count it?' is a game about addition where there are 3 numbers that need to be added to get certain points, but one of the numbers can change at certain time intervals according to the level of the game. This game is made using Vue.js and Laravel framework"
-                    },
-                    {
-                         "title" : "My Role",
-                         "content": "My role is to make the whole game from start to finish, starting from designing the appearance, logo, implementing code both front-end and backend."
-                    }
-               ],
-               "link": [],
-               "images" : []
-          },
-          {
-               "id" : 26,
-               "project_id" : 8,
-               "section_name": "Link to View the Project",
-               "text" : [],
-               "link" :[
-                    {
-                         "title" : "Web / Application Link",
-                         "content" : "https://cycigame.web.app/"
-                    },
-                    {
-                         "title" : "Source Code Link (UI)",
-                         "content" : "https://github.com/Mcooldown/can-you-count-it"
-                    },
-                    {
-                         "title" : "Source Code Link (API)",
-                         "content" : "https://github.com/Mcooldown/can-you-count-it-api"
-                    }
-               ],
-               "images" : []
-          },
-          {
-               "id" : 27,
-               "project_id" : 8,
-               "section_name": "User Interface",
-               "text" : [],
-               "link" :[],
-               "images" : [
-                    {
-                         "title" : "Home Page, Select Level Page, Loading Page",
-                         "caption" : "The picture above is the home page, where when the user first opens the web, this page will appear. Users need to fill in their name before entering the game, then the next page is the Select Level Page, where users can choose the level of the game according to their abilities. Then after that the loading page will appear before the game starts.",
-                         "location" : "can-you-count-it/cyci-1.webp"
-                    },
-                    {
-                         "title" : "Game Page, Result Page, How to Play Page, Leaderboard Page",
-                         "caption" : "The picture above shows the game page, where users can play this game on this page. Then after the time expires, the Result page where the score from the user is displayed. Then after that in this game there is also a how to play page that users can read when they don't understand how to play this game. Then there is also a Leaderboard page where users can see the ranking of users with the highest scores in this game at each level.",
-                         "location" : "can-you-count-it/cyci-2.webp"
-                    }
-               ]
-          },
-          {
-               "id" : 28,
-               "project_id" : 9,
-               "section_name": "About",
-               "text" : [
-                    {
-                         "title" : "Introduction",
-                         "content" : "As the 28th IT manager of BNEC, I created this website to help the learning management and corporate relations division to meet the needs of BNEC members, namely related to learning systems and transaction systems for merchants who partner with BNEC. Therefore, this website was created with various features, namely Class selection, Class Activities, Online Exam, Class Score, and Merchant Transaction Claim, where these features are expected to help these two divisions meet the needs of members. This website was created using Laravel and it is possible to use other frameworks if in the future this website is developed further when I am no longer serving as IT manager at BNEC."
-                    },
-                    {
-                         "title" : "My Role",
-                         "content": "My role is to do research on the needs of the Learning management and corporate relations divisions to create a system that suits their needs, as well as to design the interface and database of this web. Then I and my partner Putu also implemented this design into code until it was completely finished."
-                    }
-               ],
-               "link": [],
-               "images" : []
-          },
-          {
-               "id" :29,
-               "project_id" : 9,
-               "section_name": "Current Website Link",
-               "text" : [
-                    {"title" : "Disclaimer","content" : "The user interface of the current website can change from the one I designed considering that this website belongs to an organization that can change at any time depending on the next presidency."}
-               ],
-               "link" :[
-                    {
-                         "title" : "Link",
-                         "content" : "https://member.mybnec.org/"
-                    }
-               ],
-               "images" : []
-          },
-          {
-               "id" : 30,
-               "project_id" : 9,
-               "section_name": "User Interface",
-               "text" : [],
-               "link" :[],
-               "images" : [
-                    {
-                         "title" : "Home Page, Dashboard Page, and Merchant Transaction List Page",
-                         "caption" : "The picture above is the home page, where members must enter their NIM and password to be able to enter their respective accounts. Then after success, the Dashboard page will be displayed. This page displays a summary of all the features on this website, which includes class information, headlines, loyalty points for merchant transactions, and BNEC cart for merchant transactions. Then when a member opens the sidebar by clicking the button on the top left and then clicking the Merchant Transactions menu, it will be directed to the Merchant Transaction List page which displays a list of transactions that have been made by the user and claimed to the corporate relations division.",
-                         "location" : "bnec-member/bnec-member-1.webp"
-                    },
-                    {
-                         "title" : "Activity List Page, Class Detail Page, Class Scores Page",
-                         "caption" : "The picture above is an Activity List Page, where each member attends a class session every week, the tutor will record the activities carried out along with taking the member's attendance to record their attendance. Then there is the class detail page, where information about the classes taken by members is displayed, starting from the name, tutor, and also the schedule for each week. Then there is a score page where the mid exam scores and final exam scores from the class the member is participating in will be displayed on this page.",
-                         "location" : "bnec-member/bnec-member-2.webp"
-                    },
-                    {
-                         "title" : "Exam List Page, Module List Page",
-                         "caption" : "The picture above is the exam page, that is, when a member wants to take an exam, this page is accessed to see which exams are currently in progress and which exams have been completed. When the exam takes place, members can click start and start working on the questions on the exam questions page. Then the last is the Module page, where each class has learning materials in the form of pdf or ppt which are stored on this website and can be downloaded by members to learn.",
-                         "location" : "bnec-member/bnec-member-3.webp"
-                    }
-               ]
-          },
-          {
-               "id" : 31,
-               "project_id" : 10,
-               "section_name": "About",
-               "text" : [
-                    {
-                         "title" : "Introduction",
-                         "content" : "This application was created using the Java GUI to complete the final lab project assignment for the object oriented analysis and design course at Binus University. This application has several features to manage this Coffee Vibes (coffee shop). These features include Employee Management to manage employees who work in this coffee shop, then Product Management to collect data on all coffees and can be used for ordering by baristas. Then there is transaction management to manage the ordering process from product selection to checkout. Lastly is voucher management to record all vouchers that apply to this coffee shop transaction. This application is made in the Java language by utilizing the Java GUI library to display the GUI."
-                    },
-                    {
-                         "title" : "My Role",
-                         "content": "My role is to make all the features together with my partner, Putu. Then I also helped make the documentation as a project collection requirement."
-                    }
-               ],
-               "link": [],
-               "images" : []
-          },
-          {
-               "id" :32,
-               "project_id" : 10,
-               "section_name": "Link to View The Project",
-               "text" : [],
-               "link" :[
-                    {
-                         "title" : "Source Code Link",
-                         "content" : "https://github.com/Mcooldown/coffee-vibes"
-                    }
-               ],
-               "images" : []
-          },
-          {
-               "id" : 33,
-               "project_id" : 10,
-               "section_name": "User Interface",
-               "text" : [],
-               "link" :[],
-               "images" : [
-                    {
-                         "title" : "Login Page, Voucher Management Page, Employee Management Page, Product Management Page, Transaction Management Page, Add to Cart Page, Cart Page, and Checkout Page",
-                         "caption" : "When the application is run, the Login page will be displayed to log in to each account. After success, a different page will be displayed depending on the role of the account that is currently logged in. The first is the Voucher Management Page which can only be accessed by the admin, which is useful for collecting data on vouchers that can be used in transactions. Admin can add vouchers and delete certain vouchers. Then the Employee Management Page is a page that lists all employees at this coffee shop, which can be accessed by HRD and Admin roles. HRD can add new employees and update their data, while admins can only delete or fire selected employees. Then there is the Product management page where this page displays a list of all coffee products sold in this store. Admin and Barista can access this page. Admin can insert new products and update and delete products. Meanwhile, the barista can choose the product to put in the basket, when there is a new coffee order from the customer. Then there is the Transaction Management page, which is to display a list of transactions that have been successfully checked out by the barista and can only be seen by the admin. Admin can see the details of the order that has been checked out along with the coffee ordered. Then there is the Add to cart page which is a page to confirm orders that the barista adds to the cart. Once confirmed, the Cart page will be displayed along with the confirmed order. If the cart already contains the copies ordered, the Checkout page will be displayed to create a new transaction. The Add to Cart to Checkout pages can only be accessed by the Barista.",
-                         "location" : "coffee-vibes/coffee-vibes-1.webp"
-                    }
-               ]
-          },
-          {
-               "id" : 34,
-               "project_id" : 11,
-               "section_name": "About",
-               "text" : [
-                    {
-                         "title" : "Introduction",
-                         "content" : "This website is made using HTML, CSS and a bit of Javascript for form validation. This website is used to display the catalog of the k-pop merchandise store along with the registration form for those who want to register as a new member. This website was created to fulfill the final lab project assignment for the Human and Computer Interaction course at Binus University."
-                    },
-                    {
-                         "title" : "My Role",
-                         "content": "My role is to help work on all the pages of the website with my partners, namely Ricky and Glenn."
-                    }
-               ],
-               "link": [],
-               "images" : []
-          },
-          {
-               "id" :35,
-               "project_id" : 11,
-               "section_name": "Link to View The Project",
-               "text" : [],
-               "link" :[
-                    {
-                         "title" : "Website Link",
-                         "content" : "https://store-del-luna.web.app/"
-                    },
-                    {
-                         "title" : "Source Code Link",
-                         "content" : "https://github.com/Mcooldown/Store-Del-Luna"
-                    }
-               ],
-               "images" : []
-          },
-          {
-               "id" : 36,
-               "project_id" : 11,
-               "section_name": "User Interface",
-               "text" : [],
-               "link" :[],
-               "images" : [
-                    {
-                         "title" : "Home Page, Register Page, and Testimonial Page",
-                         "caption" : "The home page is the main page, which displays information about the store, promo information, and also information on artist merchandise sold by this store. Then the register page displays a form that can be filled in to become a new member. Then the data will be validated by Javascript but not sent to the database because this project task is only required to create the front-end. Then there is a testimonial page that displays testimonials from buyers of this store. The data displayed is in the form of a dummy only, so it does not really come from a real person.",
-                         "location" : "store-del-luna/store-del-luna-1.webp"
-                    },
-                    {
-                         "title" : "Merchandise Page, and Albums Page",
-                         "caption" : "The merchandise page shows all the merchandise sold in this store and individual merchandise grouped by artist. Then the albums page displays all the albums sold in this store and each album is also grouped by artist.",
-                         "location" : "store-del-luna/store-del-luna-2.webp"
-                    }
-               ]
-          }
+  "project_details": [
+    {
+      "id": 1,
+      "project_id": 1,
+      "section_name": "About",
+      "text": [
+        {
+          "title": "Introduction",
+          "content": "Angkasa Visual Works is a Web-based visual design production house that connects customers who need design and designers to handle their requests. This website has several features, including Authentication with JWT, Cart and Transaction, Chat for Customer and Designer, also Design Order System. This website is built using ReactJS framework for Front-end and Laravel for Back-end API."
+        },
+        {
+          "title": "My Role",
+          "content": "My role is to implement UI design into code with ReactJS Framework as well as connect app to Back-end API. Besides that, I also play a role in deploying this web application to Firebase hosting."
+        }
+      ],
+      "link": [],
+      "images": []
+    },
+    {
+      "id": 2,
+      "project_id": 1,
+      "section_name": "Link to View the Project",
+      "text": [],
+      "link": [
+        {
+          "title": "Web / Application Link",
+          "content": "https://angkasavisual.web.app/"
+        },
+        {
+          "title": "Source Code Link (UI)",
+          "content": "https://github.com/Mcooldown/angkasa-visual-app"
+        },
+        {
+          "title": "Source Code Link (API)",
+          "content": "https://github.com/putuduta/Angkasa-Visual-Backend"
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": 3,
+      "project_id": 1,
+      "section_name": "User Interface",
+      "text": [],
+      "link": [],
+      "images": [
+        {
+          "title": "Home Page, About Us Page, and Our Services Page",
+          "caption": "In the picture above, the page that is displayed is the Home Page, which is the first page when a user accesses this web. The Home Page displays the Landing section as well as information that promotes this website. Then the About Page displays information about Angkasa Visual Works and there are testimonials from several users about the use of this web. Then there is Our Service Page to see what products are offered through this website",
+          "location": "angkasa-visual-works/angkasa-1.webp"
+        },
+        {
+          "title": "Product Detail Page, My Cart Page, and Checkout Form Page",
+          "caption": "In the image above, the page displayed is the Product Detail page, which shows the details of the product design selected by the user and the package. Users can also fill in the form above to add products to the cart. Then the Cart Page contains the product design orders that the user is interested in. Then the Checkout Form Page contains a form to checkout the selected product design",
+          "location": "angkasa-visual-works/angkasa-2.webp"
+        },
+        {
+          "title": "Order Detail Page, Customer Order List Page, Designer Order List Page",
+          "caption": "In the picture above, the page that is displayed is the Order Detail Page, which displays the order details from users who have completed their transactions. Then the Customer Order List to show a list of orders from the user and their status. Then Designer Order List to display a list of orders from the designer side, namely the designer who handles designs that have been ordered by the user and their status as well.",
+          "location": "angkasa-visual-works/angkasa-3.webp"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "project_id": 2,
+      "section_name": "About",
+      "text": [
+        {
+          "title": "Introduction",
+          "content": "Curebox is the Web based Medical Marketplace that provides feature to support the medicine transactions. This application is built as my personal portfolio as I've done learning about MERN Stack (MongoDB, ExpressJS, ReactJS, NodeJS). The features of this web consist of Medicine Search, Medicine Cart & Checkout, Forum about Medicine, also Articles about Medicine."
+        },
+        {
+          "title": "My Role",
+          "content": "My role in this project is to implement the previously created user interface design into code using the React JS framework (Front-end). Then I also implemented the previously designed business process into code using NodeJS and ExpressJS (Back-end) and the database also uses MongoDB. Finally, I also play a role in deploying this web to firebase hosting. Overall, I'm holding the whole development in this project on the code side (Full stack)."
+        }
+      ],
+      "link": [],
+      "images": []
+    },
+    {
+      "id": 5,
+      "project_id": 2,
+      "section_name": "Link to View the Project",
+      "text": [],
+      "link": [
+        {
+          "title": "Web / Application Link",
+          "content": "https://withcurebox.web.app/"
+        },
+        {
+          "title": "Source Code Link (UI)",
+          "content": "https://github.com/Mcooldown/curebox-app"
+        },
+        {
+          "title": "Source Code Link (API)",
+          "content": "https://github.com/Mcooldown/curebox-api"
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": 6,
+      "project_id": 2,
+      "section_name": "User Interface",
+      "text": [],
+      "link": [],
+      "images": [
+        {
+          "title": "Home Page, Login Page, Register Page, Article Detail Page, and Forum Detail Page",
+          "caption": "The image above shows the Home Page, where this page is displayed when the user first accesses the web. Then the login and register pages are displayed for authentication. Then the Article Details page displays certain articles along with their details and pictures. Then the last one is the Forum Details Page, where this page displays a particular forum thread that is being discussed. In the detail forum there is also a comment section to respond to the topic of the forum thread that is being discussed.",
+          "location": "curebox/curebox-1.webp"
+        },
+        {
+          "title": "Product Detail Page, My Cart Page, Checkout Form Page, My Transactions Page, Transaction Details Page, and Dashboard Page",
+          "caption": "The image above shows the Product Detail Page, where there is product and price information as well as a button to add the product to the cart. Then the cart page will display the results of orders from the user. Then there is a checkout page form to display the form that must be filled in to complete the product transaction previously ordered in the cart. After the transaction is successful, the transaction data will be displayed on the Transaction Page, and when a transaction is clicked it will display the Transaction Details page. Then the last is the dashboard page, where when the user logs in using authentication, he will be directed to this page immediately. This page contains a user profile along with a button to move to another page related to the features of this web.",
+          "location": "curebox/curebox-2.webp"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "project_id": 3,
+      "section_name": "About",
+      "text": [
+        {
+          "title": "Introduction",
+          "content": "Bilik Mental is the Web based Mental Health Application that provides feature to support the whose are in needs for they mental health. This web was built with Next.js, Node.js, Express.js, MongoDB, also Tailwind CSS. The features of this web consist of Meditation Course, Consultation with the professionals, Motivational Quotes, also Articles related to Mental Health."
+        },
+        {
+          "title": "My Role",
+          "content": "Because this web is my personal project after completing the Next.js course, the entire process from the beginning of the user interface design, database design, to implementation into code on the front-end and back-end is done by myself."
+        }
+      ],
+      "link": [],
+      "images": []
+    },
+    {
+      "id": 8,
+      "project_id": 3,
+      "section_name": "Link to View the Project",
+      "text": [],
+      "link": [
+        {
+          "title": "Web / Application Link",
+          "content": "http://bilikmental.vercel.app/"
+        },
+        {
+          "title": "Source Code Link (UI)",
+          "content": "https://github.com/Mcooldown/bilikmental-app"
+        },
+        {
+          "title": "Source Code Link (API)",
+          "content": "https://github.com/Mcooldown/bilikmental-api"
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": 9,
+      "project_id": 3,
+      "section_name": "User Interface",
+      "text": [],
+      "link": [],
+      "images": [
+        {
+          "title": "Home Page, Login Page, Register Page, Quote List Page, and Article List Page",
+          "caption": "The image above shows the Home Page, where this page is displayed when the user first accesses the web. Then the register page to register a new account, then the login page to enter a registered user account. Then the Quotes List page displays all the motivational quotes available on this web and can also be filtered by category. Then the last is the Article List page showing all the articles available on this web and can also be filtered by category.",
+          "location": "bilik-mental/bilik-mental-1.png"
+        },
+        {
+          "title": "Dashboard Page, Consultation List Page, Select Consultant Page, and New Consultation Form Page",
+          "caption": "The image above shows the Dashboard Page, where this page is displayed when the user has successfully logged in. The information displayed is the user's profile, as well as buttons to access the features on this web. Then the Consultation List Page contains a list of consultations registered by the user along with information on the status of the consultation, the consultant, and the time of the consultation. Then when the user wants to make a new consultation schedule, the Select Consultant page will be displayed, where the user can choose the available consultant for consultation. After that the user will be shown the New Consultation Form page to fill in some data including the desired consultation time. When you have submitted, the process is complete and the data will be added to the user's consultation list.",
+          "location": "bilik-mental/bilik-mental-2.png"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "project_id": 4,
+      "section_name": "About",
+      "text": [
+        {
+          "title": "Introduction",
+          "content": "NginepKuy is the web application that made for BNCC Hackathon 4.0 with the theme about staycation. This application provide booking & checkout feature for accomodation, also Online Chat with Travel Agent feature to consult the best vacation plan that user can follows. This web was built with Laravel (both Front-end and Back-end) and MySQL Database."
+        },
+        {
+          "title": "My Role",
+          "content": "My role in this project is to help design web flow and database design with my team, and implement all these designs into the framework. In addition, I also helped create the User Interface of several pages on this web with my team."
+        }
+      ],
+      "link": [],
+      "images": []
+    },
+    {
+      "id": 11,
+      "project_id": 4,
+      "section_name": "Link to View the Project",
+      "text": [],
+      "link": [
+        {
+          "title": "Web / Application Link",
+          "content": "https://nginepkuy.000webhostapp.com/"
+        },
+        {
+          "title": "Source Code Link (Front-end & Back-end)",
+          "content": "https://github.com/Mcooldown/NginepKuy"
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": 12,
+      "project_id": 4,
+      "section_name": "User Interface",
+      "text": [],
+      "link": [],
+      "images": [
+        {
+          "title": "Home Page, Accomodation List Page, and Accomodation Details Page",
+          "caption": "The picture above shows the Home Page, which is the initial page that the user accesses when he first opens this web. On this page, the user can view information about this website and there is a form that can be filled in to search for accommodation according to the user's filter. Then on the Accommodation List page, the results of the filter will be displayed, where there is a list of accommodations that can be booked for online transactions. Then when one of the accommodations is clicked, it will display the Accommodation Details Page, which displays detailed information about the selected accommodation and the type of room provided by the accommodation.",
+          "location": "nginepkuy/nginepkuy-1.webp"
+        },
+        {
+          "title": "Accomodation Type Details Page, Booking List Page, Payment Form Page, and Checkout List Page",
+          "caption": "The picture above shows the Accomodation Type Details Page, where when the user selects a room type in a particular accommodation, the user will be directed to this page, where this page will display detailed information about the selected room type and also a button to make a booking if the user wishes. the room type. When the user makes a booking, the booking data for the accommodation will automatically enter the user's booking list, which is displayed on the Booking List page. After that, if the user wants to pay, he will be directed to the Payment Form Page, where the user needs to fill in some data to make a payment and complete the transaction. After the transaction is successful, the user will be directed to the Checkout List page which displays all transactions and their status as well.",
+          "location": "nginepkuy/nginepkuy-2.webp"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "project_id": 4,
+      "section_name": "Certificate",
+      "text": [],
+      "link": [],
+      "images": [
+        {
+          "title": "Certificate of Participation",
+          "caption": "Certificate of participation of BNCC Technoscape Hackathon 4.0",
+          "location": "nginepkuy/hackaton-certificate.webp"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "project_id": 5,
+      "section_name": "About",
+      "text": [
+        {
+          "title": "Background",
+          "content": "As the 28th IT manager at BNEC (Bina Nusantara English Club), the first thing I did was to change the appearance of the main website of this organization to be more modern and attractive according to the design style used in the presidency in which year I served at that time (2021) . The purpose of this redesign is to provide a better user experience for users, including those who want to see information about this organization. A good user interface makes users have a good impression of this organization, so that is one of the reasons why I decided to do this redesign."
+        },
+        {
+          "title": "My Role & Tools Used",
+          "content": "My role is to carry out the entirety of this redesign, namely designing a new user interface design, requesting the required image components to the brand management division, and finally implementing the design into the framework. Because the frameworks used to create this website are only laravel and bootstrap, so I only use these two frameworks to do this redesign, not using other front-end frameworks."
+        }
+      ],
+      "link": [],
+      "images": []
+    },
+    {
+      "id": 15,
+      "project_id": 5,
+      "section_name": "Current Website Link",
+      "text": [
+        {
+          "title": "Disclaimer",
+          "content": "The user interface of the current website can change from the one I designed considering that this website belongs to an organization that can change at any time depending on the next presidency."
+        }
+      ],
+      "link": [
+        {
+          "title": "Current Website Link",
+          "content": "https://www.mybnec.org/"
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": 16,
+      "project_id": 5,
+      "section_name": "User Interface",
+      "text": [],
+      "link": [],
+      "images": [
+        {
+          "title": "Home Page",
+          "caption": "The picture above shows the Home page, which is the page that the user accesses when entering this website. This page displays information related to the organization as a whole, namely organizational profile information, latest articles and news, and partners who work with the organization.",
+          "location": "mybnec/mybnec-1.webp"
+        },
+        {
+          "title": "About Us Page, Board of Management Page, and Event History Details Page",
+          "caption": "The image above displays the About us page, where there is information related to the organization's profile, ranging from the vision and mission, values, to greetings from the president. Then the Board of Management Page displays information about the organization's management as well as the current organizational management structure. Then there is also the Event History Details page, where this page displays the history of events held by the organization since they first started.",
+          "location": "mybnec/mybnec-2.webp"
+        },
+        {
+          "title": "Dashboard Page",
+          "caption": "The picture above is the Dashboard Page. where this page can only be accessed by members of the board of management (BoM). This website also provides features to assist organizational activities that can be used by all BoM members. When BoM members log into their respective accounts, this page will be displayed, which contains information on the names of BoM members along with information on feature usage and information on BoM members whose birthdays are today or this week.",
+          "location": "mybnec/mybnec-3.webp"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "project_id": 6,
+      "section_name": "About",
+      "text": [
+        {
+          "title": "Introduction",
+          "content": "This website is the official website of the 2021 Asian English Olympics event, which is an Asian-scale English competition held by my organization (BNEC) every year. This website provides all information about this event, starting from the theme raised, the English competitions being contested and their details, announcements, sponsors and media partners, as well as terms and conditions. In addition to displaying this information, this website also provides a competition participant registration feature, where participants can register their accounts first and purchase tickets to enter the competition. The registration process starts from ordering competition slots to making payments and registering information for each participant. In addition to features for participants, there are also features for the committee, which is to view the list of participants and their payment status as well as other features that manage the operations of this web. This website is made using Laravel both on the front-end and back-end. Then MySQL is used as the database."
+        },
+        {
+          "title": "My Role",
+          "content": "Because I was appointed as the committee for this event, namely as the coordinator of the Media and Information Technology Division in charge of handling the entire website, I am tasked with ensuring that the features on this website run well. Previously, the main features of this website have been created by people in my division of the organization (BNEC). Therefore, when I was appointed to be the coordinator, I was in charge of perfecting the feature so that it was ready to be used later. In addition, when new features are needed that are requested by other committees, then I am tasked with fulfilling their needs, namely making these features. In addition, because the website for this event changes every year, I also redesigned the entire website so that it was different from previous years."
+        }
+      ],
+      "link": [],
+      "images": []
+    },
+    {
+      "id": 18,
+      "project_id": 6,
+      "section_name": "Current Website Link",
+      "text": [
+        {
+          "title": "Disclaimer",
+          "content": "The user interface of the current website can change from the one I designed considering that this website belongs to an organization that can change at any time depending on the next presidency."
+        }
+      ],
+      "link": [
+        {
+          "title": "Link",
+          "content": "https://aeo.mybnec.org/"
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": 19,
+      "project_id": 6,
+      "section_name": "User Interface",
+      "text": [],
+      "link": [],
+      "images": [
+        {
+          "title": "Home Page, About Us Page, and FAQ Page",
+          "caption": "The image above shows the Home page, where all information about the event is displayed in its entirety from top to bottom. Then the About Us page displays information about this event in more detail, which is more focused on the profile of this event. Then the FAQ page displays a list of questions that are usually frequently asked by participants when registering for this competition event and the answers to these questions.",
+          "location": "aeo-2021/aeo-2021-1.webp"
+        },
+        {
+          "title": "Login Page, Register Page, and Step 1-4 Page",
+          "caption": "The image above shows the page in sequence during the competition registration process. When a user wants to register, they need to create an account first on the register page, then go to the login page to enter their account. After that the user will be directed to the step 1 page, which is to place an order for the competition slot taken. After step 1 is complete, you will be directed to step 2, which is to make a payment. After the payment is confirmed, it will be directed to step 3 where the user will register the names of the participants who have taken part in the competition that has been ordered. Then after registering participants, the user can access the step 4 page, namely the dashboard which displays several menus that can be accessed related to this event.",
+          "location": "aeo-2021/aeo-2021-2.webp"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "project_id": 6,
+      "section_name": "Certificate",
+      "text": [],
+      "link": [],
+      "images": [
+        {
+          "title": "Committee Certificate",
+          "caption": "Certificate as Coordinator of Media and Information Technology Division",
+          "location": "aeo-2021/committee-certificate.webp"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "project_id": 7,
+      "section_name": "About",
+      "text": [
+        {
+          "title": "Introduction",
+          "content": "This website is the official website of The 2021 BNEC Social Event, where on this website some information is displayed about this event, starting from the purpose of the event, the theme raised, and an invitation to make donations. In addition, there are articles that can be read related to this event. Then this website also provides a donation feature where data is collected on anyone who makes a donation and the amount. In addition, because this event also held several webinars, this website provides a registration feature for the webinars held. Registered data will be stored in a list that can only be seen by the event committee."
+        },
+        {
+          "title": "My Role",
+          "content": "Because I was appointed as the committee for this event, namely as the coordinator of the Media Information Technology and Registration Division in charge of handling the entire website, I was tasked with creating this website from scratch and its features, as well as creating a new user interface that was different from previous years. In addition, I also ensure that all features run well without any problems, and I am also in charge of handling committee requests if it turns out that new features are needed or changes to features that have been made."
+        }
+      ],
+      "link": [],
+      "images": []
+    },
+    {
+      "id": 22,
+      "project_id": 7,
+      "section_name": "Current Website Link",
+      "text": [
+        {
+          "title": "Disclaimer",
+          "content": "The user interface of the current website can change from the one I designed considering that this website belongs to an organization that can change at any time depending on the next presidency."
+        }
+      ],
+      "link": [
+        {
+          "title": "Link",
+          "content": "https://se.mybnec.org/"
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": 23,
+      "project_id": 7,
+      "section_name": "User Interface",
+      "text": [],
+      "link": [],
+      "images": [
+        {
+          "title": "Home Page, Campaign Page, and Article List Page",
+          "caption": "The image above shows the home page, where there is information about this event in its entirety. Then there is a campaign page which details the purpose of this event being held along with posts that have been uploaded to support this event. In addition, there is an article list page which contains a collection of articles created at this event to be read by users. This article contains the theme raised.",
+          "location": "se-2020/se-2020-1.webp"
+        },
+        {
+          "title": "Competition Registration Page, Donation Page, Main Event Registration Page, and Webinar Registration Page",
+          "caption": "The picture above shows the registration and donation pages, where on this registration page there is registration for competitions held at this event, then registration for main events and webinars that users can participate in. On the registration page, the user only needs to fill in the registration form, after that the user is automatically registered in the event. Then there is also a donation page that can be accessed by users when they want to donate in the form of money or used books. To donate, just fill out the form provided. The purpose of this form is only to collect data. The picture above does not show the entire form because at the time of documenting, registration has been closed so that it looks different.",
+          "location": "se-2020/se-2020-2.webp"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "project_id": 7,
+      "section_name": "Certificate",
+      "text": [],
+      "link": [],
+      "images": [
+        {
+          "title": "Committee Certificate",
+          "caption": "Certificate as Coordinator of Media Information Technology and Registration Division",
+          "location": "se-2020/commitee-certificate.webp"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "project_id": 8,
+      "section_name": "About",
+      "text": [
+        {
+          "title": "Introduction",
+          "content": "'Can you count it?' is a game about addition where there are 3 numbers that need to be added to get certain points, but one of the numbers can change at certain time intervals according to the level of the game. This game is made using Vue.js and Laravel framework"
+        },
+        {
+          "title": "My Role",
+          "content": "My role is to make the whole game from start to finish, starting from designing the appearance, logo, implementing code both front-end and backend."
+        }
+      ],
+      "link": [],
+      "images": []
+    },
+    {
+      "id": 26,
+      "project_id": 8,
+      "section_name": "Link to View the Project",
+      "text": [],
+      "link": [
+        {
+          "title": "Web / Application Link",
+          "content": "https://cycigame.web.app/"
+        },
+        {
+          "title": "Source Code Link (UI)",
+          "content": "https://github.com/Mcooldown/can-you-count-it"
+        },
+        {
+          "title": "Source Code Link (API)",
+          "content": "https://github.com/Mcooldown/can-you-count-it-api"
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": 27,
+      "project_id": 8,
+      "section_name": "User Interface",
+      "text": [],
+      "link": [],
+      "images": [
+        {
+          "title": "Home Page, Select Level Page, Loading Page",
+          "caption": "The picture above is the home page, where when the user first opens the web, this page will appear. Users need to fill in their name before entering the game, then the next page is the Select Level Page, where users can choose the level of the game according to their abilities. Then after that the loading page will appear before the game starts.",
+          "location": "can-you-count-it/cyci-1.webp"
+        },
+        {
+          "title": "Game Page, Result Page, How to Play Page, Leaderboard Page",
+          "caption": "The picture above shows the game page, where users can play this game on this page. Then after the time expires, the Result page where the score from the user is displayed. Then after that in this game there is also a how to play page that users can read when they don't understand how to play this game. Then there is also a Leaderboard page where users can see the ranking of users with the highest scores in this game at each level.",
+          "location": "can-you-count-it/cyci-2.webp"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "project_id": 9,
+      "section_name": "About",
+      "text": [
+        {
+          "title": "Introduction",
+          "content": "As the 28th IT manager of BNEC, I created this website to help the learning management and corporate relations division to meet the needs of BNEC members, namely related to learning systems and transaction systems for merchants who partner with BNEC. Therefore, this website was created with various features, namely Class selection, Class Activities, Online Exam, Class Score, and Merchant Transaction Claim, where these features are expected to help these two divisions meet the needs of members. This website was created using Laravel and it is possible to use other frameworks if in the future this website is developed further when I am no longer serving as IT manager at BNEC."
+        },
+        {
+          "title": "My Role",
+          "content": "My role is to do research on the needs of the Learning management and corporate relations divisions to create a system that suits their needs, as well as to design the interface and database of this web. Then I and my partner Putu also implemented this design into code until it was completely finished."
+        }
+      ],
+      "link": [],
+      "images": []
+    },
+    {
+      "id": 29,
+      "project_id": 9,
+      "section_name": "Current Website Link",
+      "text": [
+        {
+          "title": "Disclaimer",
+          "content": "The user interface of the current website can change from the one I designed considering that this website belongs to an organization that can change at any time depending on the next presidency."
+        }
+      ],
+      "link": [
+        {
+          "title": "Link",
+          "content": "https://member.mybnec.org/"
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": 30,
+      "project_id": 9,
+      "section_name": "User Interface",
+      "text": [],
+      "link": [],
+      "images": [
+        {
+          "title": "Home Page, Dashboard Page, and Merchant Transaction List Page",
+          "caption": "The picture above is the home page, where members must enter their NIM and password to be able to enter their respective accounts. Then after success, the Dashboard page will be displayed. This page displays a summary of all the features on this website, which includes class information, headlines, loyalty points for merchant transactions, and BNEC cart for merchant transactions. Then when a member opens the sidebar by clicking the button on the top left and then clicking the Merchant Transactions menu, it will be directed to the Merchant Transaction List page which displays a list of transactions that have been made by the user and claimed to the corporate relations division.",
+          "location": "bnec-member/bnec-member-1.webp"
+        },
+        {
+          "title": "Activity List Page, Class Detail Page, Class Scores Page",
+          "caption": "The picture above is an Activity List Page, where each member attends a class session every week, the tutor will record the activities carried out along with taking the member's attendance to record their attendance. Then there is the class detail page, where information about the classes taken by members is displayed, starting from the name, tutor, and also the schedule for each week. Then there is a score page where the mid exam scores and final exam scores from the class the member is participating in will be displayed on this page.",
+          "location": "bnec-member/bnec-member-2.webp"
+        },
+        {
+          "title": "Exam List Page, Module List Page",
+          "caption": "The picture above is the exam page, that is, when a member wants to take an exam, this page is accessed to see which exams are currently in progress and which exams have been completed. When the exam takes place, members can click start and start working on the questions on the exam questions page. Then the last is the Module page, where each class has learning materials in the form of pdf or ppt which are stored on this website and can be downloaded by members to learn.",
+          "location": "bnec-member/bnec-member-3.webp"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "project_id": 10,
+      "section_name": "About",
+      "text": [
+        {
+          "title": "Introduction",
+          "content": "This application was created using the Java GUI to complete the final lab project assignment for the object oriented analysis and design course at Binus University. This application has several features to manage this Coffee Vibes (coffee shop). These features include Employee Management to manage employees who work in this coffee shop, then Product Management to collect data on all coffees and can be used for ordering by baristas. Then there is transaction management to manage the ordering process from product selection to checkout. Lastly is voucher management to record all vouchers that apply to this coffee shop transaction. This application is made in the Java language by utilizing the Java GUI library to display the GUI."
+        },
+        {
+          "title": "My Role",
+          "content": "My role is to make all the features together with my partner, Putu. Then I also helped make the documentation as a project collection requirement."
+        }
+      ],
+      "link": [],
+      "images": []
+    },
+    {
+      "id": 32,
+      "project_id": 10,
+      "section_name": "Link to View The Project",
+      "text": [],
+      "link": [
+        {
+          "title": "Source Code Link",
+          "content": "https://github.com/Mcooldown/coffee-vibes"
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": 33,
+      "project_id": 10,
+      "section_name": "User Interface",
+      "text": [],
+      "link": [],
+      "images": [
+        {
+          "title": "Login Page, Voucher Management Page, Employee Management Page, Product Management Page, Transaction Management Page, Add to Cart Page, Cart Page, and Checkout Page",
+          "caption": "When the application is run, the Login page will be displayed to log in to each account. After success, a different page will be displayed depending on the role of the account that is currently logged in. The first is the Voucher Management Page which can only be accessed by the admin, which is useful for collecting data on vouchers that can be used in transactions. Admin can add vouchers and delete certain vouchers. Then the Employee Management Page is a page that lists all employees at this coffee shop, which can be accessed by HRD and Admin roles. HRD can add new employees and update their data, while admins can only delete or fire selected employees. Then there is the Product management page where this page displays a list of all coffee products sold in this store. Admin and Barista can access this page. Admin can insert new products and update and delete products. Meanwhile, the barista can choose the product to put in the basket, when there is a new coffee order from the customer. Then there is the Transaction Management page, which is to display a list of transactions that have been successfully checked out by the barista and can only be seen by the admin. Admin can see the details of the order that has been checked out along with the coffee ordered. Then there is the Add to cart page which is a page to confirm orders that the barista adds to the cart. Once confirmed, the Cart page will be displayed along with the confirmed order. If the cart already contains the copies ordered, the Checkout page will be displayed to create a new transaction. The Add to Cart to Checkout pages can only be accessed by the Barista.",
+          "location": "coffee-vibes/coffee-vibes-1.webp"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "project_id": 11,
+      "section_name": "About",
+      "text": [
+        {
+          "title": "Introduction",
+          "content": "This website is made using HTML, CSS and a bit of Javascript for form validation. This website is used to display the catalog of the k-pop merchandise store along with the registration form for those who want to register as a new member. This website was created to fulfill the final lab project assignment for the Human and Computer Interaction course at Binus University."
+        },
+        {
+          "title": "My Role",
+          "content": "My role is to help work on all the pages of the website with my partners, namely Ricky and Glenn."
+        }
+      ],
+      "link": [],
+      "images": []
+    },
+    {
+      "id": 35,
+      "project_id": 11,
+      "section_name": "Link to View The Project",
+      "text": [],
+      "link": [
+        {
+          "title": "Website Link",
+          "content": "https://store-del-luna.web.app/"
+        },
+        {
+          "title": "Source Code Link",
+          "content": "https://github.com/Mcooldown/Store-Del-Luna"
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": 36,
+      "project_id": 11,
+      "section_name": "User Interface",
+      "text": [],
+      "link": [],
+      "images": [
+        {
+          "title": "Home Page, Register Page, and Testimonial Page",
+          "caption": "The home page is the main page, which displays information about the store, promo information, and also information on artist merchandise sold by this store. Then the register page displays a form that can be filled in to become a new member. Then the data will be validated by Javascript but not sent to the database because this project task is only required to create the front-end. Then there is a testimonial page that displays testimonials from buyers of this store. The data displayed is in the form of a dummy only, so it does not really come from a real person.",
+          "location": "store-del-luna/store-del-luna-1.webp"
+        },
+        {
+          "title": "Merchandise Page, and Albums Page",
+          "caption": "The merchandise page shows all the merchandise sold in this store and individual merchandise grouped by artist. Then the albums page displays all the albums sold in this store and each album is also grouped by artist.",
+          "location": "store-del-luna/store-del-luna-2.webp"
+        }
+      ]
+    },
+    {
+     "id": 37,
+     "project_id": 12,
+     "section_name": "About",
+     "text": [
+       {
+         "title": "Introduction",
+         "content": "This website built with Vue.js and SCSS, containing 5 pages requested by the clients to showcase their projects & company information, also gives a fresher & more professional look."
+       },
+       {
+         "title": "My Role",
+         "content": "The website is designed by William Hadinata. My role is to implement the design using Javascript & CSS framework to build this website"
+       }
+     ],
+     "link": [],
+     "images": []
+   },
+   {
+     "id": 38,
+     "project_id": 12,
+     "section_name": "Link to View The Project",
+     "text": [],
+     "link": [
+       {
+         "title": "Website Link",
+         "content": "https://algyp.co.id/"
+       }
+     ],
+     "images": []
+   },
+   {
+     "id": 39,
+     "project_id": 12,
+     "section_name": "User Interface",
+     "text": [],
+     "link": [],
+     "images": [
+       {
+         "title": "Home Page",
+         "location": "algyp-sarana-graha/algyp-1.webp"
+       },
+       {
+         "title": "About Page",
+         "location": "algyp-sarana-graha/algyp-2.webp"
+       },
+       {
+         "title": "Our Works Page",
+         "location": "algyp-sarana-graha/algyp-3.webp"
+       },
+       {
+         "title": "Work Detail",
+         "location": "algyp-sarana-graha/algyp-4.webp"
+       },
+       {
+         "title": "Our Workshop Page",
+         "location": "algyp-sarana-graha/algyp-5.webp"
+       },
+       {
+         "title": "Contact Page",
+         "location": "algyp-sarana-graha/algyp-6.webp"
+       }
      ]
+   }
+  ]
 }
