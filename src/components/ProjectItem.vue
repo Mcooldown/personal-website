@@ -4,7 +4,7 @@
     @click="goToProjectDetailPage"
   >
     <img
-      :src="require(`@/assets/projects/${project.thumbnail}`)"
+      :src="imageUrl"
       class="project-item__thumbnail"
       :alt="project.title"
     />
@@ -29,8 +29,8 @@
 <script src="./js/project-item.js"></script>
 
 <style lang="scss" scoped>
-@import "~@/styles/variables.scss";
-@import "~@/styles/responsive.scss";
+@import "@/styles/variables.scss";
+@import "@/styles/responsive.scss";
 
 .project-item {
   transition: 200ms ease all;
