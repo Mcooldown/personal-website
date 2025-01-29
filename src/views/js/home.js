@@ -21,7 +21,7 @@ export default {
 
     function viewResume () {
       const a = document.createElement("a")
-      a.href = "Resume - Vincent Hadinata.pdf"
+      a.href = config.path.resume
       window.open(a.href)
     }
 

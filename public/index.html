@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.png" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Vincent Hadinata Profile Website" />
+    <meta
+      property="og:description"
+      content="This website showcases a comprehensive portfolio of projects developed by Vincent Hadinata, including both educational projects and real-world client projects."
+    />
+    <meta property="og:url" content="https://vincenthadinata.netlify.app" />
+    <meta property="og:site_name" content="Vincent Hadinata Profile Website" />
+    <meta
+      property="og:image"
+      content="https://vincenthadinata.netlify.app/thumbnail.jpg"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <link rel="icon" href="<%= BASE_URL %>vh-logo.ico">
-  <meta property="og:type" content="personal website" />
-  <meta property="og:title" content="Vincent Hadinata Personal Website" />
-  <meta property="og:description"
-    content="This website consists of short description about me, experiences, skills, also the projects that i've created" />
-  <meta property="og:url" content="https://vincenthadinata.netlify.app" />
-  <meta property="og:site_name" content="Vincent Hadinata Personal Website" />
-  <meta property="og:image" content="https://vincenthadinata.netlify.app/thumbnail.png" />
-</head>
-
-<body>
-  <noscript>
-    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
-      Please enable it to continue.</strong>
-  </noscript>
-  <div id="app"></div>
-  <!-- built files will be auto injected -->
-</body>
-
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.</strong
+      >
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
 </html>

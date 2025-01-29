@@ -1,5 +1,8 @@
 export default {
   name: "Vincent Hadinata",
+  path: {
+    resume: 'resume-vincent-hadinata.pdf'
+  },
   page: {
     home: "/",
     projects: "/projects",
