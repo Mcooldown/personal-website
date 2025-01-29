@@ -29,7 +29,11 @@ html {
 }
 
 * {
-  font-family: "OpenSans-Regular";
+  font-family: "Montserrat-Regular";
+}
+
+body {
+  margin: 0;
 }
 
 .wrapper {
@@ -46,9 +50,10 @@ html {
     background: $color-blue;
     color: $color-white;
     font-size: 1.5em;
-    padding: 0.25rem 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 8px;
     border: none;
+    cursor: pointer;
   }
 }
 

@@ -10,6 +10,7 @@ export default {
     const showButton = ref(false)
     const store = useStore()
 
+    const previousScroll = ref(window.scrollY)
     const visibleNavbar = computed(() => store.getters.visibleNavbar)
     const visibleFooter = computed(() => store.getters.visibleFooter)
 
@@ -21,7 +22,8 @@ export default {
     })
 
     function handleScroll () {
-      showButton.value = !(window.scrollY === 0)
+      showButton.value = window.scrollY > 0 && previousScroll.value < window.scrollY
+      previousScroll.value = window.scrollY
     }
 
     function scrollToTop () {

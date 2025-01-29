@@ -37,19 +37,14 @@ export default {
         icon: "fa fa-tasks",
         action: () => router.push(config.page.projects),
         isActive: route.path === config.page.projects
-      },
-      {
-        title: "CONTACT ME",
-        icon: "fa fa-phone-alt",
-        action: () => window.scrollTo(0, document.body.scrollHeight),
-        isActive: false
       }
     ]))
 
-    return { 
+    return {
       visibleShadow,
       navItems,
-      goToHomePage
+      goToHomePage,
+      config
     }
   },
 }

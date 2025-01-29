@@ -1,20 +1,26 @@
 // Font
 @font-face {
-  font-family: "OpenSans-Regular";
-  src: url("~@/fonts/OpenSans/OpenSans-Regular.ttf") format("truetype");
+  font-family: "Montserrat-Regular";
+  src: url("~@/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: "OpenSans-Bold";
-  src: url("~@/fonts/OpenSans/OpenSans-Bold.ttf") format("truetype");
+  font-family: "Montserrat-Bold";
+  src: url("~@/fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
 }
-$font-regular: "OpenSans-Regular";
-$font-bold: "OpenSans-Bold";
+@font-face {
+  font-family: "Montserrat-Black";
+  src: url("~@/fonts/Montserrat/Montserrat-Black.ttf") format("truetype");
+}
+$font-regular: "Montserrat-Regular";
+$font-bold: "Montserrat-Bold";
+$font-black: "Montserrat-Black";
 
 // Color
 $color-dark-gray: #393e46;
 $color-gray: #7b7b7b;
-$color-light-gray: #f8f8f8;
-$color-blue: #0092ca;
+$color-light-gray: #EBECEF;
+$color-dark-gray: #505050;
+$color-blue: #313B6B;
 $color-white: #ffff;
 $color-black: #000000;
 $color-shadow: #dddddd;

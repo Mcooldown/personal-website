@@ -1,7 +1,7 @@
 export default {
   name: "Vincent Hadinata",
   path: {
-    resume: 'resume-vincent-hadinata.pdf'
+    resume: 'Resume - Vincent Hadinata.pdf'
   },
   page: {
     home: "/",
@@ -29,14 +29,11 @@ export default {
   },
   home: {
     landing: {
-      top: "Hello, my name is",
-      title: "Vincent Hadinata,",
-      subtitle: "A Software Engineer who interested in full stack development.",
-      description: `Currently, I'm working as Associate Software Development Engineer at Blibli.
-        I'm interested to explore more about full stack development for web. Also, I've
-        involved in several group projects and personal projects as a result
-        of my learning.`,
-      button: "VIEW MY RESUME"
+      top: "Hello, I'm",
+      title: "VINCENT HADINATA",
+      subtitle: "Software Engineering Enthusiast",
+      description: `Currently, I'm working as Software Engineer at Mekari. I'm very interested to learn and implement new technologies in software development.`,
+      button: "VIEW RESUME"
     },
     projects: {
       "title-1": "Featured",

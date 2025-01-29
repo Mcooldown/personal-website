@@ -2,7 +2,7 @@
   <nav :class="['v-navbar', {'visible-shadow': visibleShadow }]">
     <div class="v-navbar__container">
       <img 
-        src="@/assets/vh-logo.png"
+        src="@/assets/logo.png"
         class="v-navbar__logo"
         alt=""
         @click="goToHomePage"
@@ -21,6 +21,15 @@
             <i :class="[item.icon]" />
           </div>
         </div>
+        <a
+          v-for="(contact, index) of config.footer.contacts"
+          :key="`nav-item-contact-${index+1}`"
+          :href="contact.link"
+          class="list__contact-item"
+          target="_blank"
+        >
+          <i :class="['fa-2x', contact.icon]"/>
+        </a>
       </div>
     </div>
   </nav>
@@ -75,6 +84,7 @@
   &__list {
     display: flex;
     gap: 48px;
+    align-items: center;
 
     @include mobile {
       gap: 16px;
@@ -82,15 +92,16 @@
     .list {
       &__item {
         cursor: pointer;
-        transition: 200ms ease all;
+        color: $color-dark-gray;
 
         &:hover {
-          transform: scale(1.1);
+          color: $color-blue;
         }
         .item {
           &__title {
             font-size: 16px;
             font-family: $font-bold;
+            letter-spacing: 1.5px;
 
             @include mobile {
               display: none;
@@ -128,6 +139,21 @@
               }
             }
           }
+        }
+      }
+      &__contact-item {
+        color: $color-gray;
+
+        &:not(:first-of-type) {
+          margin-left: -24px;
+        }
+
+        svg {
+          width: 24px;
+        }
+          
+        &:hover {
+          color: $color-blue;
         }
       }
     }
