@@ -5,13 +5,13 @@
         <i class="fa fa-6x fa-exclamation-triangle" />
       </div>
       <div class="not-found__title">
-        {{ config.notFound.title }}
+        Page Not Found
       </div>
       <div class="not-found__description">
-        {{ config.notFound.description }}
+        Sorry, your requested page doesn't exist. Please go to another page.
       </div>
       <Button
-        :title="config.notFound.button"
+        title="BACK TO HOME"
         @click="goToHomePage"
         class="not-found__button"
       />

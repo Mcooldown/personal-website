@@ -2,9 +2,13 @@ import { projects } from "@/data/projects.json"
 import { onMounted, ref } from "vue"
 import config from "@/data/config"
 import { useRoute, useRouter } from "vue-router"
+import Badge from "@/components/Badge.vue"
 
 export default {
   name: 'ProjectDetailPage',
+  components: {
+    Badge
+  },
   setup() {
     const route = useRoute()
     const router = useRouter()

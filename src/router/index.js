@@ -7,17 +7,17 @@ import config from "@/data/config"
 const routes = [
   {
     path: '/',
-    name: 'home',
+    name: 'Home',
     component: HomePage,
   },
   {
     path:'/404',
-    name: 'not-found',
+    name: 'Not Found',
     component: NotFoundPage
   },
   {
     path: '/:slug',
-    name: 'project-detail',
+    name: 'Project Detail',
     component: ProjectDetailPage,
     props: true
   },

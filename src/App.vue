@@ -11,7 +11,7 @@
   </div>
   <div v-if="showButton" class="button-up">
     <button @click="scrollToTop">
-      <i class="fa fa-arrow-up" />&nbsp;&nbsp;{{ config.scrollToTop }}
+      <i class="fa fa-arrow-up" />&nbsp;&nbsp;Scroll to top
     </button>
   </div>
 </template>
@@ -20,6 +20,7 @@
 
 <style lang="scss">
 @import "~@/styles/variables.scss";
+@import "~@/styles/responsive";
 
 html {
   scroll-behavior: smooth;
@@ -51,6 +52,20 @@ body {
     border-radius: 8px;
     border: none;
     cursor: pointer;
+  }
+}
+
+.section-wrapper {
+  padding: 0 2rem;
+  margin: auto;
+  
+  @include widescreen {
+    max-width: $widescreen;
+    padding: 0;
+  }
+  
+  @include mobile {
+    padding: 0 1.25rem;
   }
 }
 

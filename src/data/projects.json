@@ -41,7 +41,7 @@
           "value": "https://socialevent.mybnec.org/"
         }
       ],
-      "full_description": "This website is the official website of The 2021 BNEC Social Event, where on this website some information is displayed about this event, starting from the purpose of the event, the theme raised, and an invitation to make donations. In addition, there are articles that can be read related to this event. Then this website also provides a donation feature where data is collected on anyone who makes a donation and the amount. In addition, because this event also held several webinars, this website provides a registration feature for the webinars held. Registered data will be stored in a list that can only be seen by the event committee. (*Disclaimer: The user interface of the current website can change from the one I designed considering that this website belongs to an organization that can change at any time depending on the next presidency.)"
+      "full_description": "This website is the official website of The 2021 BNEC Social Event, where on this website some information is displayed about this event, starting from the purpose of the event, the theme raised, and an invitation to make donations. In addition, there are articles that can be read related to this event. Then this website also provides a donation feature where data is collected on anyone who makes a donation and the amount. In addition, because this event also held several webinars, this website provides a registration feature for the webinars held. Registered data will be stored in a list that can only be seen by the event committee. <br>(*Disclaimer: The user interface of the current website can change from the one I designed considering that this website belongs to an organization that can change at any time depending on the next presidency.)"
     },
     {
       "id": 3,
@@ -61,7 +61,7 @@
           "value": "https://aeo.mybnec.org/"
         }
       ],
-      "full_description": "This website is the official website of the 2021 Asian English Olympics event, which is an Asian-scale English competition held by my organization (BNEC) every year. This website provides all information about this event, starting from the theme raised, the English competitions being contested and their details, announcements, sponsors and media partners, as well as terms and conditions. In addition to displaying this information, this website also provides a competition participant registration feature, where participants can register their accounts first and purchase tickets to enter the competition. The registration process starts from ordering competition slots to making payments and registering information for each participant. In addition to features for participants, there are also features for the committee, which is to view the list of participants and their payment status as well as other features that manage the operations of this web. This website is made using Laravel both on the front-end and back-end. Then MySQL is used as the database. (*Disclaimer: The user interface of the current website can change from the one I designed considering that this website belongs to an organization that can change at any time depending on the next presidency.)"
+      "full_description": "This website is the official website of the 2021 Asian English Olympics event, which is an Asian-scale English competition held by my organization (BNEC) every year. This website provides all information about this event, starting from the theme raised, the English competitions being contested and their details, announcements, sponsors and media partners, as well as terms and conditions. <br><br>In addition to displaying this information, this website also provides a competition participant registration feature, where participants can register their accounts first and purchase tickets to enter the competition. The registration process starts from ordering competition slots to making payments and registering information for each participant. <br><br>In addition to features for participants, there are also features for the committee, which is to view the list of participants and their payment status as well as other features that manage the operations of this web. This website is made using Laravel both on the front-end and back-end. Then MySQL is used as the database. <br><br>The user interface of the current website can change from the one I designed considering that this website belongs to an organization that can change at any time depending on the next presidency."
     },
     {
       "id": 4,
@@ -238,7 +238,7 @@
           "value": "https://github.com/Mcooldown/can-you-count-it"
         }
       ],
-      "full_description": "'Can you count it?' is a game about addition where there are 3 numbers that need to be added to get certain points, but one of the numbers can change at certain time intervals according to the level of the game. This game is made using Vue.js and Laravel framework"
+      "full_description": "'Can You Count It?' is an engaging addition-based game where players must sum three numbers to reach a target score. However, one of the numbers dynamically changes at specific time intervals, adding an extra layer of challenge. The frequency of these changes varies based on the game's difficulty level, requiring players to think quickly and adapt their calculations in real-time."
     },
     {
       "id": 11,
@@ -261,7 +261,7 @@
           "value": "https://algyp.co.id"
         }
       ],
-      "full_description": "This website built with Vue.js, containing 5 pages requested by the clients to showcase their projects & company information, also gives a fresher & more professional look."
+      "full_description": "This project is a revamp of the official PT Algyp Sarana Graha website, designed to enhance its professionalism and user experience. The website consists of five pages, featuring company information and a showcase of the company’s projects. The redesign aims to present a more polished and modern online presence."
     },
     {
       "id": 12,
@@ -270,15 +270,20 @@
       "thumbnail": "jar-management/jar-thumbnail.jpg",
       "tech_stack": ["Vue.js", "Express.js", "MySQL"],
       "slug": "jar-management",
+      "images": [
+        "jar-management/jar-1.png",
+        "jar-management/jar-2.png",
+        "jar-management/jar-3.png",
+        "jar-management/jar-4.png",
+        "jar-management/jar-5.png"
+      ],
       "links": [
         {
           "label": "Website",
           "value": "http://jarmanagement.xyz/"
         }
       ],
-      "images": [
-
-      ]
+      "full_description": "This project is a revamp of the official JAR Management website, featuring a modernized design and enhanced functionality. The website comprises five pages, showcasing company information, talent profiles, blogs, and short videos. Additionally, an admin panel is integrated to efficiently manage all displayed content."
     }
   ]
 }

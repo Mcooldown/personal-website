@@ -15,13 +15,11 @@
       {{ project.short_description }}
     </div>
     <div class="project-item__tech-stacks">
-      <div 
+      <Badge 
         v-for="tech in project.tech_stack"
         :key="tech"
-        class="tech-stacks__item"
-      >
-        {{ tech }}
-      </div>
+        :title="tech"
+      />
     </div>
   </RouterLink>
 </template>
@@ -82,16 +80,6 @@
     flex-wrap: wrap;
     gap: 8px;
     margin-top: 16px;
-
-    .tech-stacks {
-      &__item {
-        border-radius: 8px;
-        background-color: $color-blue;
-        padding: 6px 12px;
-        color: $color-white;
-        font-size: 16px;
-      }
-    }
   }
 }
 </style>

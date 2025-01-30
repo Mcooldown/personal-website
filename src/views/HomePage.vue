@@ -4,20 +4,20 @@
       <div class="home__landing section-wrapper">
         <div class="landing__content">
           <div class="content__greetings">
-            {{ config.home.landing.top }}
+            Hello, I'm
           </div>
           <div class="content__title">
-            {{ config.home.landing.title }}
+            VINCENT HADINATA
           </div>
           <div class="content__subtitle">
-            {{ config.home.landing.subtitle }}
+            Software Engineering Enthusiast
           </div>
           <div class="content__description">
-            {{ config.home.landing.description }}
+            Currently, I'm working as Software Engineer at Mekari. I'm very interested to learn and implement new technologies in software development.
           </div>
           <div class="content__actions">
             <Button
-              :title="config.home.landing.button"
+              title="VIEW RESUME"
               @click="viewResume"
               icon="fa fa-file"
             />
@@ -41,7 +41,7 @@
     </div>
     <div class="section-wrapper home__projects">
       <h2 class="projects__title">
-        {{ config.home.projects.title }}
+        MY PROJECTS
       </h2>
       <div class="projects__list">
         <ProjectItem
@@ -62,20 +62,6 @@
 <style lang="scss" scoped>
 @import "~@/styles/variables";
 @import "~@/styles/responsive";
-
-.section-wrapper {
-  padding: 0 2rem;
-  margin: auto;
-  
-  @include widescreen {
-    max-width: $widescreen;
-    padding: 0;
-  }
-  
-  @include mobile {
-    padding: 0 1.25rem;
-  }
-}
 
 .home {
   background-color: $color-light-gray;
