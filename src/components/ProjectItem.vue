@@ -36,7 +36,6 @@
   transition: 200ms ease all;
   cursor: pointer;
   border-radius: 8px;
-  box-shadow: 1px 1px 10px $color-shadow;
   background: $color-white;
   padding: 1.5rem;
   
@@ -54,36 +53,41 @@
 
   &__thumbnail {
     width: 100%;
+    border-radius: 6px;
   }
   
   &__title {
-    margin-top: 12px;
+    margin-top: 16px;
     color: $color-dark-gray;
     font-family: $font-bold;
     font-size: 28px;
 
     @include mobile {
-      font-size: 24px;
+      font-size: 26px;
     }
   }
   
   &__description {
     color: $color-gray;
-    font-size: 16px;
-    margin-top: 4px;
+    font-size: 18px;
+    margin-top: 8px;
+
+    @include mobile {
+      font-size: 16px;
+    }
   }
 
   &__tech-stacks {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-top: 24px;
+    gap: 8px;
+    margin-top: 16px;
 
     .tech-stacks {
       &__item {
         border-radius: 8px;
         background-color: $color-blue;
-        padding: 4px 12px;
+        padding: 6px 12px;
         color: $color-white;
         font-size: 16px;
       }

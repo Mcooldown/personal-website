@@ -1,118 +1,113 @@
 {
   "projects": [
     {
-      "id": 12,
-      "title": "PT Algyp Saraha Graha Official Website",
-      "short_description": "Revamping official website of PT Algyp Sarana Graha, containing company information and showcased projects.",
-      "tech_stack": ["Vue.js", "SCSS"],
-      "thumbnail": "algyp-sarana-graha/algyp-thumbnail.jpg",
-      "slug": "algyp-sarana-graha",
-      "selected": true
+      "id": 11,
+      "title": "Store Del Luna",
+      "short_description": "Website for K-pop Merchandise Shop. Built for Final Lab Project of Human and Computer Interaction course at Binus University.",
+      "tech_stack": ["HTML", "CSS", "JavaScript"],
+      "thumbnail": "store-del-luna/store-del-luna-thumbnail.png",
+      "slug": "store-del-luna"
     },
     {
-      "id": 1,
-      "title": "Angkasa Visual Works",
-      "short_description": "Web-based visual design production house that links customers who are in need of design and the designers to handle their requests.",
-      "tech_stack": ["Bootstrap", "React", "Laravel", "MySQL"],
-      "thumbnail": "angkasa-visual-works/angkasa-thumbnail.png",
-      "slug": "angkasa-visual-works",
-      "selected": true
+      "id": 7,
+      "title": "The 2020 BNEC Social Event Web",
+      "short_description": "The official website of The 2020 BNEC Social Event",
+      "tech_stack": ["Laravel", "MySQL"],
+      "thumbnail": "se-2020/se-2020-thumbnail.png",
+      "slug": "bnec-social-event-2020"
+    },
+    {
+      "id": 6,
+      "title": "The 2021 Asian English Olympics Web",
+      "short_description": "The official website of The 2021 Asian English Olympics event that provide registration feature also information related to the events",
+      "tech_stack": ["Laravel", "MySQL"],
+      "thumbnail": "aeo-2021/aeo-2021-thumbnail.png",
+      "slug": "asian-english-olympics-2021"
+    },
+    {
+      "id": 5,
+      "title": "BNEC Main Website User Interface Re-design",
+      "short_description": "Redesign the user interface of the existing BNEC Main Website to a new and more attractive appearance",
+      "tech_stack": ["Laravel"],
+      "thumbnail": "mybnec/mybnec-thumbnail.png",
+      "slug": "bnec-main-website-revamp"
+    },
+    {
+      "id": 9,
+      "title": "BNEC Member Web",
+      "short_description": "BNEC Web-based application for class selection, activities, exam, scores and merchant transaction claim.",
+      "tech_stack": ["Laravel", "MySQL"],
+      "thumbnail": "bnec-member/bnec-member-thumbnail.png",
+      "slug": "bnec-member"
     },
     {
       "id": 2,
       "title": "CureBox",
       "short_description": "Web based Medical Marketplace that provides feature to support the medicine transactions.",
-      "tech_stack": ["Bootstrap", "React", "MongoDB", "Node.js", "Express.js"],
+      "tech_stack": ["React", "MongoDB", "Express.js"],
       "thumbnail": "curebox/curebox-thumbnail.png",
-      "slug": "curebox",
-      "selected": true
+      "slug": "curebox"
     },
     {
       "id": 3,
       "title": "Bilik Mental",
       "short_description": "Web-based platform for those who have mentally ill to do consultation and meditation about their mental health.",
       "tech_stack": [
-        "Tailwind CSS",
         "Next.js",
         "MongoDB",
-        "Node.js",
         "Express.js"
       ],
       "thumbnail": "bilik-mental/bilik-mental-thumbnail.png",
-      "slug": "bilik-mental",
-      "selected": false
+      "slug": "bilik-mental"
     },
     {
       "id": 4,
       "title": "NginepKuy!",
       "short_description": "Web Application for Online Staycation Booking and Consultation",
-      "tech_stack": ["Bootstrap", "Laravel", "MySQL"],
+      "tech_stack": ["Laravel", "MySQL"],
       "thumbnail": "nginepkuy/nginepkuy-thumbnail.png",
-      "slug": "nginepkuy",
-      "selected": false
+      "slug": "nginep-kuy"
     },
     {
-      "id": 5,
-      "title": "BNEC Main Website User Interface Re-design",
-      "short_description": "Redesign the user interface of the existing BNEC Main Website to a new and more attractive appearance",
-      "tech_stack": ["Bootstrap", "Laravel"],
-      "thumbnail": "mybnec/mybnec-thumbnail.png",
-      "slug": "bnec-main-website-redesign",
-      "selected": false
-    },
-    {
-      "id": 6,
-      "title": "The 2021 Asian English Olympics Web",
-      "short_description": "The official website of The 2021 Asian English Olympics event that provide registration feature also information related to the events",
-      "tech_stack": ["Bootstrap", "Laravel", "MySQL"],
-      "thumbnail": "aeo-2021/aeo-2021-thumbnail.png",
-      "slug": "the-2021-asian-english-olympics-web",
-      "selected": false
-    },
-    {
-      "id": 7,
-      "title": "The 2020 BNEC Social Event Web",
-      "short_description": "The official website of The 2020 BNEC Social Event",
-      "tech_stack": ["Bootstrap", "Laravel", "MySQL"],
-      "thumbnail": "se-2020/se-2020-thumbnail.png",
-      "slug": "the-2020-bnec-social-event-web",
-      "selected": false
+      "id": 1,
+      "title": "Angkasa Visual Works",
+      "short_description": "Web-based visual design production house that links customers who are in need of design and the designers to handle their requests.",
+      "tech_stack": ["React", "Laravel", "MySQL"],
+      "thumbnail": "angkasa-visual-works/angkasa-thumbnail.png",
+      "slug": "angkasa-visual-works"
     },
     {
       "id": 8,
       "title": "Can you count it?",
       "short_description": "Math game with time interval",
-      "tech_stack": ["Bootstrap", "Vue.js", "Laravel", "MySQL"],
+      "tech_stack": ["Vue.js", "Laravel", "MySQL"],
       "thumbnail": "can-you-count-it/cyci-thumbnail.png",
-      "slug": "can-you-count-it",
-      "selected": true
+      "slug": "can-you-count-it"
     },
     {
-      "id": 9,
-      "title": "BNEC Member Web",
-      "short_description": "BNEC Web-based application for class selection, activities, exam, scores and merchant transaction claim.",
-      "tech_stack": ["Bootstrap", "Laravel", "MySQL"],
-      "thumbnail": "bnec-member/bnec-member-thumbnail.png",
-      "slug": "bnec-member-web",
-      "selected": false
+      "id": 12,
+      "title": "PT Algyp Saraha Graha Official Website",
+      "short_description": "Redesigning the official website of PT Algyp Sarana Graha to feature company information and showcase projects.",
+      "tech_stack": ["Vue.js"],
+      "thumbnail": "algyp-sarana-graha/algyp-thumbnail.jpg",
+      "slug": "algyp-sarana-graha"
     },
     {
-      "id": 10,
-      "title": "Coffee Vibes",
-      "short_description": "Java GUI Application for Product, Voucher, Transaction and Employee Management. Built for Final Lab Project of Object Oriented Analysis and Design course at Binus University.",
-      "tech_stack": ["Java"],
-      "thumbnail": "coffee-vibes/coffee-vibes-thumbnail.png",
-      "slug": "coffee-vibes",
-      "selected": false
-    },
-    {
-      "id": 11,
-      "title": "Store Del Luna",
-      "short_description": "Website for K-pop Merchandise Shop. Built for Final Lab Project of Human and Computer Interaction course at Binus University.",
-      "tech_stack": ["HTML", "CSS", "JavaScript"],
-      "thumbnail": "store-del-luna/store-del-luna-thumbnail.png",
-      "slug": "store-del-luna",
-      "selected": false
+      "id": 13,
+      "title": "JAR Management Official Website",
+      "short_description": "Revamping JAR Management's official website to create a fresh and appealing design, incorporating company information, a talent list, short videos, and a blog.",
+      "thumbnail": "jar-management/jar-thumbnail.jpg",
+      "tech_stack": ["Vue.js", "Express.js", "MySQL"],
+      "slug": "jar-management",
+      "links": [
+        {
+          "label": "",
+          "value": ""
+        }
+      ],
+      "images": [
+
+      ]
     }
   ]
 }

@@ -22,7 +22,7 @@
               icon="fa fa-file"
             />
             <a
-              v-for="(contact, index) of config.footer.contacts"
+              v-for="(contact, index) of config.contacts"
               :key="`nav-item-contact-${index+1}`"
               :href="contact.link"
               class="actions__contact-item"
@@ -33,33 +33,27 @@
           </div>
         </div>
         <img
-          src="@/assets/landing-image.png"
+          src="@/assets/landing-image.webp"
           class="landing__image"
           alt=""
         />
       </div>
     </div>
-    <div class="home__projects-wrapper">
-      <div class="section-wrapper home__projects">
+    <div class="section-wrapper home__projects">
+      <h2 class="projects__title">
+        {{ config.home.projects.title }}
+      </h2>
+      <div class="projects__list">
+        <ProjectItem
+          v-for="project in sortedProjectsByLatest"
+          :key="project.id"
+          :project="project"
+        />
       </div>
     </div>
-    <!-- <div class="home__projects-wrapper">
-      <div class="home__projects">
-        <div class="projects__title">
-          {{ config.home.projects["title-1"] }} 
-          <span class="blue">
-            {{ config.home.projects["title-2"] }}
-          </span>
-        </div>
-        <ProjectList :projects="projects" />
-        <div class="projects__button">
-          <Button
-            :title="config.home.projects.button"
-            @click="goToProjectsPage"
-          />
-        </div>
-      </div>
-    </div> -->
+    <div class="home__copyright">
+      {{ config.copyright(new Date().getFullYear()) }}
+    </div>
   </div>
 </template>
 
@@ -79,11 +73,13 @@
   }
   
   @include mobile {
-    padding: 0 0.5rem;
+    padding: 0 1.25rem;
   }
 }
 
 .home {
+  background-color: $color-light-gray;
+
   &__landing {
     display: flex;
     justify-content: space-around;
@@ -94,6 +90,7 @@
       position: relative;
       z-index: 3;
       box-shadow: 0 4px 4px 0px $color-shadow;
+      background-color: $color-white;
     }
     
     .landing {
@@ -107,16 +104,17 @@
             font-size: 24px;
             
             @include mobile {
-              font-size: 16px
+              font-size: 20px
             }
           }
           &__title {
             color: $color-blue;
             font-family: $font-black;
             font-size: 72px;
+            max-width: 400px;
             
             @include mobile {
-              font-size: 32px
+              font-size: 52px
             }
           }
           &__subtitle {
@@ -124,22 +122,27 @@
             font-family: $font-bold;
             font-size: 24px;
             margin-top: 8px;
-            
-            @include mobile {
-              font-size: 28px;
-              line-height: 2.4rem;
-            }
           }
           &__description {
             color: $color-gray;
             margin-top: 24px;
             font-size: 18px;
+
+            @include mobile {
+              margin-top: 16px;
+            }
           }
           &__actions {
             margin-top: 32px;
             display: flex;
             align-items: center;
             gap: 24px;
+            flex-wrap: wrap;
+
+            @include mobile {
+              margin-top: 24px;
+              gap: 16px;
+            }
 
             .actions {
               &__contact-item {
@@ -167,55 +170,43 @@
   }
 
   &__projects {
-    height: 800px;
-    
-    &-wrapper {
-      background-color: $color-light-gray;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    @include mobile {
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+    }
+
+    .projects {
+      &__title {
+        font-size: 44px;
+        font-family: $font-black;
+        color: $color-blue;
+        margin: 0 0 24px;
+
+        @include mobile {
+          font-size: 36px;
+          margin-bottom: 20px;
+        }
+      }
+      &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        
+        @include mobile {
+          grid-template-columns: 1fr;
+        }
+      }
     }
   }
 
-  // &__projects {
-  //   &-wrapper {
-  //     padding: 0 2rem;
-  //     margin: 10rem auto 12rem;
-  //     background-color: $color-light-gray;
-  //   }
-  //   @include widescreen {
-  //     max-width: $widescreen;
-  //     padding: 0;
-  //   }
-
-  //   @include mobile {
-  //     margin-bottom: 8rem;
-  //     padding: 0 0.5rem;
-  //   }
-
-  //   @include mobile {
-  //     margin: 6rem 0;
-  //   }
-    
-  //   .projects {
-  //     &__title {
-  //       font-size: 36px;
-  //       font-family: $font-bold;
-  //       color: $color-dark-gray;
-  //       margin-bottom: 20px;
-
-  //       @include mobile {
-  //         font-size: 28px;
-  //       }
-
-  //       .blue {
-  //         color: $color-blue;
-  //         font-family: $font-bold;
-  //       }
-  //     }
-
-  //     &__button {
-  //       margin-top: 36px;
-  //       text-align: center;
-  //     }
-  //   }
-  // }
+  &__copyright {
+    text-align: center;
+    color: $color-dark-gray;
+    padding: 20px 0;
+    font-size: 16px;
+  }
 }
 </style>

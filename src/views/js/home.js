@@ -1,19 +1,17 @@
 import Button from "@/components/Button.vue"
-import ProjectList from "@/components/ProjectList.vue"
-import projectData from "@/data/projects.json"
-import { onMounted } from "vue"
+import ProjectItem from "@/components/ProjectItem.vue"
+import { projects } from "@/data/projects.json"
+import { computed, onMounted } from "vue"
 import config from "@/data/config"
-import { useRouter } from "vue-router"
 
 export default {
   name: "Home",
   components: {
     Button,
-    ProjectList
+    ProjectItem
   },
   setup() {
-    const router = useRouter()
-    const projects = projectData.projects.filter((project) => project.selected)
+    const sortedProjectsByLatest = computed(() => projects.sort((a, b) => b.id - a.id))
 
     onMounted(() => {
       window.scrollTo(0, 0)
@@ -25,15 +23,10 @@ export default {
       window.open(a.href)
     }
 
-    function goToProjectsPage () {
-      router.push(config.page.projects)
-    }
-
     return {
       config,
-      projects,
-      viewResume,
-      goToProjectsPage
+      sortedProjectsByLatest,
+      viewResume
     }
   },
 }

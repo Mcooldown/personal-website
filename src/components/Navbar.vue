@@ -8,24 +8,11 @@
         @click="goToHomePage"
       />
       <div class="v-navbar__list">
-        <div
-          v-for="(item, index) of navItems"
-          :key="`nav-item-${index+1}`"
-          :class="['list__item', { 'active': item.isActive }]"
-          @click="item.action"
-        >
-          <div class="item__title">
-            {{ item.title }}
-          </div>
-          <div class="item__icon">
-            <i :class="[item.icon]" />
-          </div>
-        </div>
         <a
-          v-for="(contact, index) of config.footer.contacts"
+          v-for="(contact, index) of config.contacts"
           :key="`nav-item-contact-${index+1}`"
           :href="contact.link"
-          class="list__contact-item"
+          class="list__item"
           target="_blank"
         >
           <i :class="['fa-2x', contact.icon]"/>
@@ -62,7 +49,7 @@
     padding: 0 2rem;
 
     @include mobile {
-      padding: 0 1rem;
+      padding: 0 1.25rem;
     }
 
     @include widescreen {
@@ -83,73 +70,18 @@
 
   &__list {
     display: flex;
-    gap: 48px;
+    gap: 32px;
     align-items: center;
 
     @include mobile {
-      gap: 16px;
+      gap: 24px;
     }
     .list {
       &__item {
-        cursor: pointer;
-        color: $color-dark-gray;
-
-        &:hover {
-          color: $color-blue;
-        }
-        .item {
-          &__title {
-            font-size: 16px;
-            font-family: $font-bold;
-            letter-spacing: 1.5px;
-
-            @include mobile {
-              display: none;
-            }
-          }
-          &__icon {
-            display: none;
-            transition: 200ms ease all;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            align-items: center;
-            justify-content: center;
-            
-            @include mobile {
-              display: flex;
-            }
-
-            svg {
-              font-size: 1em;
-            }
-          }
-        }
-
-        &.active {
-          .item {
-            &__title {
-              color: $color-blue;
-            }
-            &__icon {
-              background: $color-blue;
-
-              svg {
-                color: $color-white;
-              }
-            }
-          }
-        }
-      }
-      &__contact-item {
         color: $color-gray;
-
-        &:not(:first-of-type) {
-          margin-left: -24px;
-        }
-
+        
         svg {
-          width: 24px;
+          width: 28px;
         }
           
         &:hover {

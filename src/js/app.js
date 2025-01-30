@@ -3,6 +3,7 @@ import Footer from "@/components/Footer.vue"
 import Button from "@/components/Button.vue"
 import { computed, onMounted, onUnmounted, ref } from "vue"
 import { useStore } from "vuex"
+import config from "@/data/config"
 
 export default {
   components: { Navbar, Footer, Button },
@@ -12,7 +13,6 @@ export default {
 
     const previousScroll = ref(window.scrollY)
     const visibleNavbar = computed(() => store.getters.visibleNavbar)
-    const visibleFooter = computed(() => store.getters.visibleFooter)
 
     onMounted(() => {
       window.addEventListener("scroll", handleScroll)
@@ -35,9 +35,9 @@ export default {
 
     return {
       visibleNavbar,
-      visibleFooter,
       scrollToTop,
-      showButton 
+      showButton,
+      config
     }
   },
 }

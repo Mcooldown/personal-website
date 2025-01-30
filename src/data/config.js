@@ -8,25 +8,22 @@ export default {
     projects: "/projects",
     projectDetails: (slug) => `/projects/${slug}`
   },
-  footer: {
-    title: "Contact Me",
-    description: "Feel free to contact if you're interested to work with me!",
-    contacts: [
-      {
-        icon: "fa fa-envelope",
-        link: "mailto:vincenthadinata30@gmail.com"
-      },
-      {
-        icon: "fab fa-linkedin",
-        link: "https://www.linkedin.com/in/vincenthadinata/"
-      },
-      {
-        icon: "fab fa-github",
-        link: "https://github.com/Mcooldown"
-      }
-    ],
-    copyright: (year) => `Copyright © ${year} Vincent Hadinata`
-  },
+  contacts: [
+    {
+      icon: "fa fa-envelope",
+      link: "mailto:vincenthadinata30@gmail.com"
+    },
+    {
+      icon: "fab fa-linkedin",
+      link: "https://www.linkedin.com/in/vincenthadinata/"
+    },
+    {
+      icon: "fab fa-github",
+      link: "https://github.com/Mcooldown"
+    }
+  ],
+  copyright: (year) => `Copyright © ${year} Vincent Hadinata`,
+  scrollToTop: 'Scroll to top',
   home: {
     landing: {
       top: "Hello, I'm",
@@ -36,15 +33,8 @@ export default {
       button: "VIEW RESUME"
     },
     projects: {
-      "title-1": "Featured",
-      "title-2": "Projects",
-      button: "SEE ALL PROJECTS"
+      title: 'MY PROJECTS'
     }
-  },
-  projects: {
-    "title-1": "My",
-    "title-2": "Projects",
-    subtitle: "These are several projects that I was involved in. Please have a look."
   },
   projectDetails: {
     techStack: "Tech Stack:",

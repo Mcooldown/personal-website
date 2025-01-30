@@ -9,12 +9,9 @@
       </div>
     </router-view>
   </div>
-  <div v-if="visibleFooter" ref="footer">
-    <Footer />
-  </div>
   <div v-if="showButton" class="button-up">
     <button @click="scrollToTop">
-      <i class="fa fa-arrow-up" />
+      <i class="fa fa-arrow-up" />&nbsp;&nbsp;{{ config.scrollToTop }}
     </button>
   </div>
 </template>
@@ -49,7 +46,7 @@ body {
   button {
     background: $color-blue;
     color: $color-white;
-    font-size: 1.5em;
+    font-size: 18px;
     padding: 0.5rem 1rem;
     border-radius: 8px;
     border: none;

@@ -1,6 +1,6 @@
 import Button from "@/components/Button.vue"
-import { computed, onMounted, ref } from "vue"
-import { useRoute, useRouter } from "vue-router"
+import { onMounted, ref } from "vue"
+import { useRouter } from "vue-router"
 import config from "@/data/config"
 
 export default {
@@ -9,7 +9,6 @@ export default {
     Button
   },
   setup() {
-    const route = useRoute()
     const router = useRouter()
     const visibleShadow = ref(false)
 
@@ -25,24 +24,8 @@ export default {
       window.addEventListener('scroll', handlePageScroll)
     })
 
-    const navItems = computed(() => ([
-      {
-        title: "HOME",
-        icon: "fa fa-home",
-        action: () => router.push(config.page.home),
-        isActive: route.path === config.page.home
-      },
-      {
-        title: "PROJECTS",
-        icon: "fa fa-tasks",
-        action: () => router.push(config.page.projects),
-        isActive: route.path === config.page.projects
-      }
-    ]))
-
     return {
       visibleShadow,
-      navItems,
       goToHomePage,
       config
     }

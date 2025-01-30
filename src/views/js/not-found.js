@@ -19,12 +19,10 @@ export default {
 
     onMounted (() => {
       store.commit('setVisibleNavbar', false)
-      store.commit('setVisibleFooter', false)
     })
     
     onUnmounted (() => {
       store.commit('setVisibleNavbar', true)
-      store.commit('setVisibleFooter', true)
     })
 
     return {

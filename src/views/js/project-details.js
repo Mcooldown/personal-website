@@ -24,7 +24,6 @@ export default {
       
       if(!project.value) {
         store.commit('setVisibleNavbar', false)
-        store.commit('setVisibleFooter', false)
         return
       }
       projectDetails.value = 
@@ -48,7 +47,6 @@ export default {
 
     onUnmounted (() => {
       store.commit('setVisibleNavbar', true)
-      store.commit('setVisibleFooter', true)
     })
 
     return {
