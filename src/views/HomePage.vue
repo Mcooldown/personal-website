@@ -57,7 +57,7 @@
   </div>
 </template>
 
-<script src="./js/home.js"></script>
+<script src="./js/home-page.js"></script>
 
 <style lang="scss" scoped>
 @import "~@/styles/variables";

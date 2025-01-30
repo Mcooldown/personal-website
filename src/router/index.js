@@ -1,26 +1,26 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '@/views/Home.vue'
-import ProjectDetails from '@/views/ProjectDetails.vue'
-import NotFound from "@/views/NotFound.vue"
+import HomePage from '@/views/HomePage.vue'
+import ProjectDetailPage from '@/views/ProjectDetailPage.vue'
+import NotFoundPage from "@/views/NotFoundPage.vue"
 import config from "@/data/config"
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home,
+    name: 'home',
+    component: HomePage,
   },
   {
-    path: '/projects/:slug',
-    name: 'Project Details',
-    component: ProjectDetails,
-    props: true,
+    path:'/404',
+    name: 'not-found',
+    component: NotFoundPage
   },
   {
-    path:'/:catchAll(.*)',
-    name: 'Not Found',
-    component: NotFound
-  }
+    path: '/:slug',
+    name: 'project-detail',
+    component: ProjectDetailPage,
+    props: true
+  },
 ]
 
 const router = createRouter({

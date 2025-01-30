@@ -1,7 +1,7 @@
 <template>
-  <div
+  <RouterLink
+    :to="`/${project.slug}`"
     class="project-item"
-    @click="goToProjectDetailPage"
   >
     <img
       :src="require(`@/assets/projects/${project.thumbnail}`)"
@@ -23,7 +23,7 @@
         {{ tech }}
       </div>
     </div>
-  </div>
+  </RouterLink>
 </template>
 
 <script src="./js/project-item.js"></script>
@@ -38,6 +38,7 @@
   border-radius: 8px;
   background: $color-white;
   padding: 1.5rem;
+  text-decoration: none;
   
   @include mobile {
     padding: 1rem;
@@ -53,7 +54,6 @@
 
   &__thumbnail {
     width: 100%;
-    border-radius: 6px;
   }
   
   &__title {

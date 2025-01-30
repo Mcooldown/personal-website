@@ -5,8 +5,7 @@ export default {
   },
   page: {
     home: "/",
-    projects: "/projects",
-    projectDetails: (slug) => `/projects/${slug}`
+    notFound: "/404"
   },
   contacts: [
     {
@@ -36,14 +35,8 @@ export default {
       title: 'MY PROJECTS'
     }
   },
-  projectDetails: {
+  projectDetail: {
     techStack: "Tech Stack:",
-    notFound: {
-      title: "Project Not Found",
-      description: "Sorry, your requested project doesn't exist. Please go to another project.",
-      button: "BACK TO PROJECTS"
-    },
-    openLinkButton: "CLICK HERE TO OPEN",
     noDetails: "No details available"
   },
   notFound: {

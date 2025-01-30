@@ -1,13 +1,9 @@
-import Button from "@/components/Button.vue"
 import { onMounted, ref } from "vue"
 import { useRouter } from "vue-router"
 import config from "@/data/config"
 
 export default {
   name: "Navbar",
-  components: { 
-    Button
-  },
   setup() {
     const router = useRouter()
     const visibleShadow = ref(false)
