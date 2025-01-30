@@ -14,12 +14,12 @@
 @import "~@/styles/variables.scss";
 
 .button {
-  border: 2px solid $color-blue;
-  padding: 8px 15px;
+  border: 1px solid $color-blue;
+  padding: 12px 20px;
   transition: 200ms ease all;
   color: $color-blue;
   background: transparent;
-  border-radius: 5px;
+  border-radius: 4px;
   font-size: 16px;
   cursor: pointer;
 

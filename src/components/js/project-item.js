@@ -1,18 +1,14 @@
-import { useRouter } from "vue-router"
-import config from "@/data/config"
+import Badge from '@/components/Badge.vue'
 
 export default {
   name: "ProjectItem",
-  props: ["project"],
-  setup ({ project }) {
-    const router = useRouter()
-    
-    function goToProjectDetailPage () {
-      router.push(config.page.projectDetails(project.slug))
+  components: {
+    Badge
+  },
+  props: {
+    project: {
+      required: true,
+      default: () => ({})
     }
-
-    return {
-      goToProjectDetailPage
-    }
-  }
+  },
 }

@@ -9,12 +9,9 @@
       </div>
     </router-view>
   </div>
-  <div v-if="visibleFooter" ref="footer">
-    <Footer />
-  </div>
   <div v-if="showButton" class="button-up">
     <button @click="scrollToTop">
-      <i class="fa fa-arrow-up" />
+      <i class="fa fa-arrow-up" />&nbsp;&nbsp;Scroll to top
     </button>
   </div>
 </template>
@@ -23,13 +20,18 @@
 
 <style lang="scss">
 @import "~@/styles/variables.scss";
+@import "~@/styles/responsive";
 
 html {
   scroll-behavior: smooth;
 }
 
 * {
-  font-family: "OpenSans-Regular";
+  font-family: "Montserrat-Regular";
+}
+
+body {
+  margin: 0;
 }
 
 .wrapper {
@@ -45,10 +47,25 @@ html {
   button {
     background: $color-blue;
     color: $color-white;
-    font-size: 1.5em;
-    padding: 0.25rem 1rem;
+    font-size: 18px;
+    padding: 0.5rem 1rem;
     border-radius: 8px;
     border: none;
+    cursor: pointer;
+  }
+}
+
+.section-wrapper {
+  padding: 0 2rem;
+  margin: auto;
+  
+  @include widescreen {
+    max-width: $widescreen;
+    padding: 0;
+  }
+  
+  @include mobile {
+    padding: 0 1.25rem;
   }
 }
 

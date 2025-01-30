@@ -1,118 +1,289 @@
 {
   "projects": [
     {
-      "id": 12,
-      "title": "PT Algyp Saraha Graha Official Website",
-      "short_description": "Revamping official website of PT Algyp Sarana Graha, containing company information and showcased projects.",
-      "tech_stack": ["Vue.js", "SCSS"],
-      "thumbnail": "algyp-sarana-graha/algyp-thumbnail.jpg",
-      "slug": "algyp-sarana-graha",
-      "selected": true
-    },
-    {
       "id": 1,
-      "title": "Angkasa Visual Works",
-      "short_description": "Web-based visual design production house that links customers who are in need of design and the designers to handle their requests.",
-      "tech_stack": ["Bootstrap", "React", "Laravel", "MySQL"],
-      "thumbnail": "angkasa-visual-works/angkasa-thumbnail.png",
-      "slug": "angkasa-visual-works",
-      "selected": true
-    },
-    {
-      "id": 2,
-      "title": "CureBox",
-      "short_description": "Web based Medical Marketplace that provides feature to support the medicine transactions.",
-      "tech_stack": ["Bootstrap", "React", "MongoDB", "Node.js", "Express.js"],
-      "thumbnail": "curebox/curebox-thumbnail.png",
-      "slug": "curebox",
-      "selected": true
-    },
-    {
-      "id": 3,
-      "title": "Bilik Mental",
-      "short_description": "Web-based platform for those who have mentally ill to do consultation and meditation about their mental health.",
-      "tech_stack": [
-        "Tailwind CSS",
-        "Next.js",
-        "MongoDB",
-        "Node.js",
-        "Express.js"
-      ],
-      "thumbnail": "bilik-mental/bilik-mental-thumbnail.png",
-      "slug": "bilik-mental",
-      "selected": false
-    },
-    {
-      "id": 4,
-      "title": "NginepKuy!",
-      "short_description": "Web Application for Online Staycation Booking and Consultation",
-      "tech_stack": ["Bootstrap", "Laravel", "MySQL"],
-      "thumbnail": "nginepkuy/nginepkuy-thumbnail.png",
-      "slug": "nginepkuy",
-      "selected": false
-    },
-    {
-      "id": 5,
-      "title": "BNEC Main Website User Interface Re-design",
-      "short_description": "Redesign the user interface of the existing BNEC Main Website to a new and more attractive appearance",
-      "tech_stack": ["Bootstrap", "Laravel"],
-      "thumbnail": "mybnec/mybnec-thumbnail.png",
-      "slug": "bnec-main-website-redesign",
-      "selected": false
-    },
-    {
-      "id": 6,
-      "title": "The 2021 Asian English Olympics Web",
-      "short_description": "The official website of The 2021 Asian English Olympics event that provide registration feature also information related to the events",
-      "tech_stack": ["Bootstrap", "Laravel", "MySQL"],
-      "thumbnail": "aeo-2021/aeo-2021-thumbnail.png",
-      "slug": "the-2021-asian-english-olympics-web",
-      "selected": false
-    },
-    {
-      "id": 7,
-      "title": "The 2020 BNEC Social Event Web",
-      "short_description": "The official website of The 2020 BNEC Social Event",
-      "tech_stack": ["Bootstrap", "Laravel", "MySQL"],
-      "thumbnail": "se-2020/se-2020-thumbnail.png",
-      "slug": "the-2020-bnec-social-event-web",
-      "selected": false
-    },
-    {
-      "id": 8,
-      "title": "Can you count it?",
-      "short_description": "Math game with time interval",
-      "tech_stack": ["Bootstrap", "Vue.js", "Laravel", "MySQL"],
-      "thumbnail": "can-you-count-it/cyci-thumbnail.png",
-      "slug": "can-you-count-it",
-      "selected": true
-    },
-    {
-      "id": 9,
-      "title": "BNEC Member Web",
-      "short_description": "BNEC Web-based application for class selection, activities, exam, scores and merchant transaction claim.",
-      "tech_stack": ["Bootstrap", "Laravel", "MySQL"],
-      "thumbnail": "bnec-member/bnec-member-thumbnail.png",
-      "slug": "bnec-member-web",
-      "selected": false
-    },
-    {
-      "id": 10,
-      "title": "Coffee Vibes",
-      "short_description": "Java GUI Application for Product, Voucher, Transaction and Employee Management. Built for Final Lab Project of Object Oriented Analysis and Design course at Binus University.",
-      "tech_stack": ["Java"],
-      "thumbnail": "coffee-vibes/coffee-vibes-thumbnail.png",
-      "slug": "coffee-vibes",
-      "selected": false
-    },
-    {
-      "id": 11,
       "title": "Store Del Luna",
       "short_description": "Website for K-pop Merchandise Shop. Built for Final Lab Project of Human and Computer Interaction course at Binus University.",
       "tech_stack": ["HTML", "CSS", "JavaScript"],
       "thumbnail": "store-del-luna/store-del-luna-thumbnail.png",
       "slug": "store-del-luna",
-      "selected": false
+      "images": [
+          "store-del-luna/store-del-luna-1.webp",
+          "store-del-luna/store-del-luna-2.webp"
+      ],
+      "links": [
+        {
+          "label": "Website",
+          "value": "https://store-del-luna.web.app"
+        },
+        {
+          "label": "Source Code",
+          "value": "https://github.com/Mcooldown/Store-Del-Luna"
+        }
+      ],
+      "full_description": "This website is made using HTML, CSS and a bit of Javascript for form validation. This website is used to display the catalog of the k-pop merchandise store along with the registration form for those who want to register as a new member. This website was created to fulfill the final lab project assignment for the Human and Computer Interaction course at Binus University."
+    },
+    {
+      "id": 2,
+      "title": "The 2020 BNEC Social Event Website",
+      "short_description": "The official website of The 2020 BNEC Social Event",
+      "tech_stack": ["Laravel", "MySQL"],
+      "thumbnail": "se-2020/se-2020-thumbnail.png",
+      "slug": "bnec-social-event-2020",
+      "images": [
+        "se-2020/se-2020-1.webp",
+        "se-2020/se-2020-2.webp",
+        "se-2020/commitee-certificate.webp"
+      ],
+      "links": [
+        {
+          "label": "Website",
+          "value": "https://socialevent.mybnec.org/"
+        }
+      ],
+      "full_description": "This website is the official website of The 2021 BNEC Social Event, where on this website some information is displayed about this event, starting from the purpose of the event, the theme raised, and an invitation to make donations. In addition, there are articles that can be read related to this event. Then this website also provides a donation feature where data is collected on anyone who makes a donation and the amount. In addition, because this event also held several webinars, this website provides a registration feature for the webinars held. Registered data will be stored in a list that can only be seen by the event committee. <br>(*Disclaimer: The user interface of the current website can change from the one I designed considering that this website belongs to an organization that can change at any time depending on the next presidency.)"
+    },
+    {
+      "id": 3,
+      "title": "The 2021 Asian English Olympics Website",
+      "short_description": "The official website of The 2021 Asian English Olympics event that provide registration feature also information related to the events",
+      "tech_stack": ["Laravel", "MySQL"],
+      "thumbnail": "aeo-2021/aeo-2021-thumbnail.png",
+      "slug": "asian-english-olympics-2021",
+      "images": [
+        "aeo-2021/aeo-2021-1.webp",
+        "aeo-2021/aeo-2021-2.webp",
+        "aeo-2021/committee-certificate.webp"
+      ],
+      "links": [
+        {
+          "label": "Website",
+          "value": "https://aeo.mybnec.org/"
+        }
+      ],
+      "full_description": "This website is the official website of the 2021 Asian English Olympics event, which is an Asian-scale English competition held by my organization (BNEC) every year. This website provides all information about this event, starting from the theme raised, the English competitions being contested and their details, announcements, sponsors and media partners, as well as terms and conditions. <br><br>In addition to displaying this information, this website also provides a competition participant registration feature, where participants can register their accounts first and purchase tickets to enter the competition. The registration process starts from ordering competition slots to making payments and registering information for each participant. <br><br>In addition to features for participants, there are also features for the committee, which is to view the list of participants and their payment status as well as other features that manage the operations of this web. This website is made using Laravel both on the front-end and back-end. Then MySQL is used as the database. <br><br>The user interface of the current website can change from the one I designed considering that this website belongs to an organization that can change at any time depending on the next presidency."
+    },
+    {
+      "id": 4,
+      "title": "BNEC Main Website Revamp",
+      "short_description": "Redesign the user interface of the existing BNEC Main Website to a new and more attractive appearance",
+      "tech_stack": ["Laravel"],
+      "thumbnail": "mybnec/mybnec-thumbnail.png",
+      "slug": "bnec-main-website-revamp",
+      "images": [
+        "mybnec/mybnec-1.webp",
+        "mybnec/mybnec-2.webp",
+        "mybnec/mybnec-3.webp"
+      ],
+      "links": [
+        {
+          "label": "Website",
+          "value": "https://www.mybnec.org/"
+        }
+      ],
+      "full_description": "As the 28th IT manager at BNEC (Bina Nusantara English Club), the first thing I did was to change the appearance of the main website of this organization to be more modern and attractive according to the design style used in the presidency in which year I served at that time (2021) . The purpose of this redesign is to provide a better user experience for users, including those who want to see information about this organization. A good user interface makes users have a good impression of this organization, so that is one of the reasons why I decided to do this redesign. (*Disclaimer: The user interface of the current website can change from the one I designed considering that this website belongs to an organization that can change at any time depending on the next presidency.)"
+    },
+    {
+      "id": 5,
+      "title": "BNEC Member App",
+      "short_description": "BNEC Web-based application for class selection, activities, exam, scores and merchant transaction claim.",
+      "tech_stack": ["Laravel", "MySQL"],
+      "thumbnail": "bnec-member/bnec-member-thumbnail.png",
+      "slug": "bnec-member-app",
+      "images": [
+        "bnec-member/bnec-member-1.webp",
+        "bnec-member/bnec-member-2.webp",
+        "bnec-member/bnec-member-3.webp"
+      ],
+      "links": [
+        {
+          "label": "Application",
+          "value": "https://member.mybnec.org"
+        }
+      ],
+      "full_description": "As the 28th IT manager of BNEC, I created this website to help the learning management and corporate relations division to meet the needs of BNEC members, namely related to learning systems and transaction systems for merchants who partner with BNEC. Therefore, this website was created with various features, namely Class selection, Class Activities, Online Exam, Class Score, and Merchant Transaction Claim, where these features are expected to help these two divisions meet the needs of members. This website was created using Laravel and it is possible to use other frameworks if in the future this website is developed further when I am no longer serving as IT manager at BNEC. (*Disclaimer: The user interface of the current website can change from the one I designed considering that this website belongs to an organization that can change at any time depending on the next presidency.)"
+    },
+    {
+      "id": 6,
+      "title": "CureBox",
+      "short_description": "Web based Medical Marketplace that provides feature to support the medicine transactions.",
+      "tech_stack": ["React", "MongoDB", "Express.js"],
+      "thumbnail": "curebox/curebox-thumbnail.png",
+      "slug": "curebox",
+      "images": [
+        "curebox/curebox-1.webp",
+        "curebox/curebox-2.webp"
+      ],
+      "links": [
+        {
+          "label": "Website",
+          "value": "https://withcurebox.web.app/"
+        },
+        {
+          "label": "UI Source Code",
+          "value": "https://github.com/Mcooldown/curebox-app"
+        },
+        {
+          "label": "API Source Code",
+          "value": "https://github.com/Mcooldown/curebox-api"
+        }
+      ],
+      "full_description": "Curebox is the Web based Medical Marketplace that provides feature to support the medicine transactions. This application is built as my personal portfolio as I've done learning about MERN Stack (MongoDB, ExpressJS, ReactJS, NodeJS). The features of this web consist of Medicine Search, Medicine Cart & Checkout, Forum about Medicine, also Articles about Medicine."
+    },
+    {
+      "id": 7,
+      "title": "Bilik Mental",
+      "short_description": "Web-based platform for those who have mentally ill to do consultation and meditation about their mental health.",
+      "tech_stack": [
+        "Next.js",
+        "MongoDB",
+        "Express.js"
+      ],
+      "thumbnail": "bilik-mental/bilik-mental-thumbnail.png",
+      "slug": "bilik-mental",
+      "images": [
+        "bilik-mental/bilik-mental-1.png",
+        "bilik-mental/bilik-mental-2.png"
+      ],
+      "links": [
+        {
+          "label": "Website",
+          "value": "http://bilikmental.vercel.app/"
+        },
+        {
+          "label": "UI Source Code",
+          "value": "https://github.com/Mcooldown/bilikmental-app"
+        },
+        {
+          "label": "API Source Code",
+          "value": "https://github.com/Mcooldown/bilikmental-api"
+        }
+      ],
+      "full_description": "Bilik Mental is the Web based Mental Health Application that provides feature to support the whose are in needs for they mental health. This web was built with Next.js, Node.js, Express.js, MongoDB, also Tailwind CSS. The features of this web consist of Meditation Course, Consultation with the professionals, Motivational Quotes, also Articles related to Mental Health."
+    },
+    {
+      "id": 8,
+      "title": "NginepKuy!",
+      "short_description": "Web Application for Online Staycation Booking and Consultation",
+      "tech_stack": ["Laravel", "MySQL"],
+      "thumbnail": "nginepkuy/nginepkuy-thumbnail.png",
+      "slug": "nginep-kuy",
+      "images": [
+        "nginepkuy/nginepkuy-1.webp",
+        "nginepkuy/nginepkuy-2.webp",
+        "nginepkuy/hackaton-certificate.webp"
+      ],
+      "links": [
+        {
+          "label": "Website",
+          "value": "https://nginepkuy.000webhostapp.com/"
+        },
+        {
+          "label": "Source Code",
+          "value": "https://github.com/Mcooldown/NginepKuy"
+        }
+      ],
+      "full_description": "NginepKuy is the web application that made for BNCC Hackathon 4.0 with the theme about staycation. This application provide booking & checkout feature for accomodation, also Online Chat with Travel Agent feature to consult the best vacation plan that user can follows. This web was built with Laravel (both Front-end and Back-end) and MySQL Database."
+    },
+    {
+      "id": 9,
+      "title": "Angkasa Visual Works",
+      "short_description": "Web-based visual design production house that links customers who are in need of design and the designers to handle their requests.",
+      "tech_stack": ["React", "Laravel", "MySQL"],
+      "thumbnail": "angkasa-visual-works/angkasa-thumbnail.png",
+      "slug": "angkasa-visual-works",
+      "images": [
+        "angkasa-visual-works/angkasa-1.webp",
+        "angkasa-visual-works/angkasa-2.webp",
+        "angkasa-visual-works/angkasa-3.webp"
+      ],
+      "links": [
+        {
+          "label": "Website",
+          "value": "https://angkasavisual.web.app/"
+        },
+        {
+          "label": "UI Source Code",
+          "value": "https://github.com/Mcooldown/angkasa-visual-app"
+        },
+        {
+          "label": "API Source Code",
+          "value": "https://github.com/putuduta/Angkasa-Visual-Backend"
+        }
+      ],
+      "full_description": "Angkasa Visual Works is a Web-based visual design production house that connects customers who need design and designers to handle their requests. This website has several features, including Authentication with JWT, Cart and Transaction, Chat for Customer and Designer, also Design Order System. This website is built using ReactJS framework for Front-end and Laravel for Back-end API."
+    },
+    {
+      "id": 10,
+      "title": "Can you count it?",
+      "short_description": "Web-based math game with time interval",
+      "tech_stack": ["Vue.js", "Laravel", "MySQL"],
+      "thumbnail": "can-you-count-it/cyci-thumbnail.png",
+      "slug": "can-you-count-it",
+      "images": [
+        "can-you-count-it/cyci-1.webp",
+        "can-you-count-it/cyci-2.webp"
+      ],
+      "links": [
+        {
+          "label": "Play game",
+          "value": "https://cycigame.web.app/"
+        },
+        {
+          "label": "API Source Code",
+          "value": "https://github.com/Mcooldown/can-you-count-it-api"
+        },
+        {
+          "label": "UI Source Code",
+          "value": "https://github.com/Mcooldown/can-you-count-it"
+        }
+      ],
+      "full_description": "'Can You Count It?' is an engaging addition-based game where players must sum three numbers to reach a target score. However, one of the numbers dynamically changes at specific time intervals, adding an extra layer of challenge. The frequency of these changes varies based on the game's difficulty level, requiring players to think quickly and adapt their calculations in real-time."
+    },
+    {
+      "id": 11,
+      "title": "PT Algyp Saraha Graha Official Website",
+      "short_description": "Redesigning the official website of PT Algyp Sarana Graha to feature company information and showcase projects.",
+      "tech_stack": ["Vue.js"],
+      "thumbnail": "algyp-sarana-graha/algyp-thumbnail.jpg",
+      "slug": "algyp-sarana-graha",
+      "images": [
+        "algyp-sarana-graha/algyp-1.webp",
+        "algyp-sarana-graha/algyp-2.webp",
+        "algyp-sarana-graha/algyp-3.webp",
+        "algyp-sarana-graha/algyp-4.webp",
+        "algyp-sarana-graha/algyp-5.webp",
+        "algyp-sarana-graha/algyp-6.webp"
+      ],
+      "links": [
+        {
+          "label": "Website",
+          "value": "https://algyp.co.id"
+        }
+      ],
+      "full_description": "This project is a revamp of the official PT Algyp Sarana Graha website, designed to enhance its professionalism and user experience. The website consists of five pages, featuring company information and a showcase of the company’s projects. The redesign aims to present a more polished and modern online presence."
+    },
+    {
+      "id": 12,
+      "title": "JAR Management Official Website",
+      "short_description": "Revamping JAR Management's official website to create a fresh and appealing design, incorporating company information, a talent list, short videos, and a blog.",
+      "thumbnail": "jar-management/jar-thumbnail.jpg",
+      "tech_stack": ["Vue.js", "Express.js", "MySQL"],
+      "slug": "jar-management",
+      "images": [
+        "jar-management/jar-1.png",
+        "jar-management/jar-2.png",
+        "jar-management/jar-3.png",
+        "jar-management/jar-4.png",
+        "jar-management/jar-5.png"
+      ],
+      "links": [
+        {
+          "label": "Website",
+          "value": "http://jarmanagement.xyz/"
+        }
+      ],
+      "full_description": "This project is a revamp of the official JAR Management website, featuring a modernized design and enhanced functionality. The website comprises five pages, showcasing company information, talent profiles, blogs, and short videos. Additionally, an admin panel is integrated to efficiently manage all displayed content."
     }
   ]
 }
