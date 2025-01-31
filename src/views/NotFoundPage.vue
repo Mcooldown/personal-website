@@ -14,6 +14,7 @@
         title="BACK TO HOME"
         @click="goToHomePage"
         class="not-found__button"
+        icon="fa fa-home"
       />
     </div>
   </div>
@@ -41,15 +42,15 @@
     color: $color-dark-gray;
     font-family: $font-bold;
     margin-top: 32px;
-    font-size: 36px;
+    font-size: 32px;
   }
   &__description {
     color: $color-gray;
     margin-top: 16px;
-    font-size: 20px;
+    font-size: 18px;
   }
   &__button {
-    margin-top: 32px;
+    margin-top: 24px;
   }
 }
 </style>

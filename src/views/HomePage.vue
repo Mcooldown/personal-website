@@ -69,8 +69,9 @@
   &__landing {
     display: flex;
     justify-content: space-around;
-    gap: 32px;
-    margin-top: 120px;
+    gap: 56px;
+    padding-top: 120px;
+    padding-bottom: 80px;
 
     &-wrapper {
       position: relative;
@@ -82,7 +83,6 @@
     .landing {
       &__content {
         align-self: center;
-        margin-bottom: 80px;
 
         .content {
           &__greetings {
@@ -100,7 +100,7 @@
             max-width: 400px;
             
             @include mobile {
-              font-size: 52px
+              font-size: 44px
             }
           }
           &__subtitle {
@@ -108,6 +108,10 @@
             font-family: $font-bold;
             font-size: 24px;
             margin-top: 8px;
+
+            @include mobile {
+              font-size: 20px;
+            }
           }
           &__description {
             color: $color-gray;
@@ -116,6 +120,7 @@
 
             @include mobile {
               margin-top: 16px;
+              font-size: 16px;
             }
           }
           &__actions {
@@ -134,6 +139,14 @@
               &__contact-item {
                 color: $color-gray;
 
+                svg {
+                  width: 28px;
+                
+                  @include mobile {
+                    width: 24px;
+                  }
+                }
+
                 &:hover {
                   color: $color-blue;
                 }
@@ -144,9 +157,8 @@
       }
 
       &__image {
-        width: 35%;
+        width: 32%;
         align-self: flex-end;
-        margin-right: 32px;
 
         @include mobile {
           display: none;
@@ -160,8 +172,8 @@
     padding-bottom: 4rem;
 
     @include mobile {
-      padding-top: 2.5rem;
-      padding-bottom: 2.5rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
     }
 
     .projects {
@@ -172,8 +184,8 @@
         margin: 0 0 24px;
 
         @include mobile {
-          font-size: 36px;
-          margin-bottom: 20px;
+          font-size: 28px;
+          margin-bottom: 16px;
         }
       }
       &__list {

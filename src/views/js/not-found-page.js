@@ -2,6 +2,7 @@ import Button from "@/components/Button.vue"
 import { useRouter } from "vue-router"
 import { useStore } from "vuex"
 import { onMounted, onUnmounted } from "vue"
+import config from "@/data/config"
 
 export default {
   name: "NotFound",

@@ -65,7 +65,7 @@ body {
   }
   
   @include mobile {
-    padding: 0 1.25rem;
+    padding: 0 1rem;
   }
 }
 

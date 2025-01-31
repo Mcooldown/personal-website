@@ -75,6 +75,10 @@
   background-color: $color-white;
   border-radius: 8px;
   padding: 20px;
+
+  @include mobile {
+    padding: 16px;
+  }
 }
 
 .project-detail-page {
@@ -89,7 +93,7 @@
     padding: 120px 0 100px;
 
     @include mobile {
-      padding: 100px 0 40px;
+      padding: 92px 0 48px;
     }
 
     .header {
@@ -99,6 +103,11 @@
         flex-wrap: wrap;
         gap: 8px;
         font-size: 16px;
+        word-break: break-word;
+
+        @include mobile {
+          font-size: 14px;
+        }
 
         a {
           text-decoration: none;
@@ -202,12 +211,22 @@
       &__full-description {
         font-size: 18px;
         color: $color-dark-gray;
+
+        @include mobile {
+          font-size: 16px;
+        }
       }
       &__link {
         display: flex;
         flex-direction: column;
         gap: 12px;
         font-size: 18px;
+        flex-wrap: wrap;
+        word-break: break-word;
+
+        @include mobile {
+          font-size: 16px;
+        }
 
         .link {
           &__label {

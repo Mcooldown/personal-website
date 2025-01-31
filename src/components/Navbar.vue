@@ -1,6 +1,6 @@
 <template>
   <nav :class="['v-navbar', {'visible-shadow': visibleShadow }]">
-    <div class="v-navbar__container">
+    <div class="v-navbar__container section-wrapper">
       <img 
         src="@/assets/logo.png"
         class="v-navbar__logo"
@@ -42,46 +42,43 @@
   }
 
   &__container {
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
-
-    @include mobile {
-      padding: 0 1.25rem;
-    }
-
-    @include widescreen {
-      max-width: $widescreen;
-      padding: 0;
-    }
   }
 
   &__logo {
-    height: 36px;
+    height: 32px;
     cursor: pointer;
     transition: 200ms ease all;
 
     &:hover {
       transform: scale(1.25);
     }
+
+    @include mobile {
+      height: 24px;
+    }
   }
 
   &__list {
     display: flex;
-    gap: 32px;
+    gap: 24px;
     align-items: center;
 
     @include mobile {
-      gap: 24px;
+      gap: 20px;
     }
     .list {
       &__item {
         color: $color-gray;
         
         svg {
-          width: 28px;
+          width: 32px;
+        
+          @include mobile {
+            width: 24px;
+          }
         }
           
         &:hover {

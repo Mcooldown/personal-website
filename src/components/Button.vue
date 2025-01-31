@@ -12,10 +12,11 @@
 
 <style lang="scss" scoped>
 @import "~@/styles/variables.scss";
+@import "~@/styles/responsive.scss";
 
 .button {
   border: 1px solid $color-blue;
-  padding: 12px 20px;
+  padding: 10px 16px;
   transition: 200ms ease all;
   color: $color-blue;
   background: transparent;
@@ -29,7 +30,12 @@
   }
 
   &__icon {
-    padding-right: 8px;
+    padding-right: 4px;
+  }
+
+  @include mobile {
+    font-size: 14px;
+    padding: 8px 14px;
   }
 }
 </style>

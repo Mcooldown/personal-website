@@ -52,6 +52,8 @@
 
   &__thumbnail {
     width: 100%;
+    border-radius: 6px;
+    border: 1px solid $color-light-gray;
   }
   
   &__title {
@@ -61,7 +63,7 @@
     font-size: 28px;
 
     @include mobile {
-      font-size: 26px;
+      font-size: 24px;
     }
   }
   
