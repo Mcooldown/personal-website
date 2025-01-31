@@ -11,7 +11,7 @@ export default {
     ProjectItem
   },
   setup() {
-    const sortedProjectsByLatest = computed(() => projects.sort((a, b) => b.id - a.id))
+    const sortedProjectsByLatest = computed(() => projects?.sort((a, b) => b.id - a.id) || [])
 
     onMounted(() => {
       window.scrollTo(0, 0)

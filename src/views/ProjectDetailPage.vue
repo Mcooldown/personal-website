@@ -7,7 +7,7 @@
             ><i class="fa fa-home"></i>&nbsp;Home</RouterLink
           >
           <i class="fa fa-chevron-right"></i>
-          <span>Project - {{ project.title }}</span>
+          <span>{{ project.title }}</span>
         </div>
         <div class="header__landing">
           <img

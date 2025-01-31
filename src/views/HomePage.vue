@@ -10,10 +10,10 @@
             VINCENT HADINATA
           </div>
           <div class="content__subtitle">
-            Software Engineering Enthusiast
+            Software Engineer
           </div>
           <div class="content__description">
-            Currently, I'm working as Software Engineer at Mekari. I'm very interested to learn and implement new technologies in software development.
+            I'm currently working as a Software Engineer at Mekari, with a strong interest in learning and implementing new technologies in software development. I look forward to collaborating with you. Please feel free to reach out to me.
           </div>
           <div class="content__actions">
             <Button
@@ -71,7 +71,6 @@
     justify-content: space-around;
     gap: 56px;
     padding-top: 120px;
-    padding-bottom: 80px;
 
     &-wrapper {
       position: relative;
@@ -83,6 +82,7 @@
     .landing {
       &__content {
         align-self: center;
+        margin-bottom: 80px;
 
         .content {
           &__greetings {
@@ -106,11 +106,11 @@
           &__subtitle {
             color: $color-dark-gray;
             font-family: $font-bold;
-            font-size: 24px;
+            font-size: 26px;
             margin-top: 8px;
 
             @include mobile {
-              font-size: 20px;
+              font-size: 22px;
             }
           }
           &__description {
