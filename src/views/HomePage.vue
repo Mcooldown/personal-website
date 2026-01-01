@@ -13,7 +13,7 @@
             Software Engineer
           </div>
           <div class="content__description">
-            I'm currently working as a Software Engineer at Mekari, with a strong interest in learning and implementing new technologies in software development. I look forward to collaborating with you. Please feel free to reach out to me.
+            I am a Software Engineer at Mekari and former Software Engineer at Blibli, with over 3.5 years of professional experience in software development. I am passionate about learning and applying new technologies to deliver impactful solutions. Let's connect and explore opportunities to collaborate—feel free to reach out!
           </div>
           <div class="content__actions">
             <Button

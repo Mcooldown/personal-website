@@ -1,7 +1,7 @@
 export default {
   name: "Vincent Hadinata",
   path: {
-    resume: 'Resume - Vincent Hadinata.pdf'
+    resume: 'Resume - Vincent Hadinata - 2026.pdf'
   },
   page: {
     home: "/",
