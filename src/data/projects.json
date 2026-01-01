@@ -107,7 +107,7 @@
       "id": 6,
       "title": "CureBox",
       "short_description": "Web based Medical Marketplace that provides feature to support the medicine transactions.",
-      "tech_stack": ["React", "MongoDB", "Express.js"],
+      "tech_stack": ["React", "MongoDB", "Node.js"],
       "thumbnail": "curebox/curebox-thumbnail.png",
       "slug": "curebox",
       "images": [
@@ -137,7 +137,7 @@
       "tech_stack": [
         "Next.js",
         "MongoDB",
-        "Express.js"
+        "Node.js"
       ],
       "thumbnail": "bilik-mental/bilik-mental-thumbnail.png",
       "slug": "bilik-mental",
@@ -159,7 +159,7 @@
           "value": "https://github.com/Mcooldown/bilikmental-api"
         }
       ],
-      "full_description": "Bilik Mental is the Web based Mental Health Application that provides feature to support the whose are in needs for they mental health. This web was built with Next.js, Node.js, Express.js, MongoDB, also Tailwind CSS. The features of this web consist of Meditation Course, Consultation with the professionals, Motivational Quotes, also Articles related to Mental Health."
+      "full_description": "Bilik Mental is the Web based Mental Health Application that provides feature to support the whose are in needs for they mental health. This web was built with Next.js, Node.js, Node.js, MongoDB, also Tailwind CSS. The features of this web consist of Meditation Course, Consultation with the professionals, Motivational Quotes, also Articles related to Mental Health."
     },
     {
       "id": 8,
@@ -268,7 +268,7 @@
       "title": "JAR Management Official Website",
       "short_description": "Revamping JAR Management's official website to create a fresh and appealing design, incorporating company information, a talent list, short videos, and a blog.",
       "thumbnail": "jar-management/jar-thumbnail.jpg",
-      "tech_stack": ["Vue.js", "Express.js", "MySQL"],
+      "tech_stack": ["Vue.js", "Node.js", "MySQL"],
       "slug": "jar-management",
       "images": [
         "jar-management/jar-1.png",
@@ -280,10 +280,38 @@
       "links": [
         {
           "label": "Website",
-          "value": "http://jarmanagement.xyz/"
+          "value": "https://www.terjarinc.com"
         }
       ],
       "full_description": "This project is a revamp of the official JAR Management website, featuring a modernized design and enhanced functionality. The website comprises five pages, showcasing company information, talent profiles, blogs, and short videos. Additionally, an admin panel is integrated to efficiently manage all displayed content."
+    },
+    {
+      "id": 13,
+      "title": "Andhika Group Official Website",
+      "short_description": "Revamping Andhika Group Official website to create modern looks and complete company informations",
+      "thumbnail": "andhika/andhika-thumbnail.jpg",
+      "tech_stack": ["Next.js", "Node.js", "MySQL"],
+      "slug": "andhika",
+      "images": [
+        "andhika/andhika-1.webp",
+        "andhika/andhika-2.webp",
+        "andhika/andhika-3.webp",
+        "andhika/andhika-4.webp",
+        "andhika/andhika-5.webp",
+        "andhika/andhika-6.webp",
+        "andhika/andhika-7.webp",
+        "andhika/andhika-8.webp",
+        "andhika/andhika-9.webp",
+        "andhika/andhika-10.webp",
+        "andhika/andhika-11.webp"
+      ],
+      "links": [
+        {
+          "label": "Website",
+          "value": "http://www.andhika.com"
+        }
+      ],
+      "full_description": "This project is a revamp of the official Andhika group website, containing information about the company (history, structure, vision mission, values), services, contact, CSR, certifications, and admin system for managing website content. Also to increase SEO performance and website speed optimization."
     }
   ]
 }
