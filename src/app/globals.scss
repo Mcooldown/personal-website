@@ -1,0 +1,30 @@
+@import "@/styles/variables.scss";
+@import "@/styles/responsive.scss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "Montserrat-Regular", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100vh;
+}
+
+.section-wrapper {
+  width: 100%;
+  max-width: $widescreen;
+  padding: 0 2rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+  
+  @include mobile {
+    padding: 0 1.5rem;
+  }
+}

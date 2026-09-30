@@ -1,0 +1,240 @@
+@import "@/styles/variables.scss";
+@import "@/styles/responsive.scss";
+
+.home {
+  background-color: $color-light-gray;
+
+  &__landing {
+    display: flex;
+    justify-content: space-between;
+    gap: 56px;
+    padding-top: 120px;
+    padding-bottom: 80px;
+
+    &-wrapper {
+      position: relative;
+      z-index: 3;
+      box-shadow: 0 4px 12px 0px rgba(0, 0, 0, 0.05);
+      background-color: $color-white;
+    }
+    
+    .landing__content {
+      align-self: center;
+      flex: 1;
+
+      .content__greetings {
+        color: $color-dark-gray;
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 8px;
+        
+        @include mobile {
+          font-size: 18px;
+        }
+      }
+      .content__title {
+        color: $color-blue;
+        font-family: $font-black;
+        font-size: 64px;
+        line-height: 1.1;
+        max-width: 600px;
+        margin: 0;
+        
+        @include mobile {
+          font-size: 40px;
+        }
+      }
+      .content__subtitle {
+        color: $color-dark-gray;
+        font-family: $font-bold;
+        font-size: 24px;
+        margin-top: 12px;
+        margin-bottom: 0;
+
+        @include mobile {
+          font-size: 20px;
+        }
+      }
+      .content__description {
+        color: $color-gray;
+        margin-top: 24px;
+        font-size: 18px;
+        line-height: 1.6;
+        max-width: 650px;
+
+        @include mobile {
+          margin-top: 16px;
+          font-size: 16px;
+        }
+      }
+      .content__actions {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        flex-wrap: wrap;
+
+        @include mobile {
+          margin-top: 28px;
+          gap: 16px;
+        }
+
+        .btn-resume {
+          background-color: $color-blue;
+          color: $color-white;
+          padding: 12px 24px;
+          border-radius: 8px;
+          text-decoration: none;
+          font-family: $font-bold;
+          font-size: 16px;
+          transition: background-color 0.2s;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          
+          &:hover {
+            background-color: darken($color-blue, 10%);
+          }
+        }
+
+        .actions__contact-item {
+          color: $color-gray;
+          transition: color 0.2s ease;
+
+          i {
+            font-size: 28px;
+          
+            @include mobile {
+              font-size: 24px;
+            }
+          }
+
+          &:hover {
+            color: $color-blue;
+          }
+        }
+      }
+    }
+
+    .landing__image {
+      width: 38%;
+      max-width: 450px;
+      height: auto;
+      object-fit: cover;
+      align-self: center;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+
+  &__projects {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    @include mobile {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+
+    .projects__title {
+      font-size: 40px;
+      font-family: $font-black;
+      color: $color-blue;
+      margin: 0 0 32px;
+      text-align: center;
+
+      @include mobile {
+        font-size: 28px;
+        margin-bottom: 24px;
+      }
+    }
+    .projects__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+      
+      @include mobile {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .project-card {
+        background: $color-white;
+        border-radius: 12px;
+        overflow: hidden;
+        text-decoration: none;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        display: flex;
+        flex-direction: column;
+
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        &__image {
+          width: 100%;
+          height: 250px;
+          overflow: hidden;
+          
+          .thumbnail {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        &__content {
+          padding: 24px;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+        }
+
+        &__title {
+          font-family: $font-bold;
+          font-size: 22px;
+          color: $color-dark-gray;
+          margin: 0 0 12px;
+        }
+
+        &__desc {
+          color: $color-gray;
+          font-size: 15px;
+          line-height: 1.6;
+          margin: 0 0 20px;
+          flex: 1;
+        }
+
+        &__tech {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px;
+
+          .tech-badge {
+            background-color: $color-light-gray;
+            color: $color-dark-gray;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-family: $font-bold;
+          }
+        }
+      }
+    }
+  }
+
+  &__copyright {
+    text-align: center;
+    color: $color-dark-gray;
+    padding: 24px 0;
+    font-size: 16px;
+    background-color: $color-white;
+    border-top: 1px solid rgba(0,0,0,0.05);
+  }
+}

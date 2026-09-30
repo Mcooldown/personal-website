@@ -1,0 +1,139 @@
+@import "@/styles/variables.scss";
+@import "@/styles/responsive.scss";
+
+.project-detail {
+  padding: 40px 0 80px;
+  background-color: $color-light-gray;
+  min-height: 100vh;
+
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: $color-gray;
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 32px;
+    transition: color 0.2s;
+
+    &:hover {
+      color: $color-blue;
+    }
+  }
+
+  .project-header {
+    margin-bottom: 40px;
+
+    .project-title {
+      font-size: 48px;
+      color: $color-blue;
+      font-family: $font-black;
+      margin: 0 0 16px;
+
+      @include mobile {
+        font-size: 32px;
+      }
+    }
+
+    .project-tech {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+
+      .tech-badge {
+        background-color: $color-white;
+        color: $color-dark-gray;
+        padding: 8px 16px;
+        border-radius: 8px;
+        font-size: 14px;
+        font-family: $font-bold;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      }
+    }
+  }
+
+  .project-content {
+    background-color: $color-white;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+
+    @include mobile {
+      padding: 24px;
+    }
+
+    h2 {
+      font-size: 24px;
+      color: $color-dark-gray;
+      font-family: $font-bold;
+      margin: 0 0 24px;
+      border-bottom: 2px solid $color-light-gray;
+      padding-bottom: 12px;
+    }
+
+    .project-description {
+      margin-bottom: 48px;
+
+      p {
+        font-size: 18px;
+        line-height: 1.8;
+        color: $color-gray;
+        margin-bottom: 32px;
+
+        @include mobile {
+          font-size: 16px;
+        }
+      }
+
+      .project-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+
+        .link-btn {
+          background-color: $color-blue;
+          color: $color-white;
+          padding: 12px 24px;
+          border-radius: 8px;
+          text-decoration: none;
+          font-family: $font-bold;
+          transition: background-color 0.2s;
+
+          &:hover {
+            background-color: darken($color-blue, 10%);
+          }
+        }
+      }
+    }
+
+    .project-gallery {
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+
+        @include mobile {
+          grid-template-columns: 1fr;
+        }
+
+        .gallery-item {
+          border-radius: 12px;
+          overflow: hidden;
+          box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+
+          .gallery-image {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+
+            &:hover {
+              transform: scale(1.02);
+            }
+          }
+        }
+      }
+    }
+  }
+}
