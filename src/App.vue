@@ -56,16 +56,14 @@ body {
 }
 
 .section-wrapper {
+  width: 100%;
+  max-width: $widescreen;
   padding: 0 2rem;
-  margin: auto;
-  
-  @include widescreen {
-    max-width: $widescreen;
-    padding: 0;
-  }
+  margin: 0 auto;
+  box-sizing: border-box;
   
   @include mobile {
-    padding: 0 1rem;
+    padding: 0 1.5rem;
   }
 }
 

@@ -10,10 +10,10 @@
             VINCENT HADINATA
           </div>
           <div class="content__subtitle">
-            Software Engineer
+            Front-end Engineer
           </div>
           <div class="content__description">
-            I am a Software Engineer at Mekari and former Software Engineer at Blibli, with over 3.5 years of professional experience in software development. I am passionate about learning and applying new technologies to deliver impactful solutions. Let's connect and explore opportunities to collaborate—feel free to reach out!
+            I am currently a Front-end Engineer at Octomate by HRnet, previously building software at Mekari and Blibli. With over 3.5 years of professional experience in software development, I am passionate about crafting intuitive user interfaces and applying modern technologies to deliver impactful web experiences. Let's connect and explore opportunities to collaborate—feel free to reach out!
           </div>
           <div class="content__actions">
             <Button
@@ -87,36 +87,41 @@
         .content {
           &__greetings {
             color: $color-dark-gray;
-            font-size: 24px;
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 8px;
             
             @include mobile {
-              font-size: 20px
+              font-size: 18px;
             }
           }
           &__title {
             color: $color-blue;
             font-family: $font-black;
-            font-size: 72px;
-            max-width: 400px;
+            font-size: 64px;
+            line-height: 1.1;
+            max-width: 600px;
             
             @include mobile {
-              font-size: 44px
+              font-size: 40px;
             }
           }
           &__subtitle {
             color: $color-dark-gray;
             font-family: $font-bold;
-            font-size: 26px;
-            margin-top: 8px;
+            font-size: 24px;
+            margin-top: 12px;
 
             @include mobile {
-              font-size: 22px;
+              font-size: 20px;
             }
           }
           &__description {
             color: $color-gray;
             margin-top: 24px;
             font-size: 18px;
+            line-height: 1.6;
+            max-width: 650px;
 
             @include mobile {
               margin-top: 16px;
@@ -124,20 +129,21 @@
             }
           }
           &__actions {
-            margin-top: 32px;
+            margin-top: 40px;
             display: flex;
             align-items: center;
             gap: 24px;
             flex-wrap: wrap;
 
             @include mobile {
-              margin-top: 24px;
+              margin-top: 28px;
               gap: 16px;
             }
 
             .actions {
               &__contact-item {
                 color: $color-gray;
+                transition: color 0.2s ease;
 
                 svg {
                   width: 28px;
@@ -157,8 +163,11 @@
       }
 
       &__image {
-        width: 32%;
-        align-self: flex-end;
+        width: 38%;
+        max-width: 500px;
+        align-self: center;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 
         @include mobile {
           display: none;
