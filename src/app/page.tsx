@@ -26,13 +26,11 @@ export default function Home() {
             <h1 className="content__title">VINCENT HADINATA</h1>
             <h2 className="content__subtitle">Software Engineer</h2>
             <p className="content__description">
-              I am currently a Software Engineer (Frontend) at Octomate by HRnet,
-              previously building software at Mekari and Blibli. With over 3.5
-              years of professional experience in software development, I am
-              passionate about crafting intuitive user interfaces and applying
-              modern technologies to deliver impactful web experiences. Let's
-              connect and explore opportunities to collaborate—feel free to reach
-              out!
+              I am a Software Engineer currently at Octomate by HRnet, with
+              previous experience at Mekari and Blibli. With over 3.5 years of
+              experience across frontend and backend development, I am passionate
+              about learning new technologies, driving development efficiency,
+              and optimizing systems to deliver impactful solutions.
             </p>
             <div className="content__actions">
               <a href={`/${config.path.resume}`} target="_blank" rel="noopener noreferrer" className="btn-resume">
