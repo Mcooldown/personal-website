@@ -1,32 +1,5 @@
-<template>
-  <nav :class="['v-navbar', {'visible-shadow': visibleShadow }]">
-    <div class="v-navbar__container section-wrapper">
-      <img 
-        src="@/assets/logo.png"
-        class="v-navbar__logo"
-        alt=""
-        @click="goToHomePage"
-      />
-      <div class="v-navbar__list">
-        <a
-          v-for="(contact, index) of config.contacts"
-          :key="`nav-item-contact-${index+1}`"
-          :href="contact.link"
-          class="list__item"
-          target="_blank"
-        >
-          <i :class="['fa-2x', contact.icon]"/>
-        </a>
-      </div>
-    </div>
-  </nav>
-</template>
-
-<script src="./js/navbar.js"></script>
-
-<style lang="scss" scoped>
-@import "~@/styles/variables.scss";
-@import "~@/styles/responsive.scss";
+@import "@/styles/variables.scss";
+@import "@/styles/responsive.scss";
 
 .v-navbar {
   background: $color-white;
@@ -73,7 +46,7 @@
       &__item {
         color: $color-gray;
         
-        svg {
+        svg, i {
           width: 32px;
         
           @include mobile {
@@ -88,4 +61,3 @@
     }
   }
 }
-</style>

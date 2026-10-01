@@ -1,26 +1,5 @@
-<template>
-  <div v-if="visibleNavbar" ref="navbar">
-    <Navbar />
-  </div>
-  <div ref="content" class="wrapper">
-    <router-view v-slot="{ Component, route }">
-      <div :key="route.name">
-        <component :is="Component"></component>
-      </div>
-    </router-view>
-  </div>
-  <div v-if="showButton" class="button-up">
-    <button @click="scrollToTop">
-      <i class="fa fa-arrow-up" />&nbsp;&nbsp;Scroll to top
-    </button>
-  </div>
-</template>
-
-<script src="./js/app.js"></script>
-
-<style lang="scss">
-@import "~@/styles/variables.scss";
-@import "~@/styles/responsive";
+@import "@/styles/variables.scss";
+@import "@/styles/responsive.scss";
 
 html {
   scroll-behavior: smooth;
@@ -68,5 +47,3 @@ body {
     padding: 0 1rem;
   }
 }
-
-</style>

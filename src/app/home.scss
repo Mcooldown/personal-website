@@ -1,68 +1,101 @@
-<template>
-  <div class="home">
-    <div class="home__landing-wrapper">
-      <div class="home__landing section-wrapper">
-        <div class="landing__content">
-          <div class="content__greetings">
-            Hello, I'm
-          </div>
-          <div class="content__title">
-            VINCENT HADINATA
-          </div>
-          <div class="content__subtitle">
-            Software Engineer
-          </div>
-          <div class="content__description">
-            I am a Software Engineer at Mekari and former Software Engineer at Blibli, with over 3.5 years of professional experience in software development. I am passionate about learning and applying new technologies to deliver impactful solutions. Let's connect and explore opportunities to collaborate—feel free to reach out!
-          </div>
-          <div class="content__actions">
-            <Button
-              title="VIEW RESUME"
-              @click="viewResume"
-              icon="fa fa-file"
-            />
-            <a
-              v-for="(contact, index) of config.contacts"
-              :key="`nav-item-contact-${index+1}`"
-              :href="contact.link"
-              class="actions__contact-item"
-              target="_blank"
-            >
-              <i :class="['fa-2x', contact.icon]"/>
-            </a>
-          </div>
-        </div>
-        <img
-          src="@/assets/landing-image.webp"
-          class="landing__image"
-          alt=""
-        />
-      </div>
-    </div>
-    <div class="section-wrapper home__projects">
-      <h2 class="projects__title">
-        MY PROJECTS
-      </h2>
-      <div class="projects__list">
-        <ProjectItem
-          v-for="project in sortedProjectsByLatest"
-          :key="project.id"
-          :project="project"
-        />
-      </div>
-    </div>
-    <div class="home__copyright">
-      {{ config.copyright(new Date().getFullYear()) }}
-    </div>
-  </div>
-</template>
+@import "@/styles/variables.scss";
+@import "@/styles/responsive.scss";
 
-<script src="./js/home-page.js"></script>
+// Badge CSS from original Badge.vue
+.badge {
+  border-radius: 8px;
+  background-color: $color-blue;
+  padding: 6px 12px;
+  color: $color-white;
+  font-size: 16px;
+}
 
-<style lang="scss" scoped>
-@import "~@/styles/variables";
-@import "~@/styles/responsive";
+// Button CSS from original Button.vue
+.button {
+  border: 1px solid $color-blue;
+  padding: 10px 16px;
+  transition: 200ms ease all;
+  color: $color-blue;
+  background: transparent;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
 
+  &:hover {
+    background-color: $color-blue;
+    color: $color-white;
+  }
+
+  &__icon {
+    padding-right: 4px;
+  }
+
+  @include mobile {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+}
+
+// ProjectItem CSS from original ProjectItem.vue
+.project-item {
+  transition: 200ms ease all;
+  cursor: pointer;
+  border-radius: 8px;
+  background: $color-white;
+  padding: 1.5rem;
+  text-decoration: none;
+  display: block; // Next.js <Link> is inline by default, we need it to behave like <RouterLink> block
+  
+  @include mobile {
+    padding: 1rem;
+  }
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  &__thumbnail {
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid $color-light-gray;
+    display: block; // added for image spacing
+    height: auto; // to avoid squishing
+  }
+  
+  &__title {
+    margin-top: 16px;
+    color: $color-dark-gray;
+    font-family: $font-bold;
+    font-size: 28px;
+
+    @include mobile {
+      font-size: 24px;
+    }
+  }
+  
+  &__description {
+    color: $color-gray;
+    font-size: 18px;
+    margin-top: 8px;
+
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+
+  &__tech-stacks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+  }
+}
+
+// HomePage CSS from original HomePage.vue
 .home {
   background-color: $color-light-gray;
 
@@ -98,6 +131,7 @@
             font-family: $font-black;
             font-size: 72px;
             max-width: 400px;
+            margin: 0; // added margin 0 to match h1 defaults in Next vs Vue div
             
             @include mobile {
               font-size: 44px
@@ -139,7 +173,7 @@
               &__contact-item {
                 color: $color-gray;
 
-                svg {
+                svg, i {
                   width: 28px;
                 
                   @include mobile {
@@ -159,6 +193,8 @@
       &__image {
         width: 32%;
         align-self: flex-end;
+        display: block; // added for image spacing
+        height: auto; // to avoid squishing
 
         @include mobile {
           display: none;
@@ -207,4 +243,3 @@
     font-size: 16px;
   }
 }
-</style>
