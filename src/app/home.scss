@@ -1,130 +1,204 @@
 @import "@/styles/variables.scss";
 @import "@/styles/responsive.scss";
 
+// Badge CSS from original Badge.vue
+.badge {
+  border-radius: 8px;
+  background-color: $color-blue;
+  padding: 6px 12px;
+  color: $color-white;
+  font-size: 16px;
+}
+
+// Button CSS from original Button.vue
+.button {
+  border: 1px solid $color-blue;
+  padding: 10px 16px;
+  transition: 200ms ease all;
+  color: $color-blue;
+  background: transparent;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-blue;
+    color: $color-white;
+  }
+
+  &__icon {
+    padding-right: 4px;
+  }
+
+  @include mobile {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+}
+
+// ProjectItem CSS from original ProjectItem.vue
+.project-item {
+  transition: 200ms ease all;
+  cursor: pointer;
+  border-radius: 8px;
+  background: $color-white;
+  padding: 1.5rem;
+  text-decoration: none;
+  display: block; // Next.js <Link> is inline by default, we need it to behave like <RouterLink> block
+  
+  @include mobile {
+    padding: 1rem;
+  }
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  &__thumbnail {
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid $color-light-gray;
+    display: block; // added for image spacing
+    height: auto; // to avoid squishing
+  }
+  
+  &__title {
+    margin-top: 16px;
+    color: $color-dark-gray;
+    font-family: $font-bold;
+    font-size: 28px;
+
+    @include mobile {
+      font-size: 24px;
+    }
+  }
+  
+  &__description {
+    color: $color-gray;
+    font-size: 18px;
+    margin-top: 8px;
+
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+
+  &__tech-stacks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+  }
+}
+
+// HomePage CSS from original HomePage.vue
 .home {
   background-color: $color-light-gray;
 
   &__landing {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 56px;
     padding-top: 120px;
-    padding-bottom: 80px;
 
     &-wrapper {
       position: relative;
       z-index: 3;
-      box-shadow: 0 4px 12px 0px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 4px 4px 0px $color-shadow;
       background-color: $color-white;
     }
     
-    .landing__content {
-      align-self: center;
-      flex: 1;
+    .landing {
+      &__content {
+        align-self: center;
+        margin-bottom: 80px;
 
-      .content__greetings {
-        color: $color-dark-gray;
-        font-size: 20px;
-        font-weight: 500;
-        margin-bottom: 8px;
-        
-        @include mobile {
-          font-size: 18px;
-        }
-      }
-      .content__title {
-        color: $color-blue;
-        font-family: $font-black;
-        font-size: 64px;
-        line-height: 1.1;
-        max-width: 600px;
-        margin: 0;
-        
-        @include mobile {
-          font-size: 40px;
-        }
-      }
-      .content__subtitle {
-        color: $color-dark-gray;
-        font-family: $font-bold;
-        font-size: 24px;
-        margin-top: 12px;
-        margin-bottom: 0;
-
-        @include mobile {
-          font-size: 20px;
-        }
-      }
-      .content__description {
-        color: $color-gray;
-        margin-top: 24px;
-        font-size: 18px;
-        line-height: 1.6;
-        max-width: 650px;
-
-        @include mobile {
-          margin-top: 16px;
-          font-size: 16px;
-        }
-      }
-      .content__actions {
-        margin-top: 40px;
-        display: flex;
-        align-items: center;
-        gap: 24px;
-        flex-wrap: wrap;
-
-        @include mobile {
-          margin-top: 28px;
-          gap: 16px;
-        }
-
-        .btn-resume {
-          background-color: $color-blue;
-          color: $color-white;
-          padding: 12px 24px;
-          border-radius: 8px;
-          text-decoration: none;
-          font-family: $font-bold;
-          font-size: 16px;
-          transition: background-color 0.2s;
-          display: flex;
-          align-items: center;
-          gap: 10px;
-          
-          &:hover {
-            background-color: darken($color-blue, 10%);
-          }
-        }
-
-        .actions__contact-item {
-          color: $color-gray;
-          transition: color 0.2s ease;
-
-          i {
-            font-size: 28px;
-          
+        .content {
+          &__greetings {
+            color: $color-dark-gray;
+            font-size: 24px;
+            
             @include mobile {
-              font-size: 24px;
+              font-size: 20px
             }
           }
-
-          &:hover {
+          &__title {
             color: $color-blue;
+            font-family: $font-black;
+            font-size: 72px;
+            max-width: 400px;
+            margin: 0; // added margin 0 to match h1 defaults in Next vs Vue div
+            
+            @include mobile {
+              font-size: 44px
+            }
+          }
+          &__subtitle {
+            color: $color-dark-gray;
+            font-family: $font-bold;
+            font-size: 26px;
+            margin-top: 8px;
+
+            @include mobile {
+              font-size: 22px;
+            }
+          }
+          &__description {
+            color: $color-gray;
+            margin-top: 24px;
+            font-size: 18px;
+
+            @include mobile {
+              margin-top: 16px;
+              font-size: 16px;
+            }
+          }
+          &__actions {
+            margin-top: 32px;
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            flex-wrap: wrap;
+
+            @include mobile {
+              margin-top: 24px;
+              gap: 16px;
+            }
+
+            .actions {
+              &__contact-item {
+                color: $color-gray;
+
+                svg, i {
+                  width: 28px;
+                
+                  @include mobile {
+                    width: 24px;
+                  }
+                }
+
+                &:hover {
+                  color: $color-blue;
+                }
+              }
+            }
           }
         }
       }
-    }
 
-    .landing__image {
-      width: 38%;
-      max-width: 450px;
-      height: auto;
-      object-fit: cover;
-      align-self: flex-end;
+      &__image {
+        width: 32%;
+        align-self: flex-end;
+        display: block; // added for image spacing
+        height: auto; // to avoid squishing
 
-      @include mobile {
-        display: none;
+        @include mobile {
+          display: none;
+        }
       }
     }
   }
@@ -134,94 +208,29 @@
     padding-bottom: 4rem;
 
     @include mobile {
-      padding-top: 3rem;
-      padding-bottom: 3rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
     }
 
-    .projects__title {
-      font-size: 40px;
-      font-family: $font-black;
-      color: $color-blue;
-      margin: 0 0 32px;
-      text-align: center;
+    .projects {
+      &__title {
+        font-size: 44px;
+        font-family: $font-black;
+        color: $color-blue;
+        margin: 0 0 24px;
 
-      @include mobile {
-        font-size: 28px;
-        margin-bottom: 24px;
+        @include mobile {
+          font-size: 28px;
+          margin-bottom: 16px;
+        }
       }
-    }
-    .projects__list {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 32px;
-      
-      @include mobile {
-        grid-template-columns: 1fr;
+      &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         gap: 24px;
-      }
-
-      .project-card {
-        background: $color-white;
-        border-radius: 12px;
-        overflow: hidden;
-        text-decoration: none;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-        display: flex;
-        flex-direction: column;
-
-        &:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-        }
-
-        &__image {
-          width: 100%;
-          overflow: hidden;
-          background-color: $color-light-gray;
-          
-          .thumbnail {
-            width: 100%;
-            height: auto;
-            display: block;
-          }
-        }
-
-        &__content {
-          padding: 24px;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-        }
-
-        &__title {
-          font-family: $font-bold;
-          font-size: 22px;
-          color: $color-dark-gray;
-          margin: 0 0 12px;
-        }
-
-        &__desc {
-          color: $color-gray;
-          font-size: 15px;
-          line-height: 1.6;
-          margin: 0 0 20px;
-          flex: 1;
-        }
-
-        &__tech {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 8px;
-
-          .tech-badge {
-            background-color: $color-light-gray;
-            color: $color-dark-gray;
-            padding: 6px 12px;
-            border-radius: 6px;
-            font-size: 13px;
-            font-family: $font-bold;
-          }
+        
+        @include mobile {
+          grid-template-columns: 1fr;
         }
       }
     }
@@ -230,9 +239,7 @@
   &__copyright {
     text-align: center;
     color: $color-dark-gray;
-    padding: 24px 0;
+    padding: 20px 0;
     font-size: 16px;
-    background-color: $color-white;
-    border-top: 1px solid rgba(0,0,0,0.05);
   }
 }

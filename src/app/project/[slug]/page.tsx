@@ -67,60 +67,75 @@ export default async function ProjectDetail({ params }: { params: Promise<{ slug
   }
 
   return (
-    <main className="project-detail">
-      <div className="section-wrapper">
-        <Link href="/" className="back-link">
-          <i className="fa fa-arrow-left"></i> Back to Home
-        </Link>
-        
-        <div className="project-header">
-          <h1 className="project-title">{project.title}</h1>
-          <div className="project-tech">
-            {project.tech_stack.map((tech: string) => (
-              <span key={tech} className="tech-badge">{tech}</span>
-            ))}
+    <div className="project-detail-page">
+      <div className="project-detail-page__header">
+        <div className="section-wrapper">
+          <div className="header__breadcrumbs">
+            <Link href="/"><i className="fa fa-home"></i>&nbsp;Home</Link>
+            <i className="fa fa-chevron-right"></i>
+            <span>{project.title}</span>
           </div>
-        </div>
-
-        <div className="project-content">
-          <div className="project-description">
-            <h2>About Project</h2>
-            <p>{project.full_description}</p>
-            
-            <div className="project-links">
-              {project.links?.map((link: ProjectLink, idx: number) => (
-                <a
-                  key={idx}
-                  href={link.value}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="link-btn"
-                >
-                  {link.label}
-                </a>
-              ))}
-            </div>
-          </div>
-
-          <div className="project-gallery">
-            <h2>Gallery</h2>
-            <div className="gallery-grid">
-              {project.images.map((img: string, idx: number) => (
-                <div key={idx} className="gallery-item">
-                  <Image
-                    src={`/projects/${img}`}
-                    alt={`${project.title} screenshot ${idx + 1}`}
-                    width={800}
-                    height={600}
-                    className="gallery-image"
-                  />
-                </div>
-              ))}
+          <div className="header__landing">
+            <Image
+              src={`/projects/${project.thumbnail}`}
+              alt=""
+              className="landing__image"
+              width={800}
+              height={600}
+            />
+            <div>
+              <h1 className="landing__title">{project.title}</h1>
+              <p className="landing__description">{project.short_description}</p>
+              <p className="landing__tech-stack-title">Tech Stack:</p>
+              <div className="landing__tech-stack-list">
+                {project.tech_stack.map((tech) => (
+                  <div key={tech} className="badge">
+                    {tech}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </main>
+      <div className="section-wrapper project-detail-page__details">
+        {project.full_description && (
+          <div className="box details__full-description">
+            <div dangerouslySetInnerHTML={{ __html: project.full_description }}></div>
+          </div>
+        )}
+        {project.links && project.links.length > 0 && (
+          <div className="box details__link">
+            {project.links.map((link, index) => (
+              <div key={`link-${index}`}>
+                <span className="link__label">{link.label}</span>:&nbsp;&nbsp;
+                <a href={link.value} target="_blank" rel="noopener noreferrer" className="link__value">
+                  {link.value}
+                </a>
+              </div>
+            ))}
+          </div>
+        )}
+        {project.images && project.images.length > 0 && (
+          <>
+            {project.images.map((image, index) => (
+              <Image
+                key={index}
+                src={`/projects/${image}`}
+                alt=""
+                className="details__image"
+                width={1200}
+                height={800}
+              />
+            ))}
+          </>
+        )}
+      </div>
+      <div className="project-detail-page__copyright">
+        {/* config.copyright(new Date().getFullYear()) */}
+        Copyright © {new Date().getFullYear()} Vincent Hadinata
+      </div>
+    </div>
   );
 }
 

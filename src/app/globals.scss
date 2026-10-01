@@ -6,7 +6,7 @@ html {
 }
 
 * {
-  font-family: "Montserrat-Regular", sans-serif;
+  font-family: "Montserrat-Regular";
 }
 
 body {
@@ -17,14 +17,33 @@ body {
   min-height: 100vh;
 }
 
+.button-up {
+  position: fixed;
+  bottom: 2vh;
+  right: 4vw;
+  transition: 200ms ease all;
+  
+  button {
+    background: $color-blue;
+    color: $color-white;
+    font-size: 18px;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+  }
+}
+
 .section-wrapper {
-  width: 100%;
-  max-width: $widescreen;
   padding: 0 2rem;
-  margin: 0 auto;
-  box-sizing: border-box;
+  margin: auto;
+  
+  @include widescreen {
+    max-width: $widescreen;
+    padding: 0;
+  }
   
   @include mobile {
-    padding: 0 1.5rem;
+    padding: 0 1rem;
   }
 }

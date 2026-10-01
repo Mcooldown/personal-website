@@ -1,139 +1,201 @@
-@import "@/styles/variables.scss";
-@import "@/styles/responsive.scss";
+@import '@/styles/variables.scss';
+@import '@/styles/responsive.scss';
 
-.project-detail {
-  padding: 40px 0 80px;
+// Badge CSS from Badge.vue (needed here too since it's used in detail page)
+.badge {
+  border-radius: 8px;
+  background-color: $color-blue;
+  padding: 6px 12px;
+  color: $color-white;
+  font-size: 16px;
+}
+
+.box {
+  background-color: $color-white;
+  border-radius: 8px;
+  padding: 20px;
+
+  @include mobile {
+    padding: 16px;
+  }
+}
+
+.project-detail-page {
   background-color: $color-light-gray;
   min-height: 100vh;
 
-  .back-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    color: $color-gray;
-    text-decoration: none;
-    font-size: 16px;
-    margin-bottom: 32px;
-    transition: color 0.2s;
-
-    &:hover {
-      color: $color-blue;
-    }
-  }
-
-  .project-header {
-    margin-bottom: 40px;
-
-    .project-title {
-      font-size: 48px;
-      color: $color-blue;
-      font-family: $font-black;
-      margin: 0 0 16px;
-
-      @include mobile {
-        font-size: 32px;
-      }
-    }
-
-    .project-tech {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-
-      .tech-badge {
-        background-color: $color-white;
-        color: $color-dark-gray;
-        padding: 8px 16px;
-        border-radius: 8px;
-        font-size: 14px;
-        font-family: $font-bold;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      }
-    }
-  }
-
-  .project-content {
+  &__header {
+    position: relative;
+    z-index: 3;
+    box-shadow: 0 4px 4px 0px $color-shadow;
     background-color: $color-white;
-    border-radius: 16px;
-    padding: 40px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    padding: 120px 0 100px;
 
     @include mobile {
-      padding: 24px;
+      padding: 92px 0 48px;
     }
 
-    h2 {
-      font-size: 24px;
-      color: $color-dark-gray;
-      font-family: $font-bold;
-      margin: 0 0 24px;
-      border-bottom: 2px solid $color-light-gray;
-      padding-bottom: 12px;
-    }
-
-    .project-description {
-      margin-bottom: 48px;
-
-      p {
-        font-size: 18px;
-        line-height: 1.8;
-        color: $color-gray;
-        margin-bottom: 32px;
+    .header {
+      &__breadcrumbs {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        font-size: 16px;
+        word-break: break-word;
 
         @include mobile {
-          font-size: 16px;
+          font-size: 14px;
         }
-      }
 
-      .project-links {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 16px;
-
-        .link-btn {
-          background-color: $color-blue;
-          color: $color-white;
-          padding: 12px 24px;
-          border-radius: 8px;
+        a {
           text-decoration: none;
-          font-family: $font-bold;
-          transition: background-color 0.2s;
+          color: $color-blue;
 
-          &:hover {
-            background-color: darken($color-blue, 10%);
+          svg, i {
+            color: $color-blue;
           }
         }
+        svg, i {
+          color: $color-dark-gray;
+        }
+        span {
+          color: $color-gray;
+        }
       }
-    }
 
-    .project-gallery {
-      .gallery-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
+      &__landing {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 48px;
+        margin-top: 32px;
 
         @include mobile {
-          grid-template-columns: 1fr;
+          flex-direction: column;
+          gap: 24px;
+          margin-top: 24px;
         }
 
-        .gallery-item {
-          border-radius: 12px;
-          overflow: hidden;
-          box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        .landing {
+          &__image {
+            width: 50%;
+            border-radius: 8px;
+            border: 1px solid $color-light-gray;
+            height: auto; // Add to maintain proportion for Image
+            display: block; // Add to avoid inline space below image
 
-          .gallery-image {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            display: block;
-            transition: transform 0.3s ease;
+            @include mobile {
+              width: 100%;
+            }
+          }
+          &__title {
+            color: $color-blue;
+            font-family: $font-black;
+            text-transform: uppercase;
+            font-size: 44px;
+            margin: 0;
 
-            &:hover {
-              transform: scale(1.02);
+            @include mobile {
+              font-size: 32px;
+            }
+          }
+          &__description {
+            color: $color-gray;
+            font-size: 18px;
+            margin: 16px 0 0;
+
+            @include mobile {
+              margin-top: 12px;
+              font-size: 16px;
+            }
+          }
+          &__tech-stack {
+            &-title {
+              margin: 28px 0 0;
+              font-size: 20px;
+              color: $color-dark-gray;
+              font-family: $font-bold;
+
+              @include mobile {
+                font-size: 18px;
+                margin-top: 24px;
+              }
+            }
+            &-list {
+              margin-top: 8px;
+              display: inline-flex;
+              align-items: center;
+              flex-wrap: wrap;
+              gap: 8px;
             }
           }
         }
       }
     }
+  }
+
+  &__details {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @include mobile {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      gap: 20px;
+    }
+
+    .details {
+      &__full-description {
+        font-size: 18px;
+        color: $color-dark-gray;
+
+        @include mobile {
+          font-size: 16px;
+        }
+      }
+      &__link {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        font-size: 18px;
+        flex-wrap: wrap;
+        word-break: break-word;
+
+        @include mobile {
+          font-size: 16px;
+        }
+
+        .link {
+          &__label {
+            color: $color-dark-gray;
+          }
+          &__value {
+            font-family: $font-bold;
+            color: $color-blue;
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      &__image {
+        width: 100%;
+        border-radius: 8px;
+        height: auto;
+        display: block;
+      }
+    }
+  }
+  &__copyright {
+    text-align: center;
+    color: $color-dark-gray;
+    padding: 20px 0;
+    font-size: 16px;
   }
 }
