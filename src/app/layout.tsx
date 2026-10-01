@@ -37,6 +37,9 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
+import Navbar from "@/components/Navbar";
+import ScrollToTop from "@/components/ScrollToTop";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -45,9 +48,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <Navbar />
         <div className="wrapper">
           {children}
         </div>
+        <ScrollToTop />
       </body>
     </html>
   );
